@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Examen de práctica de certificación</title>
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de styles css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.Durante el proceso de AAA, ¿cuándo se implementará la autorización? </h3>
+        <ul class="listaIT">
+          <li>inmediatamente después de que un cliente AAA envíe información de autenticación a un servidor centralizado </li>
+          <li>inmediatamente después de determinar a qué recursos puede acceder un usuario </li>
+          <li><span class="azul">inmediatamente después de la autenticación exitosa contra una fuente de datos AAA *</span></li>
+          <li>inmediatamente después de que la auditoría y contabilidad de AAA reciba informes detallados</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La autorización AAA se implementa inmediatamente después de que el usuario se autentica en una fuente de datos AAA específica.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.¿Cuál es la función principal del algoritmo Diffie-Hellman? </h3>
+        <ul class="listaIT">
+          <li>para proporcionar integridad de datos </li>
+          <li>para evitar ataques de intermediarios </li>
+          <li><span class="azul">para intercambiar claves secretas compartidas sobre redes no confiables *</span></li>
+          <li>para generar y compartir claves públicas </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El algoritmo Diffie-Hellman (DH) es un método moderno de intercambio de claves que permite el intercambio de claves secretas de forma segura a través de una red no confiable.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.Al configurar SSH en un enrutador para implementar la gestión segura de la red, un ingeniero de red ha emitido los comandos de inicio de sesión local y de entrada de transporte ssh line vty. ¿Qué tres acciones de configuración adicionales se deben realizar para completar la configuración de SSH? (Elija tres).</h3>
+        <ul class="listaIT">
+          <li>Configure el acceso CLI basado en roles. </li>
+          <li><span class="azul">Cree una base de datos de nombre de usuario y contraseña local válida. * </span></li>
+          <li><span class="azul">Configure el nombre de dominio IP correcto. *</span></li>
+          <li><span class="azul">Genere las claves RSA asimétricas. *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>SSH se habilita automáticamente después de que se generan las claves RSA. La configuración de los niveles de privilegio del usuario y la configuración del acceso a la CLI basada en roles son buenas prácticas de seguridad, pero no son un requisito para implementar SSH.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>4.¿Qué funcionalidad proporciona la palabra clave de conexión única TACACS a los servicios AAA?</h3>
+        <ul class="listaIT">
+          <li>mantiene una única conexión UDP durante la vida de la sesión </li>
+          <li><span class="azul">mejora el rendimiento de la conexión TCP *</span></li>
+          <li>cifra la transferencia de datos entre el servidor TACACS + y el cliente AAA </li>
+          <li>permite el uso de claves diferentes entre el servidor TACACS + y el cliente AAA</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La palabra clave de conexión única mejora el rendimiento de TCP con TACACS + al mantener una conexión TCP única durante la vida de la sesión. Sin la palabra clave de conexión única, una conexión TCP se abre y se cierra por sesión.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.¿En qué situación es más probable que un administrador de red implemente la protección de root? </h3>
+        <ul class="listaIT">
+          <li>en todos los puertos del switch (usados ​​o no usados)</li>
+          <li>en todos los puertos del conmutador que se conectan a un dispositivo de Capa 3 </li>
+          <li><span class="azul">en todos los puertos del conmutador que se conectan a otro conmutador que no es el puente raíz *</span></li>
+          <li>en todos los puertos del conmutador que se conectan a otro conmutador </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Protección de raíz junto con PortFast, y la protección de BPDU se usa para prevenir un ataque de manipulación de STP.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.¿Qué tipo de algoritmos requieren que el remitente y el receptor intercambien una clave secreta que se utiliza para garantizar la confidencialidad de los mensajes? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">algoritmos simétricos *</span></li>
+          <li>clave pública algoritmos de
+hash algoritmos </li>
+          <li>asimétricos</li>
+          <li>algoritmos</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los algoritmos simétricos usan la misma clave, una clave secreta, para cifrar y descifrar datos. Esta clave debe ser compartida previamente antes de que pueda ocurrir la comunicación. Los algoritmos asimétricos requieren más potencia de procesamiento y gastos generales en los dispositivos de comunicación, ya que estas claves pueden ser largas para evitar ser hackeados.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.Un administrador de red está configurando un servidor AAA para administrar la autenticación TACACS +. ¿Cuáles son dos atributos de la autenticación TACACS +? (Elija dos.)</h3>
+        <ul class="listaIT">
+          <li>Cifrado solo para la contraseña de un usuario </li>
+          <li><span class="azul">cifrado para todas las comunicaciones * </span></li>
+          <li><span class="azul">procesos separados para autenticación y autorización *</span></li>
+          <li>proceso único para autenticación y autorización </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La autenticación TACACS + incluye los siguientes atributos:<br>
+Procesos separados de autenticación y autorización <br>
+Encripta todas las comunicaciones, no solo las contraseñas
+Utiliza el puerto TCP 49</p>
+      </div>
+      <div class="capituloIT">
+        <h3>8.¿Cuál es una característica de una vista CLI basada en roles de la configuración del enrutador? </h3>
+        <ul class="listaIT">
+          <li>Una vista de CLI tiene una jerarquía de comandos, con vistas superiores e inferiores. </li>
+          <li>Cuando se elimina una supervisión, se eliminan las vistas CLI asociadas.</li>
+          <li><span class="azul">Una vista única de la CLI puede ser compartida dentro de múltiples superviews. *</span></li>
+          <li>Sólo un usuario puede configurar supervista una nueva visión y añadir o eliminar comandos desde los puntos de vista existentes.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Una vista CLI no tiene jerarquía de comandos y, por lo tanto, no tiene vistas superiores o inferiores. La eliminación de una vista supervisada no elimina las vistas CLI asociadas. Solo un usuario de vista raíz puede configurar una nueva vista y agregar o eliminar comandos de las vistas existentes.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>9.¿En qué servicio o protocolo se basa el protocolo de copia segura para garantizar que las transferencias de copia segura sean de usuarios autorizados? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">AAA *</span></li>
+          <li>RADIO</li>
+          <li>IPsec</li>
+          <li>SNMP</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El protocolo de copia segura (SCP) se utiliza para copiar de forma segura las imágenes de IOS y los archivos de configuración en un servidor SCP. Para realizar esto, SCP utilizará conexiones SSH de usuarios autenticados a través de AAA.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>10.¿Qué tres funciones se proporcionan bajo la solución de marco de Cisco NAC? (Elija tres).</h3>
+        <ul class="listaIT">
+          <li>Conexión segura a los servidores. </li>
+          <li><span class="azul">Servicios AAA *</span></li>
+          <li><span class="azul">para dispositivos no compatibles *</span></li>
+          <li><span class="azul">análisis para el cumplimiento de políticas *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El objetivo tanto del marco de Cisco NAC como del dispositivo de Cisco NAC es garantizar que solo los hosts que están autenticados y tengan su postura de seguridad examinada y aprobada estén permitidos en la red. Proporcionan cuatro funciones importantes: autenticación, autorización y contabilidad; evaluación de la postura (evaluación de un dispositivo entrante con respecto a las políticas de seguridad), cuarentena de sistemas no conformes, y remediación de dispositivos no conformes. No proporcionan conexión VPN ni servicios de detección / prevención de intrusos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>11.Un administrador de red está configurando un servidor AAA para administrar la autenticación RADIUS. ¿Qué dos características están incluidas en la autenticación RADIUS? (Elija dos).</h3>
+        <ul class="listaIT">
+          <li><span class="azul">las contraseñas ocultas durante la transmisión * </span></li>
+          <li><span class="azul">proceso único para la autenticación y autorización *</span></li>
+          <li>CLARO</li>
+          <li>OPER</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La autenticación RADIUS admite las siguientes funciones: <br>
+Autenticación y autorización RADIUS como un solo proceso <br>
+Cifra solo la contraseña <br>
+Utiliza UDP <br>
+Soporta tecnologías de acceso remoto, 802.1X y Protocolo de inicio de sesión (SIP)</p>
+      </div>
+      <div class="capituloIT">
+        <h3>12.¿Cuál es el siguiente paso en el establecimiento de una VPN IPsec después de que se complete la fase 1 de IKE? </h3>
+        <ul class="listaIT">
+          <li>autenticación de tráfico interesante de pares</li>
+          <li>Sabrina</li>
+          <li><span class="azul">negociación de la política IPsec SA *</span></li>
+          <li>claro</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El establecimiento de un túnel IPsec consta de cinco pasos: <br>
+detección de tráfico interesante definen por una ACL <br>
+Fase 1 de IKE en el que pares negocian la política de ISAKMP SA <br>
+Fase 2 de IKE en el que pares negocian IPsec SA política de
+creación del túnel IPsec
+terminación del túnel IPsec</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.Un técnico de seguridad utiliza un algoritmo asimétrico para cifrar mensajes con una clave privada y luego reenvía esos datos a otro técnico. ¿Qué clave debe utilizarse para descifrar estos datos? </h3>
+        <ul class="listaIT">
+          <li>La clave pública del receptor. </li>
+          <li>La clave privada del remitente.</li>
+          <li><span class="azul">La clave pública del remitente. *</span></li>
+          <li>La clave privada del receptor.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los algoritmos asimétricos utilizan dos claves. Si una clave pública encripta los datos, la clave privada correspondiente descifra los datos. Lo opuesto también es cierto. Si una clave privada cifra los datos, la clave pública correspondiente descifra los datos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>14.¿Qué tipo de activación de firma IPS se basa en un perfil definido de la actividad normal de la red? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">detección basada en anomalías *</span></li>
+          <li>detección basada en patrones</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Hay cuatro tipos de activadores de IPS:
+detección basada en patrones detección basada en
+anomalías detección basada en
+directivas
+honeypot detección basada en
+anomalías La detección basada en anomalías compara la actividad de la red con un perfil predefinido de lo que se considera actividad normal.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>15.¿Qué condición describe una verdadera alarma de firma IPS positiva? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">una alarma cuando se genera una alarma en respuesta a un ataque conocido *</span></li>
+          <li>cuando no se genera una alarma en respuesta a un ataque conocido </li>
+          <li>cuando el tráfico normal no genera </li>
+          <li>cuando el tráfico normal genera una alarma</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Hay cuatro alarmas de IPS: <br>
+Falso positivo: se produce cuando el tráfico normal dispara una alarma <br>
+Falso negativo: se produce cuando el tráfico malicioso conocido que debería activar una alarma no es <br>
+Verdadero positivo: se produce cuando el tráfico que se sabe malicioso provoca un ataque <br>
+Verdadero negativo: se produce cuando el tráfico normal no dispara una alarma</p>
+      </div>
+      <div class="capituloIT">
+        <h3>16.En la implementación de la administración segura de la red, ¿cuáles son los dos servicios o funciones del plano de administración de un enrutador Cisco que deben configurarse? (Elija dos).</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Inicios de sesión y contraseñas seguros *</span></li>
+          <li><span class="azul">Acceso SSH seguro *</span></li>
+          <li>Cisco Express Forwarding</li>
+          <li>Filtrado de tráfico de con ACL </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El reenvío de Cisco Express, el filtrado de tráfico con las ACL y la inspección del firewall IOS de Cisco son servicios planos que proporcionan seguridad. La seguridad plano de gestión incluye las funciones siguientes: <br>
+notificación legal utilizando una pancarta
+de contraseña de inicio de sesión y funciones seguras
+NTP seguras
+SSH segura el acceso
+de servicios de intercepción de TCP</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.¿Qué dos características describen un virus? (Elija dos.) </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Código malicioso que puede permanecer inactivo antes de ejecutar una acción no deseada. *</span></li>
+          <li>Un ataque de autorreplicación que se inicia de forma independiente. </li>
+          <li><span class="azul">Malware que se basa en la acción de un usuario o un programa para activar. *</span></li>
+          <li>Malware que ejecuta un código arbitrario e instala copias de sí mismo en la memoria. </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Un virus es un código malicioso que se adjunta a programas legítimos o archivos ejecutables. La mayoría de los virus requieren la activación del usuario final, pueden permanecer inactivos durante un período prolongado y luego activarse en una fecha o hora específica. En contraste, un gusano ejecuta un código arbitrario e instala copias de sí mismo en la memoria de la computadora infectada. El propósito principal de un gusano es la replicación automática para propagarse rápidamente a través de una red. Un gusano no requiere un programa host para ejecutarse.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>18.¿Qué ataque de red se mitiga al habilitar la protección BPDU? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">interruptores falsos en una red *</span></li>
+          <li>La dirección MAC falsifica </li>
+          <li>Ataques de desbordamiento de la tabla CAM</li>
+          <li>los servidores DHCP fraudulentos en una red</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Existen varios mecanismos de estabilidad de STP recomendados para ayudar a mitigar los ataques de manipulación de STP: <br>
+PortFast: se usa para traer de inmediato un interfaz configurado como acceso o puerto troncal al estado de reenvío desde un estado de bloqueo. Se aplica a todos los puertos de usuario final. <br>
+Protección de BPDU: deshabilita inmediatamente un puerto que recibe una BPDU. Se aplica a todos los puertos de usuarios finales. La recepción de BPDU puede ser parte de un intento no autorizado de agregar un conmutador a la red.<br>
+Protección de raíz: evita que un interruptor se convierta en el interruptor de raíz. Se aplica a todos los puertos donde no se debe ubicar el switch raíz. <br>
+Protección de bucle: detecta enlaces unidireccionales para evitar que los puertos alternativos o raíz se conviertan en puertos designados. Se aplica a todos los puertos que están o pueden no estar designados. </p>
+      </div>
+      <div class="capituloIT">
+        <h3>19.¿Cuándo se crea una asociación de seguridad (SA) si se utiliza un túnel VPN IPsec para conectarse entre dos sitios? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">durante la fase 1 y 2 *</span></li>
+          <li>después de crear el túnel, pero antes de enviar el tráfico</li>
+          <li>solo durante la Fase 2 </li>
+          <li>solo durante la Fase 1</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Como se ve en la Figura 8.4.1.1, una conexión VPN IPsec crea dos SA: (1) al finalizar la Fase 1 de IKE una vez que los interlocutores negocian la política de IKE SA, y (2) al final de la Fase 2 de IKE después de la Los conjuntos de transformación son negociados.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.¿Cómo se utiliza el cifrado asimétrico para proporcionar confidencialidad para el tráfico VPN? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Un remitente cifra el tráfico con la clave pública del receptor y el receptor descifra los datos utilizando la clave privada del receptor. *</span></li>
+          <li>Un remitente cifra el tráfico con la clave privada del receptor y el receptor descifra los datos utilizando la clave privada del remitente .</li>
+          <li>Un remitente encripta el tráfico con la clave privada del receptor y el receptor descifra los datos utilizando la clave pública del remitente. </li>
+          <li>Un remitente encripta el tráfico con la clave pública del receptor y el receptor descifra los datos utilizando la clave pública del remitente.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>21.¿Qué componente AAA se puede establecer utilizando tarjetas de token? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">de autenticación *</span></li>
+          <li>la auditoría </li>
+          <li>la autorización de </li>
+          <li>contable </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El componente de autenticación de AAA se establece mediante combinaciones de nombre de usuario y contraseña, preguntas de desafío y respuesta, y tarjetas de token. El componente de autorización de AAA determina a qué recursos puede acceder el usuario y qué operaciones puede realizar el usuario. El componente de contabilidad y auditoría de AAA realiza un seguimiento de cómo se utilizan los recursos de la red.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>22.En la implementación de la seguridad de la red, ¿en qué se diferencia la implementación de un firewall ASA de Cisco de un enrutador Cisco IOS? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Los dispositivos ASA admiten niveles de seguridad de interfaz. *</span></li>
+          <li>Los dispositivos ASA no admiten una denegación implícita dentro de las ACL. </li>
+          <li>Los dispositivos ASA utilizan ACL configuradas con una máscara de comodín. </li>
+          <li>dispositivos ASA usan ACL que siempre están numeradas.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las diferencias entre los dispositivos ASA y los enrutadores Cisco IOS incluyen lo siguiente: <br>
+Un dispositivo ASA configurado con ACL se configura con una máscara de subred. <br>
+Un dispositivo ASA soporta niveles de seguridad de interfaz. <br>
+Un dispositivo ASA configurado con una ACL siempre se nombra.<br>
+Los dispositivos ASA y los enrutadores Cisco IOS son similares en cuanto a que ambos admiten una denegación implícita dentro de una ACL. br</p>
+      </div>
+      <div class="capituloIT">
+        <h3>23.¿Qué función realiza el objeto de configuración de mapas de clase en el marco de políticas modular de Cisco? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">identifica el tráfico interesante *</span></li>
+          <li>restringir el tráfico a través de una interfaz que </li>
+          <li>aplicando una política a una interfaz </li>
+          <li>aplicando una política al tráfico interesante</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Hay tres objetos de configuración en el MPF; Mapas de clase, mapas de política y política de servicio. El objeto de configuración de mapas de clase utiliza criterios de coincidencia para identificar el tráfico interesante.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>24.En la implementación de la seguridad en múltiples dispositivos, ¿en qué se diferencian las ACL de ASA de las ACL de Cisco IOS? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Las ACL de IOS de Cisco están configuradas con una máscara comodín y las ACL de ASA de Cisco están configuradas con una máscara de subred. *</span></li>
+          <li>Los enrutadores IOS de Cisco utilizan ACL con nombre y número y los dispositivos ASA de Cisco utilizan solo ACL con número. </li>
+          <li>Las ACL de IOS de Cisco se procesan secuencialmente desde arriba hacia abajo y las ACL de ASA de Cisco no se procesan secuencialmente. </li>
+          <li>Las ACL de Cisco IOS utilizan una denegación implícita de todas y las ACL de Cisco ASA terminan con un permiso implícito de todas.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las ACL de Cisco IOS se configuran con una máscara de comodín y las ACL de Cisco ASA se configuran con una máscara de subred. Ambos dispositivos utilizan una denegación implícita, un procesamiento secuencial descendente y ACL nombradas o numeradas.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>25.Al configurar un enrutador Cisco para prepararse para las funciones IPS y VPN, un administrador de red abre el archivo realm-cisco.pub.key.txt, y copia y pega el contenido en el enrutador en el indicador de configuración global. ¿Cuál es el resultado después de este paso de configuración? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Se crea una clave criptográfica para que IOS IPS verifique el archivo de firma maestro. *</span></li>
+          <li>El enrutador se autentica con el servidor web de recursos IPS seguros de Cisco. </li>
+          <li>Se crea un par de claves públicas / secretas para que el enrutador sirva como servidor SSH. </li>
+          <li>Se crea un par de claves públicas / secretas para la operación VPN de IPsec.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El tercer paso en la implementación de IOS IPS es configurar la clave pública de Cisco IOS IPS que se encuentra en el archivo realm-cisco.pub.key.txt. Esta clave pública se usa para verificar la firma digital del archivo de firma maestro y se puede descargar de cisco.com. Para configurar la clave criptográfica IOS IPS, abra el archivo de texto y copie y pegue el contenido en el enrutador en el indicador de configuración global. Los pares de claves públicas / privadas para IPsec VPN y el servidor SSH se generan utilizando diferentes métodos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>26.Cuando se configura el NAT dinámico en un ASA, ¿qué dos parámetros deben ser especificados por los objetos de la red? (Elija dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">un rango de direcciones privadas que se traducirán * </span></li>
+          <li><span class="azul">la agrupación de direcciones globales públicas *</span></li>
+          <li>la interfaz NAT interna</li>
+          <li>el nivel de seguridad de la interfaz </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>En un ASA, tanto el conjunto de direcciones que se utilizarán como direcciones globales internas como el rango de direcciones privadas internas que deben traducirse se configuran a través de los objetos de la red.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>27.Un analista de sistemas está configurando y ajustando un dispositivo IPS recientemente implementado. Al examinar el registro de alarmas de IPS, el analista advierte que el IPS no genera alarmas para unos pocos paquetes de ataque conocidos. ¿Qué término describe la falta de alarmas por parte del IPS? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">falso negativo *</span></li>
+          <li>verdadero positivo</li>
+          <li>verdadero negativo </li>
+          <li>falso positivo</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las alarmas generadas por un IPS se pueden clasificar en 4 tipos: <br>
+Un falso positivo ocurre cuando un IPS genera una alarma en el tráfico normal de usuarios que no debería haber activado una alarma. <br>
+Un falso negativo ocurre cuando un IPS no genera una alarma después de procesar el tráfico de ataque que el IPS está configurado para detectar. br
+Un verdadero positivo ocurre cuando un IPS genera una alarma en respuesta al tráfico de ataque conocido.
+Un verdadero negativo ocurre cuando el tráfico normal de la red no genera una alarma.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>28.Un administrador está comparando múltiples implementaciones de AAA. ¿Qué método AAA se basa en el servidor y se considera el más seguro? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">TACACS + *</span></li>
+          <li>habilitar </li>
+          <li>RADIUS </li>
+          <li>local-caso</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las implementaciones de AAA basadas en servidor incluyen tanto RADIUS como TACACS +. TACACS + se considera más seguro porque todo el intercambio de protocolo está cifrado, mientras que RADIUS solo cifrará la contraseña del usuario.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>29.¿Qué se puede implementar para ayudar a mitigar la amenaza de que un interruptor no autorizado se convierta en el puente raíz en un dominio STP? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Guardia raíz de Source Guard *</span></li>
+          <li>Protección de
+bucle de protección BPDU</li>
+          <li>chitp</li>
+          <li>tad</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Existen varios mecanismos de estabilidad de STP recomendados para ayudar a mitigar los ataques de manipulación de STP: <br>
+PortFast: se usa para traer de inmediato un interfaz configurado como acceso o puerto troncal al estado de reenvío desde un estado de bloqueo. Se aplica a todos los puertos de usuario final. <br>
+Protección de BPDU: deshabilita inmediatamente un puerto que recibe una BPDU. Se aplica a todos los puertos de usuario final. <br>
+Protección de raíz: evita que un interruptor se convierta en el interruptor de raíz. Se aplica a todos los puertos donde no se debe ubicar el switch raíz. <br>
+Protección de bucle: detecta enlaces unidireccionales para evitar que los puertos alternativos o raíz se conviertan en puertos designados. Se aplica a todos los puertos que están o pueden no estar designados.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>30.Considere la siguiente configuración en un ASA de Cisco: <br>
+crypto ipsec transform-set ESP-DES-SHA esp-des esp-sha-hmac <br>
+¿Cuál es el propósito de este comando?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">para definir los algoritmos de encriptación e integridad que se usan para construir el túnel de IPsec *</span></li>
+          <li>para definir los parámetros de ISAKMP que se usan para establecer el túnel </li>
+          <li>para definir qué tráfico está permitido y protegido por el túnel </li>
+          <li>para definir solo los algoritmos de encriptación permitidos</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El conjunto de transformación se negocia durante la Fase 2 del proceso de conexión VPN de IPsec. El propósito del conjunto de transformación es definir qué esquemas de encriptación y autenticación se pueden usar. El dispositivo que realiza la iniciación de VPN ofrece los conjuntos de transformación aceptables en orden de preferencia, en este caso, la autenticación ESP utilizando DES para el cifrado o la autenticación ESP utilizando la autenticación e integridad SHA-HMAC para la carga útil de datos. Recuerde que ESP proporciona confidencialidad con encriptación e integridad con autenticación. El ESP-DES-SHA es el nombre del conjunto de transformación. Los parámetros que siguen (esp-des y esp-sha-hmac) son los tipos específicos de encriptación o autenticación que admite ASA para el túnel VPN que usa este conjunto de transformación.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>31.¿Qué se negocia en el establecimiento de un túnel IPsec entre dos hosts IPsec durante la Fase 1 de IKE? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">ISAKMP SA interesante *</span></li>
+          <li>transformar grupos </li>
+          <li>DH</li>
+          <li>in</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El establecimiento de un túnel IPsec consta de cinco pasos: <br>
+Detección de tráfico interesante definen por una ACL <br>
+Fase 1 de IKE en el que pares negocian la política de ISAKMP SA <br>
+Fase 2 de IKE en el que pares negocian IPsec SA política de
+creación del túnel IPsec
+terminación del túnel IPsec</p>
+      </div>
+      <div class="capituloIT">
+        <h3>32.¿Qué tipo de alarma de firma IPS se produce a partir del tráfico normal que no debería haber activado una alarma? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">falso positivo *</span></li>
+          <li>verdadero positivo </li>
+          <li>verdadero negativo </li>
+          <li>falso negativo </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Hay cuatro alarmas de IPS: <br>
+Falso positivo: se produce cuando el tráfico normal dispara una alarma <br>
+Falso negativo: se produce cuando el tráfico malicioso conocido que debería activar una alarma no es <br>
+Verdadero positivo: se produce cuando el tráfico que se sabe malicioso provoca un ataque <br>
+Verdadero negativo: se produce cuando el tráfico normal no dispara una alarma</p>
+      </div>
+      <div class="capituloIT">
+        <h3>33.¿Qué dos opciones proporcionan acceso remoto seguro a un enrutador? (Elija dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">HTTPS *</span></li>
+          <li>HTTp</li>
+          <li>chap</li>
+          <li><span class="azul">SSH *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Por seguridad, todo el tráfico entre la computadora del administrador y el enrutador debe cifrarse mediante el uso de HTTPS o SSH en lugar de HTTP o Telnet.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>34.¿Qué medidas puede tomar un administrador de red para ayudar a mitigar la amenaza de ataques de salto de VLAN?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Deshabilitar la negociación automática de trunking. *</span></li>
+          <li>Deshabilitar VTP. </li>
+          <li>Habilite PortFast en todos los puertos del switch. </li>
+          <li>Configure todos los puertos del switch para que sean miembros de la VLAN 1.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Hay dos métodos para mitigar los ataques de salto de VLAN: <br>
+deshabilitar la negociación automática de trunking
+en los puertos de conmutación, desactivando el trunking en todos los puertos de conmutación no troncales no utilizados</p>
+      </div>
+      <div class="capituloIT">
+        <h3>35.¿Qué tipo de datos analiza la función DLP de Cisco Email Security Appliance para evitar que los datos del cliente se filtren fuera de la empresa? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">mensajes salientes *</span></li>
+          <li>mensajes almacenados en un dispositivo cliente </li>
+          <li>mensajes almacenados en el servidor de correo electrónico</li>
+          <li>mensajes entrantes</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los ESA de Cisco controlan los mensajes salientes a través de la prevención de pérdida de datos (DLP), el cifrado de correo electrónico y la integración opcional con RSA Enterprise Manager. Este control ayuda a garantizar que los mensajes salientes cumplan con los estándares de la industria y estén protegidos en tránsito.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>36.Un especialista en seguridad configura un IPS para que genere una alerta cuando se detecte un ataque por primera vez. Las alertas para la detección posterior del mismo ataque se suprimen durante un período de tiempo predefinido. Se generará otra alerta al final del período que indica el número del ataque detectado. ¿Qué mecanismo de monitoreo de alertas IPS está configurado? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">resumen de alerta *</span></li>
+          <li>alerta atómica </li>
+          <li>alerta de correlación</li>
+          <li>compuesta</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las alertas generadas por un IPS deben ser monitoreadas de cerca para asegurar que se tomen las acciones adecuadas contra ataques maliciosos. Las soluciones IPS incorporan dos tipos de alertas, alertas atómicas y alertas de resumen. Las alertas atómicas se generan cada vez que se desencadena una firma. Una alerta de resumen es una alerta única que indica varias apariciones de la misma firma desde la misma dirección o puerto de origen. Con un cambio de resumen, la primera detección del ataque desencadena una alerta normal. La detección posterior del mismo ataque se cuenta hasta el final del intervalo de resumen de la firma. Cuando el tiempo especificado por el intervalo de resumen ha transcurrido, se envía una alarma de resumen, que indica el número de alarmas que se produjeron durante el intervalo de tiempo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>37.¿Qué conjunto de transformación proporciona la mejor protección?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">crypto ipsec transform-set ESP-DES-SHA esp -aes-256 esp-sha-hmac *</span></li>
+          <li>crypto ipsec transform-set ESP-DES-SHA esp-aes esp-sha-hmac </li>
+          <li>crypto ipsec transform-set ESP-DES-SHA esp-3des esp-sha-hmac </li>
+          <li>conjunto de transformación criptográfico ipsec ESP-DES-SHA esp-des esp-sha-hmac</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>DES utiliza claves de 56 bits. 3DES utiliza claves de 56 bits, pero se cifra tres veces. AES utiliza claves de 128 bits. AES-256 usa claves de 256 bits y es la más fuerte.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>38.Un servidor de syslog ha recibido el mensaje mostrado. <br>
+          * Mar 1 00: 07: 18.783:% SYS-5-CONFIG_I: Configurado desde la consola por vty0 (172.16.45.1)
+  ¿Qué se puede determinar a partir del mensaje del syslog?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El mensaje informa al administrador que un usuario con una dirección IP de 172.16.45.1 configuró este dispositivo de forma remota. *</span></li>
+          <li>El mensaje es una notificación normal y no debe revisarse.</li>
+          <li>El mensaje es un mensaje de notificación Log_Alert.</li>
+          <li>La descripción del mensaje muestra que se accedió a la línea de la consola localmente.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El mensaje que se muestra es un Log_Notice de nivel 5 y muestra que un usuario con una dirección IP de 172.16.45.1 ha configurado este dispositivo de forma remota.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>39.¿Cuáles son los tres atributos de las firmas IPS? (Elija tres.) </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Acción *</span></li>
+          <li>longitud </li>
+          <li><span class="azul">disparador * </span></li>
+          <li><span class="azul">tipo *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las firmas IPS tienen tres atributos distintivos:<br>
+• tipo <br>
+• disparador (alarma) <br>
+• acción</p>
+      </div>
+      <div class="capituloIT">
+        <h3>40.¿Qué plan de mitigación es mejor para frustrar un ataque DoS que está creando un desbordamiento de búfer de conmutador? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Habilitar seguridad de puerto. *</span></li>
+          <li>Deshabilitar STP.</li>
+          <li>Deshabilitar DTP. </li>
+          <li>Coloque los puertos no utilizados en una VLAN no utilizada.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Un ataque de desbordamiento de la tabla MAC (CAM), un desbordamiento del búfer y la falsificación de la dirección MAC se pueden mitigar configurando la seguridad del puerto. Por lo general, un administrador de red no desearía deshabilitar STP porque evita los bucles de Capa 2. DTP está deshabilitado para evitar el salto de VLAN. La colocación de puertos no utilizados en una VLAN no utilizada evita la conectividad por cable no autorizada.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>41.¿Qué método de mitigación es efectivo contra los ataques de desbordamiento de la tabla CAM?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">seguridad portuaria *</span></li>
+          <li>DHCP snooping</li>
+          <li>dinámico Inspección ARP</li>
+          <li>fuente de</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La seguridad de puertos es el método más efectivo para prevenir los ataques de desbordamiento de tablas CAM. La seguridad de puertos le da a un administrador la capacidad de especificar manualmente qué direcciones MAC deben verse en los puertos del switch dados. Proporciona un método para limitar la cantidad de direcciones MAC que pueden aprenderse dinámicamente a través de un puerto de switch.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>42.Un administrador asignó un nivel de acceso de enrutador al usuario ADMIN utilizando los siguientes comandos. <br>
+Router (config) # privilegio exec nivel 14 show ip route <br>
+Router (config) # habilitar tipo de algoritmo scrypt secret level 14 cisco-level-10 <br>
+Router (config) # nombre de usuario ADMIN privilegio 14 algoritmo de tipo scrypt secret cisco-level-10 <br>
+Qué ¿Se permiten dos acciones al usuario ADMIN? (Elija dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El usuario puede ejecutar todos los subcomandos bajo </span></li>
+          <li><span class="azul">El usuario puede emitir el comando show version. *</span></li>
+          <li>El usuario puede emitir el comando ip route.</li>
+          <li><span class="azul">el comando show ip interfaces. *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Al asignar un comando, como mostrar ruta IP a un nivel de privilegio específico, se asignan automáticamente todos los comandos asociados con las primeras palabras clave al nivel de privilegio especificado. Por lo tanto, los comandos show y show ip se configuran automáticamente al nivel de privilegio donde se establece show ip route, lo cual es necesario porque el comando show ip route no se puede ejecutar sin acceso a los comandos show y show ip. Asignar el comando show ip route permite al usuario emitir todos los comandos show, como mostrar la versión.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>43.¿Qué es un despliegue efectivo de dispositivos IPS e IDS en una red corporativa? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Coloque un IPS entre el enrutador de borde y la red interna y un IDS en la misma LAN. *</span></li>
+          <li>Coloque un IPS entre el enrutador de borde y la red interna y un IDS entre el enrutador de borde y el ISP. </li>
+          <li>Coloque tanto un IPS como un IDS dentro de la red DMZ. </li>
+          <li>Coloque un IDS entre el enrutador de borde y la red interna y un IPS dentro de la red DMZ.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Un IPS se implementa en modo en línea mientras que un IDS se implementa en modo promiscuo. Una implementación efectiva de IPS / IDS es colocar un IPS justo detrás del enrutador de la frontera para filtrar el tráfico entrante y saliente de la red interna corporativa. Las tecnologías IPS e IDS pueden complementarse entre sí. Aunque un IDS no detendrá un ataque de intrusión inmediatamente, se puede usar para validar la operación de IPS porque el IDS se puede configurar para una inspección de paquetes más profunda fuera de línea. Esto permite que el IPS se centre en menos patrones de tráfico más críticos en línea. La colocación de IPS e IDS en la red DMZ no protegerá la red interna corporativa.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>44.¿Qué tecnología antispoofing se utiliza para mitigar los ataques DoS? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">conmutada puerto-seguridad *</span></li>
+          <li>cifrado </li>
+          <li>escaneo de puertos </li>
+          <li>autenticación sólida</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>45.La implementación de la seguridad de puertos del switch ayudará a mitigar los ataques DoS. Para mitigar los ataques de reconocimiento, lo mejor es utilizar una autenticación sólida, una infraestructura conmutada, un software antifundidor y un cifrado.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>45.Un administrador de red advierte que los intentos fallidos de inicio de sesión han provocado que un enrutador entre en modo silencioso. ¿Cómo puede el administrador mantener el acceso remoto a las redes incluso durante el modo silencioso? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">El comportamiento del modo silencioso se puede anular para redes específicas mediante el uso de una ACL. *</span></li>
+          <li>El comportamiento del modo silencioso solo evitará que cuentas de usuarios específicos intenten autenticarse. </li>
+          <li>Un administrador puede desactivar el comportamiento del modo silencioso usando SSH para conectarse.</li>
+          <li>El comportamiento en modo silencioso se puede habilitar a través de un comando de grupo de acceso ip en una interfaz física. </li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El modo silencioso evita cualquier intento de inicio de sesión por un período de tiempo. El modo silencioso se habilita a través del comando login-modo silencioso access-class. El comportamiento en modo silencioso se puede anular para redes específicas al construir e implementar una lista de control de acceso (ACL).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>46.¿Qué enunciado describe la función de la herramienta SPAN utilizada en un switch de Cisco? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Copia el tráfico de un puerto de conmutador y lo envía a otro puerto de conmutador que está conectado a un dispositivo de monitoreo. *</span></li>
+          <li>Proporciona interconexión entre VLAN a través de múltiples switches. </li>
+          <li>Es un canal seguro para que un conmutador envíe el registro a un servidor syslog. </li>
+          <li>Admite la operación de captura SNMP en un switch.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Para analizar el tráfico de red que pasa a través de un conmutador, se puede usar el analizador de puertos conmutados (SPAN). SPAN puede enviar una copia del tráfico de un puerto a otro puerto en el mismo conmutador donde está conectado un analizador de red o un dispositivo de monitoreo. No se requiere SPAN para syslog o SNMP. SPAN se utiliza para reflejar el tráfico, mientras que syslog y SNMP están configurados para enviar datos directamente al servidor apropiado.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>47.¿Qué función proporciona la función de configuración flexible de Cisco IOS? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Mantiene una copia segura de la imagen de IOS y la configuración en ejecución que se pueden usar para una recuperación rápida si se borra la memoria flash o NVRAM. *</span></li>
+          <li>Bloquea el plano de administración y los servicios y funciones del plano de reenvío de un enrutador. </li>
+          <li>Permite a los administradores crear diferentes vistas de las configuraciones del enrutador para diferentes usuarios. </li>
+          <li>Identifica los ataques y las infracciones de la política de seguridad que se producen en la red.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La característica de configuración flexible de Cisco IOS permite que una copia segura del IOS y el archivo de configuración en ejecución se almacenen localmente en un enrutador. Si la memoria flash o NVRAM se borran involuntariamente o maliciosamente, el enrutador se puede restaurar rápidamente usando los archivos almacenados.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>48.¿Qué proporciona el protocolo TACACS + en una implementación de AAA? </h3>
+        <ul class="listaIT">
+          <li>compatibilidad con los protocolos TACACS anteriores
+cifrado de contraseñas sin cifrar el paquete de
+conectividad AAA a través de la <span class="azul">autorización </span>UDP  <span class="azul">por usuario o por grupo *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>TACACS + utiliza el puerto TCP 49, proporciona autorización por usuario o por grupo, cifra todo el paquete y no proporciona compatibilidad con los protocolos TACACS anteriores.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>49.¿Qué dos números de puerto UDP se pueden usar para la autenticación RADIUS AAA basada en el servidor? (Elija dos.) </h3>
+        <ul class="listaIT">
+          <li><span class="azul">1812 *</span></li>
+          <li><span class="azul">1645 *</span></li>
+          <li>1813</li>
+          <li>1646</li>
+          <li>49</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La autenticación y contabilidad RADIUS utilizan los siguientes números de puerto UDP: <br>
+puerto UDP 1645 o 1812 para la autenticación <br>
+puerto UDP 1646 o 1813 para la contabilidad <br>
+TACACS + usa el puerto TCP 49.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>50.¿Qué dos opciones pueden limitar la información descubierta en el escaneo de puertos? (Elija dos.) </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Sistema de prevención de intrusiones * </span></li>
+          <li><span class="azul">Firewall *</span></li>
+          <li>Autentificación de las </li>
+          <li>contraseñas </li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El uso de un sistema de prevención de intrusiones (IPS) y un firewall puede limitar la información que se puede descubrir con un escáner de puertos. La autenticación, el cifrado y las contraseñas no brindan protección contra la pérdida de información en el escaneo de puertos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>51.¿Qué función proporciona el protocolo RADIUS? </h3>
+        <ul class="listaIT">
+          <li>RADIUS proporciona el cifrado del paquete completo durante la transferencia. </li>
+          <li>RADIUS proporciona servicios AAA separados. </li>
+          <li><span class="azul">RADIUS proporciona puertos separados para la autorización y la contabilidad. *</span></li>
+          <li>RADIUS proporciona comunicación segura mediante el puerto TCP 49.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Cuando se autentica a un usuario AAA, RADIUS utiliza el puerto UDP 1645 o 1812 para la autenticación y el puerto UDP 1646 o 1813 para la contabilidad. TACACS proporciona servicios separados de autorización y contabilidad. Cuando se autentica un cliente RADIUS, también se autoriza. TACACS proporciona conectividad segura mediante el puerto TCP 49. RADIUS oculta las contraseñas durante la transmisión y no cifra el paquete completo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>52.¿Cuál es el rol del agente de Cisco NAC en la implementación de una infraestructura de red segura? </h3>
+        <ul class="listaIT">
+          <li>para proporcionar a los empleados de la empresa la capacidad de crear cuentas de invitado </li>
+          <li><span class="azul">para realizar una inspección profunda de los perfiles de seguridad de los dispositivos *</span></li>
+          <li>para brindar monitoreo posterior a la conexión de todos los dispositivos de punto final </li>
+          <li>para definir el acceso de usuario basado en roles y el punto final políticas de seguridad</li>
+          <li>para evaluar y aplicar el cumplimiento de las políticas de seguridad en el entorno NAC</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Cisco NAC se utiliza en Cisco Borderless Network Architecture para autenticar a los usuarios y garantizar que los dispositivos de los usuarios cumplan con las políticas de seguridad. El agente de Cisco NAC es un agente de software opcional que se ejecuta en puntos finales y realiza una inspección profunda del perfil de seguridad de ese dispositivo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>53.¿Qué nivel de syslog está asociado con Log_Alert? </h3>
+        <ul class="listaIT">
+          <li><span class="azul">1 *</span></li>
+          <li>2</li>
+          <li>4</li>
+          <li>0</li>
+          <li>3</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los niveles de syslog varían de 0 a 7: el <br>
+nivel 0 es Log_Emerg El <br>
+nivel 1 es Log_Alert El <br>
+nivel 2 es Log_Crit El <br>
+nivel 3 es Log_Err El <br>
+nivel 4 es Log_Warning El <br>
+nivel 5 es Log_Notice El <br>
+nivel 6 es Log_Info El <br>
+nivel 7 es Log_Debug</p>
+      </div>
+      <div class="capituloIT">
+        <h3>54.Consulte la presentación. Según los niveles de seguridad de las interfaces en ASA1, ¿qué tráfico se permitirá en las interfaces? </h3>
+        <ul class="listaIT">
+          <img src="imagen/ccnasec1.gif" class="fotoIT" alt="">
+          <li><span class="azul">El tráfico de la LAN y DMZ puede acceder a Internet. *</span></li>
+          <li>tráfico de la Internet y LAN puede acceder a la DMZ. </li>
+          <li>El tráfico de Internet puede acceder tanto a la DMZ como a la LAN. </li>
+          <li>El tráfico de Internet y DMZ puede acceder a la LAN.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los dispositivos ASA tienen niveles de seguridad asignados a cada interfaz que no forman parte de una ACL configurada. Estos niveles de seguridad permiten que el tráfico de interfaces más seguras, como el nivel de seguridad 100, acceda a interfaces menos seguras, como el nivel 0. Por defecto, permiten que el tráfico de interfaces más seguras (nivel de seguridad más alto) acceda a interfaces menos seguras (seguridad más baja). nivel). El tráfico de las interfaces menos seguras no puede acceder a las interfaces más seguras.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>55.Consulte la presentación. Un administrador emite estos comandos de mejora de inicio de sesión de IOS para aumentar la seguridad de las conexiones de inicio de sesión. ¿Qué se puede concluir sobre ellos? </h3>
+        <ul class="listaIT">
+          <img src="imagen/ccnasec2.gif" class="fotoIT" alt="">
+          <li>Estas mejoras se aplican a todos los tipos de conexiones de inicio de sesión. </li>
+          <li><span class="azul">Los hosts que se identifican en la ACL tendrán acceso al dispositivo. *</span></li>
+          <li>El comando de inicio de sesión bloqueado permite que el atacante intente 150 intentos antes de ser detenido para volver a intentarlo. </li>
+          <li>Debido a que no se utilizó el comando de inicio de sesión, se supone un retraso de un minuto entre los intentos de inicio de sesión.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Cuando se implementa el comando de bloqueo de inicio de sesión, se invoca automáticamente un retraso de un segundo entre los intentos de inicio de sesión. El comando de bloqueo de inicio de sesión que se presenta significa que el inicio de sesión se desactivará durante 150 segundos, si se producen más de 5 fallos de inicio de sesión dentro de los 60 segundos. Estas mejoras no se aplican a las conexiones de consola. Cuando el modo silencioso está habilitado, todos los intentos de inicio de sesión se rechazan, excepto los hosts permitidos en la ACL.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>56.¿Cuáles son las dos diferencias entre un ASA 5505 y un ASA 5506-X con un dispositivo FirePower? (Escoge dos)</h3>
+        <ul class="listaIT">
+          <li>configuración de nivel de seguridad</li>
+          <li><span class="azul">memoria DRAM defualt en el dispositivo *</span></li>
+          <li>Soporte SSL VPN</li>
+          <li>funciones de acceso remoto VPN</li>
+          <li><span class="azul">Tipo de puertos Ethernet en el Blackplane *</span></li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>57.Un analista de red debe restablecer un dispositivo ASA 5506-X a su estado predeterminado de envío después del siguiente reinicio. ¿Cuál es la duración mínima de tiempo que se debe presionar el pin RESET para tomar este efecto?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">3 segundos *</span></li>
+          <li>5 segundos</li>
+          <li>10 segundos</li>
+          <li>15 segundos</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>

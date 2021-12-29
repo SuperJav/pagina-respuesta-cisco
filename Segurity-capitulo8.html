@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segurity-capitulo 8</title>
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de styles css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.¿Cuándo se crea una asociación de seguridad (SA) si se utiliza un túnel VPN IPsec para conectarse entre dos sitios?</h3>
+        <ul class="listaIT">
+          <li>Después de crear el túnel, pero antes de enviar el tráfico.</li>
+          <li>solo durante la fase 2</li>
+          <li>solo durante la fase 1</li>
+          <li><span class="azul">durante la fase 1 y 2 *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Como se ve en la Figura 8.4.1.1, una conexión VPN IPsec crea dos SA: (1) al finalizar la Fase 1 de IKE una vez que los interlocutores negocian la política de IKE SA, y (2) al final de la Fase 2 de IKE después de la Los conjuntos de transformación son negociados.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.¿En qué situación se desactivaría el Cisco Discovery Protocol?</h3>
+        <ul class="listaIT">
+          <li>cuando un teléfono Cisco VoIP se conecta a un conmutador Cisco</li>
+          <li>cuando un conmutador Cisco se conecta a otro conmutador Cisco</li>
+          <li>cuando un conmutador Cisco se conecta a un enrutador Cisco</li>
+          <li><span class="azul">cuando una PC con Cisco IP Communicator instalado se conecta a un conmutador Cisco *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Cisco Discovery Protocol debe estar deshabilitado en los puertos que no se conectan a otros dispositivos Cisco. A pesar de que la PC tiene instalado un producto de software de Cisco, el puerto al que se conecta debe tener el Protocolo de Descubrimiento de Cisco deshabilitado debido a la información de la red que se puede derivar de la captura de los mensajes del Protocolo de Descubrimiento de Cisco.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.¿Qué dos afirmaciones describen con precisión las características de IPsec? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li>IPsec trabaja en la capa de transporte y protege los datos en la capa de red.</li>
+          <li>IPsec es un marco de estándares propietarios que dependen de algoritmos específicos de Cisco.</li>
+          <li><span class="azul">IPsec funciona en la capa de red y funciona con todos los protocolos de Capa 2. *</span></li>
+          <li><span class="azul">IPsec es un marco de estándares abiertos que se basa en algoritmos existentes. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>IPsec puede asegurar una ruta entre dos dispositivos de red. IPsec puede proporcionar las siguientes funciones de seguridad: <br>
+Confidencialidad: IPsec garantiza la confidencialidad mediante el uso de cifrado. <br>
+Integridad: IPsec garantiza que los datos lleguen sin cambios al destino mediante un algoritmo hash, como MD5 o SHA. <br>
+Autenticación: IPsec utiliza Internet Key Exchange (IKE) para autenticar usuarios y dispositivos que pueden realizar la comunicación de forma independiente. IKE utiliza varios tipos de autenticación, incluidos el nombre de usuario y la contraseña, la contraseña de un solo uso, la biométrica, las claves compartidas (PSK) y los certificados digitales. <br>
+Intercambio seguro de claves: IPsec usa el algoritmo Diffie-Hellman (DH) para proporcionar un método de intercambio de claves públicas para que dos pares establezcan una clave secreta compartida.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>4.¿Qué acción realizan los interlocutores de IPsec durante el intercambio IKE Fase 2?</h3>
+        <ul class="listaIT">
+          <li>intercambio de claves DH</li>
+          <li><span class="azul">Negociación de la política IPsec *</span></li>
+          <li>negociación de conjuntos de políticas IKE</li>
+          <li>verificación de la identidad de los compañeros</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El protocolo IKE se ejecuta en dos fases. Durante la Fase 1, las dos partes negocian los conjuntos de políticas IKE, se autentican entre sí y configuran un canal seguro. Durante la segunda fase, IKE negocia asociaciones de seguridad entre los pares.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.¿Qué técnica es necesaria para garantizar una transferencia privada de datos mediante una VPN?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">cifrado *</span></li>
+          <li>autorización</li>
+          <li>virtualización</li>
+          <li>escalabilidad</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las transferencias de datos confidenciales y seguras con VPN requieren cifrado de datos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.¿Qué enunciado describe una VPN?</h3>
+        <ul class="listaIT">
+          <li>Las VPN utilizan software de virtualización de código abierto para crear el túnel a través de Internet.</li>
+          <li><span class="azul">Las VPN utilizan conexiones virtuales para crear una red privada a través de una red pública. *</span></li>
+          <li>Las VPN utilizan conexiones físicas dedicadas para transferir datos entre usuarios remotos.</li>
+          <li>Las VPN utilizan conexiones lógicas para crear redes públicas a través de Internet.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p></p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.¿Qué conjunto de transformación proporciona la mejor protección?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">crypto ipsec transform-set ESP-DES-SHA esp-aes-256 esp-sha-hmac *</span></li>
+          <li>crypto ipsec transform-set ESP-DES-SHA esp-3des esp-sha-hmac</li>
+          <li>crypto ipsec transform-set ESP-DES-SHA esp-des esp-sha-hmac</li>
+          <li>crypto ipsec transform-set ESP-DES-SHA esp-aes esp-des esp-sha-hmac</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>DES utiliza claves de 56 bits. 3DES utiliza claves de 56 bits, pero se cifra tres veces. AES utiliza claves de 128 bits. AES-256 usa claves de 256 bits y es la más fuerte.</p>
+      </div><div class="capituloIT">
+        <h3>8.¿Qué tres puertos deben estar abiertos para verificar que un túnel VPN IPsec funciona correctamente? (Elige tres.)</h3>
+        <ul class="listaIT">
+          <li>168</li>
+          <li><span class="azul">50 *</span></li>
+          <li><spa class="azul">500 *</spa></li>
+          <li><span class="azul">51 *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p></p>
+      </div>
+      <div class="capituloIT">
+        <h3>9.Consulte la presentación. ¿Cómo tratará el enrutador el tráfico que no coincide con el definido en la lista de acceso 101?</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-8-Exam-Answer-v2-001-1.png" class="fotoIT" alt="">
+          <li><span class="azul">Se enviará sin cifrar. *</span></li>
+          <li>Será enviado encriptado.</li>
+          <li>Será bloqueado.</li>
+          <li>Será descartado.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La lista de acceso 101 es parte de la configuración del mapa criptográfico en el enrutador. El propósito de la lista de acceso es identificar el tráfico interesante que debe enviarse encriptado a través de una VPN. El tráfico que no coincide con la lista de acceso no es interesante y no se envía cifrado sino que se envía sin cifrar en texto sin formato.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>10.¿Qué tres protocolos deben permitirse a través del firewall de la empresa para establecer las VPN de sitio a sitio de IPsec? (Elige tres.)</h3>
+        <ul class="listaIT">
+          <li>HTTPS</li>
+          <li><span class="azul">ESP *</span></li>
+          <li><span class="azul">AH *</span></li>
+          <li><span class="azul">ISAKMP *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>ESP, AH e ISAKMP deben estar permitidos a través de los enrutadores del perímetro y los cortafuegos para que se puedan establecer las VPN de sitio a sitio de IPsec. NTP y HTTPS son protocolos de aplicación y no son necesarios para IPsec.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>11.¿Qué enunciado describe el efecto de la longitud de la clave para disuadir a un atacante de hackear una clave de cifrado?</h3>
+        <ul class="listaIT">
+          <li>La longitud de una clave no afecta el grado de seguridad.</li>
+          <li>Cuanto más corta es la clave, más difícil es romperla.</li>
+          <li><span class="azul">Cuanto más larga sea la clave, más posibilidades existen. *</span></li>
+          <li>La longitud de una clave no variará entre los algoritmos de cifrado.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Mientras previene los ataques de fuerza bruta y otros problemas de descifrado forzado, cuanto más larga es la longitud de la clave, más difícil es romperla. Una clave de 64 bits puede tardar un año en romperse con una computadora sofisticada, mientras que una clave de 128 bits puede demorar 1019 años en descifrar. Diferentes algoritmos de encriptación proporcionarán diferentes longitudes de clave para la implementación.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>12.¿Cuál es el propósito de configurar múltiples ACL criptográficas al crear una conexión VPN entre sitios remotos?</h3>
+        <ul class="listaIT">
+          <li>Al aplicar la ACL en una interfaz pública, se pueden crear múltiples ACL criptográficas para evitar que los usuarios públicos se conecten al enrutador habilitado para VPN.</li>
+          <li>Varias ACL criptográficas pueden definir múltiples interlocutores remotos para conectarse con un enrutador habilitado para VPN a través de Internet o una red.</li>
+          <li>Se pueden configurar múltiples ACL criptográficas para impedir que el tráfico de red específico cruce una VPN.</li>
+          <li><span class="azul">Cuando se eligen múltiples combinaciones de protección IPsec, múltiples ACL criptográficas pueden definir diferentes tipos de tráfico. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Una ACL criptográfica puede definir el "tráfico interesante" que se utiliza para crear una VPN y reenviar ese "tráfico interesante" a través de la VPN a otro enrutador habilitado para VPN. Se utilizan múltiples ACL criptográficas para definir diferentes tipos de tráfico y utilizar diferentes protecciones IPsec correspondientes a los diferentes tipos de tráfico.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.Considere la siguiente configuración en un ASA de Cisco: <br>
+crypto ipsec transform-set ESP-DES-SHA esp-des esp-sha-hmac <br>
+¿Cuál es el propósito de este comando?</h3>
+        <ul class="listaIT">
+          <li>para definir los parámetros ISAKMP que se utilizan para establecer el túnel</li>
+          <li><span class="azul">para definir los algoritmos de cifrado e integridad que se utilizan para construir el túnel IPsec *</span></li>
+          <li>Para definir qué tráfico está permitido y protegido por el túnel.</li>
+          <li>para definir solo los algoritmos de cifrado permitidos</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El conjunto de transformación se negocia durante la Fase 2 del proceso de conexión VPN de IPsec. El propósito del conjunto de transformación es definir qué esquemas de encriptación y autenticación se pueden usar. El dispositivo que realiza la iniciación de VPN ofrece los conjuntos de transformación aceptables en orden de preferencia, en este caso, la autenticación ESP utilizando DES para el cifrado o la autenticación ESP utilizando la autenticación e integridad SHA-HMAC para la carga útil de datos. Recuerde que ESP proporciona confidencialidad con encriptación e integridad con autenticación. El ESP-DES-SHA es el nombre del conjunto de transformación. Los parámetros que siguen (esp-des y esp-sha-hmac) son los tipos específicos de encriptación o autenticación que admite ASA para el túnel VPN que usa este conjunto de transformación.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>14.¿Qué protocolo proporciona servicios de autenticación, integridad y confidencialidad y es un tipo de VPN?</h3>
+        <ul class="listaIT">
+          <li>ESP</li>
+          <li><span class="azul">IPsec *</span></li>
+          <li>MD5</li>
+          <li>AES</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los servicios IPsec permiten la autenticación, integridad, control de acceso y confidencialidad. Con IPsec, la información intercambiada entre sitios remotos se puede cifrar y verificar. Tanto las VPN de acceso remoto como de sitio a sitio se pueden implementar mediante IPsec.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>15.¿Qué tres afirmaciones describen el marco del protocolo IPsec? (Elige tres.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">AH proporciona integridad y autenticación. *</span></li>
+          <li><span class="azul">ESP proporciona cifrado, autenticación e integridad. *</span></li>
+          <li><span class="azul">AH usa el protocolo IP 51. *</span></li>
+          <li>AH proporciona cifrado e integridad.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los dos protocolos principales utilizados con IPsec son AH y ESP. AH es el número de protocolo 51 y proporciona autenticación e integridad de datos para paquetes IP que se intercambian entre pares. ESP, que es el número de protocolo 50, realiza el cifrado de paquetes.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>16.¿Qué enunciado describe con precisión una característica de IPsec?</h3>
+        <ul class="listaIT">
+          <li>IPsec trabaja en la capa de aplicación y protege todos los datos de la aplicación.</li>
+          <li>IPsec es un marco de estándares desarrollado por Cisco que se basa en algoritmos OSI.</li>
+          <li>IPsec es un marco de estándares propietarios que dependen de algoritmos específicos de Cisco.</li>
+          <li><span class="azul">IPsec es un marco de estándares abiertos que se basa en algoritmos existentes. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>IPsec puede asegurar una ruta entre dos dispositivos de red. IPsec puede proporcionar las siguientes funciones de seguridad: br
+Confidencialidad: IPsec garantiza la confidencialidad mediante el uso de cifrado. <br>
+Integridad: IPsec garantiza que los datos lleguen sin cambios al destino mediante un algoritmo hash, como MD5 o SHA. <br>
+Autenticación: IPsec utiliza Internet Key Exchange (IKE) para autenticar usuarios y dispositivos que pueden realizar la comunicación de forma independiente. IKE utiliza varios tipos de autenticación, incluidos el nombre de usuario y la contraseña, la contraseña de un solo uso, la biométrica, las claves compartidas (PSK) y los certificados digitales. <br>
+Intercambio seguro de claves: IPsec utiliza el algoritmo Diffie-Hellman (DH) para proporcionar un método de intercambio de claves públicas para que dos pares establezcan una clave secreta compartida.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.¿Qué dos protocolos IPsec se utilizan para proporcionar integridad de datos?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">SHA *</span></li>
+          <li>AES</li>
+          <li><span class="azul">MD5 *</span></li>
+          <li>RSA</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El marco IPsec utiliza varios protocolos y algoritmos para proporcionar confidencialidad de datos, integridad de datos, autenticación e intercambio de claves seguro. Dos algoritmos populares utilizados para garantizar que los datos no sean interceptados y modificados (integridad de los datos) son MD5 y SHA. AES es un protocolo de cifrado y proporciona confidencialidad de datos. DH (Diffie-Hellman) es un algoritmo utilizado para el intercambio de claves. RSA es un algoritmo utilizado para la autenticación.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>18.¿Cuál es la función del algoritmo Diffie-Hellman dentro del marco IPsec?</h3>
+        <ul class="listaIT">
+          <li>proporciona autenticación</li>
+          <li><span class="azul">permite a los compañeros intercambiar claves compartidas *</span></li>
+          <li>garantiza la integridad del mensaje</li>
+          <li>proporciona un fuerte cifrado de datos</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El marco IPsec utiliza varios protocolos y algoritmos para proporcionar confidencialidad de datos, integridad de datos, autenticación e intercambio de claves seguro. DH (Diffie-Hellman) es un algoritmo utilizado para el intercambio de claves. DH es un método de intercambio de clave pública que permite a dos pares de IPsec establecer una clave secreta compartida en un canal inseguro.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>19.Consulte la presentación. ¿Qué algoritmo HMAC se utiliza para proporcionar integridad de datos?</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-8-Exam-Answer-v2-002.png"class="fotoIT" alt="">
+          <li>MD5</li>
+          <li>AES</li>
+          <li><span class="azul">SHA *</span></li>
+          <li>DH</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Dos algoritmos populares que se utilizan para garantizar que los datos no sean interceptados y modificados (integridad de los datos) son MD5 y SHA. El comando Router1 (config-isakmp) # hash sha indica que se está utilizando SHA. AES es un protocolo de cifrado y proporciona confidencialidad de datos. DH (Diffie-Hellman) es un algoritmo que se utiliza para el intercambio de claves. RSA es un algoritmo utilizado para la autenticación.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.¿Qué se necesita para definir el tráfico interesante en la creación de un túnel IPsec?</h3>
+        <ul class="listaIT">
+          <li>asociaciones de seguridad</li>
+          <li>algoritmo de hash</li>
+          <li><span class="azul">lista de acceso *</span></li>
+          <li>conjunto de transformación</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Para activar un túnel IPsec, se debe configurar una lista de acceso con una declaración de permiso que identifique el tráfico interesante. Una vez que el tráfico interesante se detecta al hacer coincidir la lista de acceso, se pueden negociar las asociaciones de seguridad del túnel.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>21.Consulte la presentación. ¿Qué algoritmo se utilizará para proporcionar confidencialidad?</h3>
+        <ul class="listaIT">
+          <img src="iagen/CCNA-Security-Chapter-8-Exam-Answer-v2-003.png" class="fotoIT" alt="">
+          <li>RSA</li>
+          <li>Diffie-Hellman</li>
+          <li>DES</li>
+          <li><span class="azul">AES *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El marco IPsec utiliza varios protocolos y algoritmos para proporcionar confidencialidad de datos, integridad de datos, autenticación e intercambio de claves seguro. Dos algoritmos populares que se utilizan para garantizar que los datos no sean interceptados y modificados (integridad de los datos) son MD5 y SHA. AES es un protocolo de cifrado y proporciona confidencialidad de datos. DH (Diffie-Hellman) es un algoritmo que se utiliza para el intercambio de claves. RSA es un algoritmo utilizado para la autenticación.</p>
+      </div><div class="capituloIT">
+        <h3>22.¿Qué dos protocolos se deben permitir para que un túnel VPN IPsec funcione correctamente? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li>501</li>
+          <li>500</li>
+          <li><span class="azul">51 *</span></li>
+          <li><span class="azul">50 *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>ESP usa el protocolo 50. AH usa el protocolo 51. ISAKMP usa el puerto UDP 500.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>23.¿Cuál es el propósito de NAT-T?</h3>
+        <ul class="listaIT">
+          <li>habilita NAT para clientes VPN basados ​​en PC</li>
+          <li><span class="azul">permite que VPN funcione cuando se usa NAT en uno o ambos extremos de la VPN *</span></li>
+          <li>actualiza NAT para IPv4</li>
+          <li>permite utilizar NAT para direcciones IPv6</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Establecer una VPN entre dos sitios ha sido un desafío cuando NAT está involucrado en cualquiera de los extremos del túnel. La versión mejorada de IKE original, IKE versión 2, ahora es compatible con NAT-T. NAT-T tiene la capacidad de encapsular paquetes ESP dentro de UDP para que el túnel VPN pueda establecerse a través de un dispositivo que tenga NAT habilitado.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>24.¿Qué término describe una situación en la que el tráfico VPN que recibe una interfaz se enruta de vuelta a esa misma interfaz?</h3>
+        <ul class="listaIT">
+          <li>GRE</li>
+          <li>dividir túneles</li>
+          <li>MPLS</li>
+          <li><span class="azul">horquilla *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Hairpinning permite que el tráfico de VPN que se recibe en una sola interfaz se enrute de nuevo a esa misma interfaz. La tunelización dividida permite que el tráfico que se origina en un cliente de acceso remoto se divida de acuerdo con el tráfico que debe cruzar una VPN y el tráfico destinado a la Internet pública. MPLS y GRE son dos tipos de VPN de Capa 3.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>25.¿Cuál es una característica importante de las VPN de acceso remoto?</h3>
+        <ul class="listaIT">
+          <li>La configuración VPN es idéntica entre los dispositivos remotos.</li>
+          <li>Los hosts internos no tienen conocimiento de la VPN.</li>
+          <li>La información requerida para establecer la VPN debe permanecer estática.</li>
+          <li><span class="azul">La conexión VPN es iniciada por el usuario remoto. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Con las VPN de acceso remoto, el usuario remoto no necesariamente tiene la conexión VPN configurada en todo momento. El PC del usuario remoto es responsable de iniciar la VPN. La información requerida para establecer la conexión VPN cambia dinámicamente según la ubicación del usuario al intentar conectarse.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>26.¿Qué tipo de VPN de sitio a sitio utiliza miembros de grupo de confianza para eliminar los túneles IPsec de punto a punto entre los miembros de un grupo?</h3>
+        <ul class="listaIT">
+          <li>DMVPN</li>
+          <li>GRE</li>
+          <li><span class="azul">GETVPN *</span></li>
+          <li>MPLS</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El grupo de transporte cifrado VPN (GETVPN) utiliza un grupo de confianza para eliminar los túneles punto a punto y su enrutamiento de superposición asociado. GETVPN a menudo se describe como "sin túnel". La VPN multipunto dinámica (DMVPN) permite el aprovisionamiento automático de las VPN IPsec de sitio a sitio mediante una combinación de tres características de Cisco IOS: NHRP, GRE e IPsec VPN. La encapsulación de enrutamiento genérico (GRE) es un protocolo de túnel desarrollado por Cisco que encapsula el tráfico multiprotocolo entre los enrutadores remotos de Cisco, pero no encripta los datos. Una VPN de MPLS consiste en un conjunto de sitios que están interconectados por medio de una red central del proveedor de MPLS.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>27.Consulte la presentación. ¿Qué par de comandos crypto isakmp key configurarían correctamente PSK en los dos enrutadores?</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-8-Exam-Answer-v2-004-1.png" class="fotoIT" alt="Segurity">
+          <li><span class="azul">R1 (config) # crypto isakmp key cisco123 address 209.165.200.227 <br>
+R2 (config) # crypto isakmp key cisco123 address 209.165.200.226 *</span></li>
+          <li>R1 (config) # crypto isakmp key cisco123 address 209.165.200.226
+R2 (config) # crypto isakmp key cisco123 address 209.165.200.227</li>
+          <li>R1 (config) # crypto isakmp key cisco123 nombre de host R1 </li>
+          <li>R1 (config) # crypto isakmp key cisco123 address 209.165.200.226 </li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La sintaxis correcta del comando crypto isakmp key es la siguiente:<br>
+crypto isakmp key keystring address peer-address <br>
+o <br>
+crypto isakmp keykeystring keyname host-hostnameSo, la respuesta correcta sería la siguiente: <br>
+R1 (config) # crypto isakmp key cisco123 address 209.165. 200.227 <br>
+R2 (config) # crypto isakmp key cisco123 address 209.165.200.226</p>
+      </div>
+
+    </div>
+  </body>
+</html>

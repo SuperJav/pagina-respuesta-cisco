@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segurity-capitulo 5</title>
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de styles css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+    <div class="contenedorIT">
+
+            <div class="capituloIT">
+              <h3>1.Al configurar un enrutador Cisco para prepararse para las funciones IPS y VPN, un administrador de red abre el archivo realm-cisco.pub.key.txt, y copia y pega el contenido en el enrutador en el indicador de configuración global. ¿Cuál es el resultado después de este paso de configuración?</h3>
+              <ul class="listaIT">
+                <li>El enrutador se autentica con el servidor web de recursos IPS seguros de Cisco.</li>
+                <li>Se crea un par de claves públicas / secretas para la operación VPN de IPsec.</li>
+                <li><span class="azul">Se crea una clave criptográfica para que IOS IPS verifique el archivo de firma maestro. *</span></li>
+                <li>Se crea un par de claves públicas / secretas para que el enrutador sirva como servidor SSH.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>El tercer paso en la implementación de IOS IPS es configurar la clave pública de Cisco IOS IPS que se encuentra en el archivo realm-cisco.pub.key.txt. Esta clave pública se usa para verificar la firma digital del archivo de firma maestro y se puede descargar de cisco.com. Para configurar la clave criptográfica IOS IPS, abra el archivo de texto y copie y pegue el contenido en el enrutador en el indicador de configuración global. Los pares de claves públicas / privadas para IPsec VPN y el servidor SSH se generan utilizando diferentes métodos.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>2.¿Qué dos beneficios ofrece el formato de firma IPS versión 5.x sobre el formato de firma versión 4.x? (Escoge dos.)</h3>
+              <ul class="listaIT">
+                <li>Soporte para protocolos IPX y AppleTalk.</li>
+                <li>Además de los micro motores de firma.</li>
+                <li><span class="azul">Además de una calificación de riesgo de firma *</span></li>
+                <li><span class="azul">soporte para parámetros de firma encriptados *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Desde IOS 12.4 (11) T, Cisco introdujo la versión 5.x del formato de firma IPS. La nueva versión admite parámetros de firma cifrados y otras características como la clasificación de riesgo de firma, que califica la firma en riesgo de seguridad.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>3.¿Qué información debe rastrear un IPS para detectar ataques que coincidan con una firma compuesta?</h3>
+              <ul class="listaIT">
+                <li>El número total de paquetes en el ataque.</li>
+                <li>El periodo de ataque utilizado por el atacante.</li>
+                <li>El ancho de banda de red consumido por todos los paquetes.</li>
+                <li><span class="azul">el estado de los paquetes relacionados con el ataque *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Una firma compuesta se llama una firma con estado. Identifica una secuencia de operaciones distribuidas en varios hosts durante un período de tiempo arbitrario. Debido a que este tipo de ataque involucra múltiples paquetes, un sensor IPS debe mantener la información de estado. Sin embargo, un sensor IPS no puede mantener la información de estado de forma indefinida. Una firma compuesta se configura con un período de tiempo para mantener el estado del ataque específico cuando se detecta por primera vez. Por lo tanto, es posible que un IPS no pueda mantener toda la información relacionada con un ataque, como el número total de paquetes, la duración total del tiempo de ataque y la cantidad de ancho de banda consumido por el ataque.</p>
+            </div><div class="capituloIT">
+              <h3>4.¿Qué es una desventaja de un mecanismo de detección basado en patrones?</h3>
+              <ul class="listaIT">
+                <li>El patrón de tráfico de red normal debe ser perfilado primero.</li>
+                <li><span class="azul">No puede detectar ataques desconocidos. *</span></li>
+                <li>Es difícil de implementar en una red grande.</li>
+                <li>Su configuración es compleja.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Un IDS / IPS con detección basada en patrones, también conocida como detección basada en firmas, compara el tráfico de red con una base de datos de ataques conocidos (archivos de firmas) y activa una alarma o evita la comunicación si se encuentra una coincidencia. Las firmas deben ser creadas primero. Por lo tanto, este tipo de detección de intrusiones no puede detectar ataques desconocidos. Es fácil de configurar y desplegar. Su funcionamiento no depende de la información del comportamiento normal de la red (o línea de base).</p>
+            </div>
+            <div class="capituloIT">
+              <h3>5.¿Qué tipo de detección de firmas IPS se usa para distraer y confundir a los atacantes?</h3>
+              <ul class="listaIT">
+                <li><span class="azul">detección basada en honeypot *</span></li>
+                <li>detección basada en políticas</li>
+                <li>detección basada en patrones</li>
+                <li>detección basada en anomalías</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>El método de detección basado en honeypot utiliza servidores ficticios para atraer ataques. El propósito del enfoque de Honey Pot es distraer los ataques de dispositivos de red reales. Después de capturar las actividades de ataque en los servidores de honeypot, los administradores de red pueden analizar los tipos de ataques entrantes y los patrones de tráfico maliciosos.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>6.¿Cuál es el propósito de configurar una clave criptográfica IOS IPS al habilitar IOS IPS en un enrutador Cisco?</h3>
+              <ul class="listaIT">
+                <li>para asegurar la imagen IOS en flash</li>
+                <li>para permitir que Cisco Configuration Professional se inicie de forma segura</li>
+                <li>para cifrar el archivo de firma maestro</li>
+                <li><span class="azul">para verificar la firma digital del archivo de firma maestro *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>La clave criptográfica verifica la firma digital del archivo de firma maestra (sigdef-default.xml). El contenido del archivo está firmado por una clave privada de Cisco para garantizar su autenticidad e integridad.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>7.Consulte la presentación. ¿Cuál es el resultado de emitir los comandos Cisco IOS IPS en el enrutador R1?</h3>
+              <ul class="listaIT">
+              <img src="imagen/CCNA-Security-Chapter-5-Exam-Answer-v2-001.png" alt="" class="fotoIT">
+                <li><span class="azul">Todo el tráfico permitido por la ACL está sujeto a inspección por parte del IPS. *</span></li>
+                <li>Una ACL nombrada determina el tráfico a inspeccionar.</li>
+                <li>Todo el tráfico que es denegado por la ACL está sujeto a inspección por parte del IPS.</li>
+                <li>Se aplica una ACL numerada a S0 / 0/0 en la dirección de salida</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Al configurar IOS IPS con el comando ip ips, se puede usar una ACL extendida opcional o estándar para filtrar el tráfico escaneado. Todo el tráfico permitido por la ACL está sujeto a inspección por parte del IPS. El tráfico que es denegado por la ACL no es inspeccionado por el IPS.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>8.Un analista de sistemas está configurando y ajustando un dispositivo IPS recientemente implementado. Al examinar el registro de alarmas de IPS, el analista advierte que el IPS no genera alarmas para unos pocos paquetes de ataque conocidos. ¿Qué término describe la falta de alarmas por parte del IPS?</h3>
+              <ul class="listaIT">
+                <li>verdadero negativo</li>
+                <li>falso positivo</li>
+                <li><span class="azul">falso negativo *</span></li>
+                <li>verdadero positivo</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Las alarmas generadas por un IPS se pueden clasificar en 4 tipos: <br>
+Un falso positivo ocurre cuando un IPS genera una alarma en el tráfico normal de usuarios que no debería haber activado una alarma.
+Un falso negativo ocurre cuando un IPS no genera una alarma después de procesar el tráfico de ataque que el IPS está configurado para detectar.
+Un verdadero positivo ocurre cuando un IPS genera una alarma en respuesta al tráfico de ataque conocido.
+Un verdadero negativo ocurre cuando el tráfico normal de la red no genera una alarma.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>9.Un especialista en seguridad configura un IPS para que genere una alerta cuando se detecte un ataque por primera vez. Las alertas para la detección posterior del mismo ataque se suprimen durante un período de tiempo predefinido. Se generará otra alerta al final del período que indica el número del ataque detectado. ¿Qué mecanismo de monitoreo de alertas IPS está configurado?</h3>
+              <ul class="listaIT">
+                <li>alerta compuesta</li>
+                <li>alerta atómica</li>
+                <li>alerta de correlación</li>
+                <li><span class="azul">alerta de resumen *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Las alertas generadas por un IPS se deben supervisar de cerca para garantizar que se tomen las medidas adecuadas contra los ataques malintencionados. Las soluciones IPS incorporan dos tipos de alertas, alertas atómicas y alertas de resumen. Las alertas atómicas se generan cada vez que se desencadena una firma. Una alerta de resumen es una alerta única que indica varias apariciones de la misma firma desde la misma dirección o puerto de origen. Con un cambio de resumen, la primera detección del ataque desencadena una alerta normal. La detección posterior del mismo ataque se cuenta hasta el final del intervalo de resumen de la firma. Cuando el tiempo especificado por el intervalo de resumen ha transcurrido, se envía una alarma de resumen, que indica el número de alarmas que se produjeron durante el intervalo de tiempo.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>10.¿Qué afirmación es cierta acerca de una alerta atómica generada por un IPS?</h3>
+              <ul class="listaIT">
+                <li>Es una alerta que se usa solo cuando ha comenzado un ataque de registro.</li>
+                <li>Es una única alerta enviada para múltiples ocurrencias de la misma firma.</li>
+                <li><span class="azul">Es una alerta que se genera cada vez que se encuentra una firma específica. *</span></li>
+                <li>Es una alarma normal y una alarma de resumen que se envían simultáneamente a intervalos establecidos.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Los dos mecanismos principales de generación de alertas para dispositivos IDS / IPS son alertas atómicas y de resumen. Las alertas atómicas se generan cada vez que se desencadena una firma. Con una alerta de resumen, se genera una sola alerta atómica para la primera detección de un ataque. Luego, las alarmas duplicadas se cuentan, pero no se envían, durante un período de tiempo específico. Cuando alcanza el período de tiempo especificado, se envía una alerta que indica el número de alarmas que se produjeron durante el intervalo de tiempo.</p>
+            </div><div class="capituloIT">
+              <h3>11.Consulte la presentación. Según la configuración, ¿qué tráfico será examinado por el IPS que está configurado en el enrutador R1?</h3>
+              <ul class="listaIT">
+                <img src="imagen/CCNA-Security-Chapter-5-Exam-Answer-v2-002.jpg" alt="" class="fotoIT">
+                <li>Tráfico que está destinado a LAN 1 y LAN 2</li>
+                <li>devolver tráfico desde el servidor web</li>
+                <li><span class="azul">no se inspeccionará el tráfico *</span></li>
+                <li>Tráfico http que se inicia desde LAN 1</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Debido a que la inspección IPS está configurada en la interfaz S0 / 0/0 con dirección de entrada, pero el rango de direcciones de origen de ACL es 192.168.0.0/16 y el tipo de tráfico está establecido en http, no habrá tráfico que coincida con estos criterios (nota, no hay servidor web en LAN 1 o LAN 2). Por lo tanto, no se llevará a cabo ninguna inspección de tráfico.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>12.Un administrador de red sospecha que la configuración predeterminada del comando ip ips notification sdee ha provocado una degradación del rendimiento en el enrutador IPS Cisco IOS. El administrador de la red ingresa el comando ip sdee events 50 en un intento de solucionar los problemas de rendimiento. ¿Cuál es el efecto inmediato de este comando?</h3>
+              <ul class="listaIT">
+                <li>Todos los eventos que se almacenaron en el búfer original se guardan, mientras se crea un nuevo búfer para almacenar nuevos eventos.</li>
+                <li><span class="azul">Todos los eventos que se almacenaron en el búfer anterior se pierden. *</span></li>
+                <li>Los 50 eventos más nuevos del búfer original se guardan y todos los demás se eliminan.</li>
+                <li>Se eliminan los 50 eventos más antiguos del búfer original.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Al enviar una notificación IPS con formato SDEE, el búfer en el enrutador almacena hasta 200 eventos de forma predeterminada. Si se solicita un búfer más pequeño, todos los eventos almacenados se pierden. Si se solicita un búfer más grande, se guardan todos los eventos almacenados. El búfer predeterminado se puede modificar con el comando ip sdee events. Todos los eventos almacenados se pierden cuando se deshabilita la notificación de Cisco SDEE. Se asigna un nuevo búfer cuando se vuelven a habilitar las notificaciones.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>13.¿Verdadero o falso?
+Un IDS de Cisco no afecta el flujo de tráfico cuando opera en modo promiscuo</h3>
+              <ul class="listaIT">
+                <li><span class="azul">cierto *</span></li>
+                <li>falso</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>En el modo promiscuo, también conocido como modo pasivo, el flujo de tráfico no se ve afectado porque el sensor IDS analiza las copias del tráfico en lugar de los paquetes reenviados reales.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>14.¿Cuál es una condición requerida para habilitar el reporte de actividad IPS usando el formato SDEE?</h3>
+              <ul class="listaIT">
+                <li>Crear un directorio de configuración IOS IPS en flash.</li>
+                <li><span class="azul">Habilite un servicio HTTP o HTTPS en el enrutador. *</span></li>
+                <li>Configure la categoría de la firma.</li>
+                <li>Ejecute el comando ip ips notification log.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Para habilitar el formato de informe de actividad IPS utilizando SDEE, el servidor HTTP o HTTPS debe estar habilitado primero en el enrutador. Si el servidor HTTP no está habilitado, el enrutador no puede responder a los clientes SDEE porque no puede ver las solicitudes. El comando ip ips notification log enviará una notificación utilizando syslog. Las tareas de configuración de la categoría de firma y la creación de un directorio de configuración IOS IPS en flash son necesarias para implementar IPS IOS, pero no están directamente asociadas con la función SDEE.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>15.Consulte la presentación. ¿Qué declaración describe mejor cómo se maneja el tráfico entrante en la serie 0/0?</h3>
+              <ul class="listaIT">
+                <img src="imagen/Which.jpg" alt="" class="fotoIT">
+                <li>El tráfico que provenga de cualquier fuente que no sea 172.31.235.0/24 se escaneará e informará.</li>
+                <li>El tráfico que no coincide con ACL 100 se eliminará.</li>
+                <li>El tráfico que no coincida con ACL 100 se escaneará e informará.</li>
+                <li><span class="azul">El tráfico que coincide con ACL 100 se escaneará e informará. *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Desde la configuración, ACL 100 se utiliza para identificar los paquetes que se deben inspeccionar. Sin embargo, dado que la configuración de la ACL 100 es desconocida (no se muestra), la única conclusión que podemos extraer es que "el tráfico que coincide con la ACL 100 se analizará e informará".</p>
+            </div>
+            <div class="capituloIT">
+              <h3>16.Consulte la presentación. Según la configuración de IPS proporcionada, ¿qué conclusión se puede sacar?</h3>
+              <ul class="listaIT">
+                <img src="imagen/CCNA-Security-Chapter-5-Exam-Answer-v2-003.jpg" alt="" class="fotoIT">
+                <li>Las firmas en todas las categorías se compilarán en la memoria y serán utilizadas por el IPS.</li>
+                <li>Las firmas en la categoría básica de ios_ips se retirarán y las firmas restantes se compilarán en la memoria y serán utilizadas por el IPS.</li>
+                <li><span class="azul">Solo las firmas en la categoría básica de ios_ips se compilarán en la memoria y serán utilizadas por el IPS. *</span></li>
+                <li>Las firmas en todas las categorías serán retiradas y no serán utilizadas por el IPS.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>La firma IPS en la categoría de todas está retirada, lo que significa que no se compilan firmas en la memoria. La categoría ios_ips basic de la firma IPS no se retira (por el comando retirado false), lo que da como resultado que las firmas en ios_ips basic se compilen en la RAM para la inspección de tráfico.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>17.Un administrador de red está configurando un IOS <br>IPS con el comando
+R1 (config) # ip ips definición-firma <br>
+¿Qué tarea de configuración se puede lograr con este comando?</h3>
+              <ul class="listaIT">
+                <li>Retire o anule el retiro de la categoría de firma básica de ios_ips.</li>
+                <li><span class="azul">Retirar o anular una firma individual. *</span></li>
+                <li>Retirar o anular la suscripción de la categoría de firma.</li>
+                <li>Retirar o cancelar la categoría de firmas atómicas.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>La definición de la firma ip ips del comando IOS se usa para configurar una firma específica, que incluye la acción de retirarse / anular el retiro y de eventos. Para configurar una categoría de firma, se usa el comando ip ips signature-category.</p>
+            </div><div class="capituloIT">
+              <h3>18.¿Cuáles son las dos desventajas de usar un IDS? (Escoge dos.)</h3>
+              <ul class="listaIT">
+                <li><span class="azul">El IDS no detiene el tráfico malicioso. *</span></li>
+                <li>El IDS analiza los paquetes reenviados reales.</li>
+                <li>El IDS no tiene impacto en el tráfico.</li>
+                <li><span class="azul">El IDS requiere que otros dispositivos respondan a los ataques. *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>La desventaja de operar con tráfico reflejado es que el IDS no puede evitar que los ataques maliciosos de un solo paquete alcancen el objetivo antes de responder al ataque. Además, un IDS a menudo requiere asistencia de otros dispositivos de red, como enrutadores y cortafuegos, para responder a un ataque. Una ventaja de un IDS es que al trabajar sin conexión utilizando el tráfico reflejado, no tiene ningún impacto en el flujo de tráfico.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>19.¿Cuáles son las dos características compartidas del IDS y el IPS? (Escoge dos.)</h3>
+              <ul class="listaIT">
+                <li><span class="azul">Ambos usan firmas para detectar tráfico malicioso. *</span></li>
+                <li>Ambos analizan copias del tráfico de red.</li>
+                <li>Ambos tienen un impacto mínimo en el rendimiento de la red.</li>
+                <li><span class="azul">Ambos se despliegan como sensores. *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Tanto el IDS como el IPS se implementan como sensores y utilizan firmas para detectar tráfico malicioso. El IDS analiza copias del tráfico de la red, lo que produce un impacto mínimo en el rendimiento de la red. El IDS también se basa en un IPS para detener el tráfico malicioso. Al aire libre</p>
+            </div>
+            <div class="capituloIT">
+              <h3>20.Consulte la presentación. Un administrador de red ingresa el comando en un enrutador IPS Cisco IOS. ¿Cuál es el efecto?</h3>
+              <ul class="listaIT">
+                <img src="imagen/CCNA-Security-Chapter-5-Exam-Answer-v2-004.jpg" class="fotoIT" alt="">
+                <li><span class="azul">Los mensajes de alerta se envían en formato syslog. *</span></li>
+                <li>Los mensajes de alerta se envían en formato de archivo de seguimiento.</li>
+                <li>Los mensajes de alerta se envían en formato de intercambio de eventos de dispositivos de seguridad (SDEE).</li>
+                <li>Los mensajes de alerta se envían en formato de registro de eventos.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>El comando ip ips notify se usa para configurar la notificación de eventos IPS. Este comando tiene dos opciones, log y sdee. La opción de registro es especificar que las notificaciones se envíen en formato syslog. La opción sdee es especificar que las notificaciones se envíen en formato SDEE. Si no se especifica ninguna opción, de forma predeterminada, las notificaciones se envían en formato syslog.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>21.¿Qué es una desventaja de IPS basada en red en comparación con IPS basada en host?</h3>
+              <ul class="listaIT">
+                <li><span class="azul">El IPS basado en red no puede examinar el tráfico cifrado. *</span></li>
+                <li>El IPS basado en red no debe usarse con múltiples sistemas operativos.</li>
+                <li>El IPS basado en red es menos rentable.</li>
+                <li>El IPS basado en red no detecta eventos de red de nivel inferior.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>Los dispositivos IPS basados ​​en red se implementan como modo en línea para monitorear activamente el tráfico en las redes. Pueden tomar acciones inmediatas cuando los criterios de seguridad coinciden. Una limitación de ellos es que no pueden monitorear / inspeccionar paquetes encriptados.</p>
+            </div>
+            <div class="capituloIT">
+              <h3>22.Un sensor IPS ha detectado que la cadena es confidencial en varios paquetes en una sesión TCP. ¿Qué tipo de disparador de firma y tipo de firma describe esto?</h3>
+              <ul class="listaIT">
+                <li>Disparador: detección basada en políticas <br>
+Tipo: Firma atómica</li>
+                <li>Disparador: detección basada en políticas <br>
+Tipo de : Firma compuesta</li>
+                <li>Disparador: detección basada en anomalías <br>
+Tipo: firma atómica</li>
+                <li><span class="azul">Disparo: Detección basada en patrones
+Tipo: Firma compuesta *</span></li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+            <div class="dialogo">
+              <p>La detección basada en patrones (también llamada detección basada en firmas) busca un patrón específico que puede ser textual, binario o una serie de llamadas de función. Puede detectarse en un solo paquete (atómico) o en una secuencia de paquetes (compuesto).</p>
+            </div>
+            <div class="capituloIT">
+              <h3>23.¿Cuáles son los dos inconvenientes de usar HIPS? (Escoge dos.)</h3>
+              <ul class="listaIT">
+                <li>Con HIPS, el éxito o el fracaso de un ataque no se puede determinar fácilmente.</li>
+                <li><span class="azul">Con HIPS, el administrador de la red debe verificar el soporte para todos los diferentes sistemas operativos utilizados en la red. *</span></li>
+                <li><span class="azul">HIPS tiene dificultades para crear una imagen de red precisa o coordinar eventos que se producen en toda la red. *</span></li>
+                <li>Si el flujo de tráfico de la red está cifrado, HIPS no puede acceder a las formas no cifradas del tráfico.</li>
+                <li>@Javi__Super</li>
+              </ul>
+            </div>
+
+    </div>
+
+  </body>
+</html>

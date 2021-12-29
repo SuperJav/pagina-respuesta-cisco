@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA4 4</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+        <div class="contenedorIT">
+          <div class="capituloIT">
+            <h4>1.¿Qué rango representa todas las direcciones IP que se ven afectadas cuando la red 10.120.160.0 con una máscara comodín de 0.0.7.255 se usa en un ACE?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">10.120.160.0 a 10.120.167.255 *</span></li>
+              <li>10.120.160.0 a 10.120.168.0</li>
+              <li>10.120.160.0 a 10.120.191.255</li>
+              <li>10.120.160.0 a 10.127.255.255</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>2.¿Qué dos funciones describen los usos de una lista de control de acceso? (Escoge dos.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Las ACL proporcionan un nivel básico de seguridad para el acceso a la red. *</span></li>
+              <li> Las ACL ayudan al enrutador a determinar la mejor ruta hacia un destino.</li>
+              <li>Las ACL estándar pueden restringir el acceso a aplicaciones y puertos específicos.</li>
+              <li><span class="azul">Las ACL pueden controlar a qué áreas puede acceder un host en una red. *</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>3.¿Qué dos afirmaciones describen el efecto de la máscara de comodín de la lista de control de acceso 0.0.0.15? (Escoge dos.)</h4>
+            <ul class="listaIT">
+              <li>Los últimos cinco bits de una dirección IP suministrada serán ignorados.</li>
+              <li><span class="azul">Los primeros 28 bits de una dirección IP suministrada coincidirán. *</span></li>
+              <li><span class="azul">Los últimos cuatro bits de una dirección IP suministrada serán ignorados. *</span></li>
+              <li>@javi__super</li>
+              <li>Los primeros 28 bits de una dirección IP suministrada serán ignorados.</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>4.Consulte la presentación. Un administrador de red está configurando una ACL para limitar la conexión a líneas Vty R1 solo a las estaciones de trabajo del grupo de TI en la red 192.168.22.0/28. El administrador verifica las conexiones Telnet exitosas desde una estación de trabajo con IP 192.168.22.5 a R1 antes de que se aplique la ACL. Sin embargo, una vez que se aplica la ACL a la interfaz Fa0 / 0, se rechazan las conexiones Telnet. ¿Cuál es la causa del fallo de conexión?</h4>
+            <ul class="listaIT">
+              <img src="imagen/i209884v1n1_209884.png" class="fotoIT" alt="">
+              <li><span class="azul">La red del grupo de TI se incluye en la declaración de rechazo. *</span></li>
+              <li>La contraseña secreta de habilitación no está configurada en R1.</li>
+              <li>El permiso ACE especifica un número de puerto incorrecto.</li>
+              <li>El permiso ACE debe especificar el protocolo ip en lugar de tcp.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>5.Consulte la presentación. El administrador de red que tiene la dirección IP de 10.0.70.23/25 debe tener acceso al servidor FTP corporativo (10.0.54.5/28). El servidor FTP también es un servidor web al que pueden acceder todos los empleados internos en redes dentro de la dirección 10.xxx. No se debe permitir ningún otro tráfico a este servidor.¿Qué ACL extendida se usaría para filtrar este tráfico y cómo se aplicaría esta ACL? (Escoge dos.)</h4>
+            <ul class="listaIT">
+              <img src="imagen/i209858v1n1_209858.png" class="fotoIT" alt="">
+              <li><span class="azul">lista de acceso 105 permite tcp host 10.0.70.23 host 10.0.54.5 eq 20 <br>
+              la lista de acceso 105 permite tcp host 10.0.70.23 host 10.0.54.5 eq 21 <br>
+              lista de acceso 105 permiso tcp 10.0.0.0 0.255.255.255 host 10.0.54.5 eq www <br>
+              access-list 105 deny ip cualquier host 10.0.54.5 <br>
+              lista de acceso 105 permiso ip cualquiera cualquiera *</span></li>
+              <li>R1 (config) # interfaz s0 / 0/0 <br>
+                    R1 (config-if) # ip access-group 105 outR2 (config) # interface gi0 / 0 <br>
+                    R2 (config-if) # ip access-group 105 in</li>
+              <li>lista de acceso 105 permiso ip host 10.0.70.23 host</li>
+              <li><span class="azul">R1 (config) # interfaz gi0 / 0 <br>
+                                  R1 (config-if) # ip access-group 105 out *</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>6.Un administrador de red está diseñando una ACL. Las redes 192.168.1.0/25, 192.168.0.0/25, 192.168.0.128/25, 192.168.1.128/26 y 192.168.1.192/26 se ven afectadas por la ACL. ¿Qué máscara de comodín, si existe, es la más eficiente de usar cuando se especifican todas estas redes en una sola entrada de permiso ACL?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">0.0.1.255 *</span></li>
+              <li>0.0.0.127</li>
+              <li>0.0.0.255</li>
+              <li>0.0.255.255</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>7.La muestra muestra el enrutador R2 conectado a través de int fa0 / 0 a un conmutador que a su vez está conectado al host con una dirección IP 192.168.1.1 / 24. R2 está conectado a otro conmutador a través de la interfaz fa0 / 1 y el conmutador está conectado a un servidor con la dirección IP 192.168.2.1 /24. Consulte la presentación. Un administrador de red desea permitir que solo el host 192.168.1.1 / 24 pueda acceder al servidor 192.168.2.1 / 24. ¿Qué tres comandos lograrán esto usando las mejores prácticas de colocación de ACL? (Elige tres.)</h4>
+            <ul class="listaIT">
+              <img src="imagen/i217141v1n1_2.png" class="fotoIT" alt="">
+              <li><span class="azul">R2 (config) # interface fastethernet 0/0 *</span></li>
+              <li>R2 (config-if) # ip access-group 101 out</li>
+              <li><span class="azul"> R2 (config) # access-list 101 permite el host IP 192.168.1.1 host 192.168.2.1 *</span></li>
+              <li><span class="azul">R2 (config-if) # ip access-group 101 en *</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>8.¿Qué dos afirmaciones son correctas acerca de las ACL extendidas? (Escoge dos)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Las ACL extendidas evalúan las direcciones de origen y destino. *</span></li>
+              <li><span class="azul">Los números de puerto se pueden usar para agregar mayor definición a una ACL. *</span></li>
+              <li>Las ACL extendidas terminan con una declaración de permiso implícita.</li>
+              <li>Se pueden colocar múltiples ACL en la misma interfaz siempre que estén en la misma dirección.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>9.¿Qué tres valores o conjuntos de valores se incluyen al crear una entrada de lista de control de acceso extendida? (Elige tres.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">dirección de origen y máscara de comodín *</span></li>
+              <li><span class="azul">Número de lista de acceso entre 100 y 199 *</span></li>
+              <li><span class="azul">Dirección de destino y máscara de comodín *</span></li>
+              <li>Dirección de la puerta de enlace predeterminada y máscara de comodín</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>10.Consulte la presentación. Esta ACL se aplica al tráfico que sale del enrutador en la interfaz que se conecta directamente al servidor 10.0.70.5. Una solicitud de información de una página web segura se envía desde el host 10.0.55.23 y está destinada al servidor 10.0.70.5. ¿Qué línea de la lista de acceso hará que el enrutador tome medidas (reenviar el paquete o soltarlo)?</h4>
+            <ul class="listaIT">
+              <img src="imagen/i209867v1n1_209867.jpg" class="fotoIT" alt="">
+              <li><span class="azul">3 *</span></li>
+              <li>1</li>
+              <li>5</li>
+              <li>4</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>11.¿Qué conjunto de entradas de control de acceso permitiría a todos los usuarios de la red 192.168.10.0/24 acceder a un servidor web ubicado en 172.17.80.1, pero no les permitiría usar Telnet?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">lista de acceso 103 permite tcp 192.168.10.0 0.0.0.255 host 172.17.80.1 eq 80 <br>
+                access-list 103 deny tcp 192.168.10.0 0.0.0.255 cualquier eq 23 *</span></li>
+              <li>access-list 103 deny tcp host 192.168.10.0 cualquier eq 23</li>
+              <li>la lista de acceso 103 permite tcp 192.168.10.0 0.0.0.255</li>
+              <li>lista de acceso 103 deny tcp 192.168.10.0 0.0.0.255</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>12.¿Qué dos filtros de paquetes podría usar un administrador de red en una ACL extendida IPv4? (Escoge dos.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">número de puerto UDP de destino *</span></li>
+              <li><span class="azul">Tipo de mensaje ICMP *</span></li>
+              <li>dirección MAC de destino</li>
+              <li>tipo de computadora</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>13.¿Qué dos comandos de ACE bloquearán el tráfico destinado a un servidor web que escucha los puertos predeterminados? (Escoge dos.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">access-list 110 deny tcp any any qq https *</span></li>
+              <li><span class="azul">access-list 110 deny tcp any any gt 75 *</span></li>
+              <li>access-list 110 deny tcp any lt 80</li>
+              <li>access-list 110 deny tcp any any eq 21</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>14.¿Qué característica es exclusiva de las ACL de IPv6 en comparación con las de las ACL de IPv4?</h4>
+            <ul class="listaIT">
+              <li>un implícito negar cualquier ACE</li>
+              <li><span class="azul">un permiso implícito de paquetes de descubrimiento de vecinos *</span></li>
+              <li>el uso de ACL nombrado ACE</li>
+              <li></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>15.¿Qué dos ACE se podrían usar para denegar el tráfico IP de un host de origen único 10.1.1.1 a la red 192.168.0.0/16? (Escoge dos.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">access-list 100 deny ip 10.1.1.1 0.0.0.0 192.168.0.0 0.0.255.255 *</span></li>
+              <li>access-list 100 deny ip 192.168.0.0 0.0.255.255 host 10.1.1.1</li>
+              <li>lista de acceso 100 deny ip 10.1.1.1 255.255.255.255 192.168.0.0 0.0.255.255</li>
+              <li><span class="azul">access-list 100 deny ip host 10.1.1.1 192.168.0.0 0.0.255.255 *</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>16.Consulte la presentación. La lista de acceso de IPv6 LIMITED_ACCESS se aplica en la interfaz S0 / 0/0 de R1 en la dirección de entrada. ¿Qué paquetes IPv6 del ISP serán eliminados por la ACL en R1?</h4>
+            <ul class="listaIT">
+              <img src="imagen/i216395v1n1_209796.png" class="fotoIT" alt="">
+              <li><span class="azul">Paquetes ICMPv6 que están destinados a PC1 *</span></li>
+              <li>Anuncios vecinos recibidos del enrutador ISP.</li>
+              <li>Paquetes HTTPS a PC1</li>
+              <li>Paquetes que están destinados a PC1 en el puerto 80</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>17.¿Qué comando se usa para activar una ACL de IPv6 llamada ENG_ACL en una interfaz para que el enrutador filtre el tráfico antes de acceder a la tabla de enrutamiento?</h4>
+            <ul class="listaIT">
+              <li>ipv6 traffic-filter ENG_ACL out</li>
+              <li><span class="azul">ipv6 traffic-filter ENG_ACL en *</span></li>
+              <li>ipv6 access-class ENG_ACL en</li>
+              <li>ipv6 access-class ENG_ACL out</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>18.¿Cuál es la máscara de comodín asociada con la red 192.168.12.0/24?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">0.0.0.255 *</span></li>
+              <li>0.0.255.255</li>
+              <li>255.255.255.0</li>
+              <li>0.0.0.256</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>19.¿Qué entrada de comando ACL de IPv6 permitirá el tráfico de cualquier host a un servidor SMTP en la red 2001: DB8: 10: 10 :: / 64?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">permite tcp cualquier host 2001: DB8: 10: 10 :: 100 eq 25 *</span></li>
+              <li>permite el host tcp 2001: DB8: 10: 10 :: 100 cualquier eq 23</li>
+              <li>permite tcp cualquier host 2001: DB8: 10: 10 :: 100 eq 23</li>
+              <li>permite el host tcp 2001: DB8: 10: 10 :: 100 cualquier eq 25</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>20.Al aplicar una ACL a una interfaz de enrutador, ¿qué tráfico se designa como saliente?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">el tráfico que sale del enrutador y va hacia el host de destino *</span></li>
+              <li>Tráfico para el cual el enrutador no puede encontrar ninguna entrada en la tabla de enrutamiento</li>
+              <li>Tráfico que va desde la dirección IP de destino al enrutador</li>
+              <li>Tráfico que viene de la dirección IP de origen al enrutado</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>21.Rellenar los espacios en blanco. Usa formato decimal punteado.</h4>
+            <ul class="listaIT">
+              <li>La máscara de comodín asociada a la red 192.168.12.0/24 es _______<span class="azul"> Respuesta correcta: 0.0.0.255 *</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>22.Pregunta presentada:</h4>
+            <ul class="listaIT">
+              <li>Pregunta</li>
+              <img src="imagen/2017-07-27_165328-768x356.jpg" class="fotoIT" alt="">
+              <li><span class="azul">Respuesta</span></li>
+              <img src="imagen/2017-074546-27_165328-768x356.jpg" class="fotoIT" alt="CCNA4">
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>23.Pregunta presentada:</h4>
+            <ul class="listaIT">
+              <li>Pregunta</li>
+              <img src="imagen/2017-07-27_165652-768x235.jpg" class="fotoIT" alt="">
+              <li><span class="azul">Respuesta</span></li>
+              <img src="imagen/2014344437-07-27_165652-768x235.jpg" class="fotoIT" alt="">
+              <li>@javi__super</li>
+            </ul>
+          </div>
+
+        </div>
+
+  </body>
+</html>

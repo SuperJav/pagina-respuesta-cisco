@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA2 primer pratica</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+        <div class="contenedorIT">
+          <div class="capituloIT">
+            <h2>CCNA Routing and Switching
+            Routing and Switching Essentials</h2>
+            <h2>Capítulo 2 SIC: Enrutamiento estático y configuración básica del enrutador</h2>
+            <img src="imagen/2017-07-12_133147-768x523.jpg" class="fotoIT" alt="">
+            <p>Algunas cosas a tener en cuenta al completar esta actividad:</p>
+            <br>
+            <br>
+            <p>1.No utilice el botón Atrás del navegador  ni cierre ni vuelva a cargar las ventanas de examen durante el examen.</p>
+            <br>
+            <p>2.No cierre Packet Tracer cuando haya terminado. Se cerrará automáticamente.</p>
+            <br>
+            <p>3.Haga clic en el  botón Enviar evaluación en la ventana del navegador para enviar su trabajo.</p>
+            <br>
+            <br>
+            <h3>Introducción</h3>
+            <br>
+            <p>New Corp. se está preparando para convertir su red para usar IPv6. Está experimentando con la transición y ha configurado una red de prueba que está configurada con direcciones IPv4 e IPv6 en todos los hosts e interfaces de dispositivos. La compañía utilizará rutas estáticas predeterminadas, estáticas y flotantes para crear conectividad en la red.</p>
+            <br>
+            <p>En esta evaluación de habilidades prácticas, configurará la red de New Corp. con la interfaz IPv4 e IPv6 y el direccionamiento del host, y las rutas estáticas flotantes y estáticas predeterminadas, IPv4 e IPv6. Además, completará una configuración básica en un enrutador.</p>
+            <br>
+            <h3>No es necesario que configure el servidor de Internet o los conmutadores.</h3>
+            <br>
+            <h3>Nota: para mantener la actividad de evaluación lo más breve posible, solo configurará parcialmente algunos dispositivos, como se indica en las instrucciones. En una red real, todos los dispositivos estarían totalmente configurados para funcionar en la red. Usted solo es responsable de completar las tareas cubiertas en las instrucciones. Cualquier configuración que realice más allá de los requisitos no dará como resultado un crédito adicional.<br><br>
+            Todas las configuraciones de dispositivos IOS deben completarse desde una conexión de terminal directa a la consola del dispositivo. Además, muchos valores que se requieren para completar las configuraciones no se le han dado. En esos casos, cree los valores que necesita para completar los requisitos.</h3><br>
+
+            <p>Practicarás y serás evaluado en las siguientes habilidades:</p>
+            <ul class="listaIT">
+              <li>Configuración básica del enrutador</li>
+              <li>Activación y direccionamiento de la interfaz del enrutador IPv4 e IPv6</li>
+              <li>Configuración de ruta estática IPv4 e IPv6 directamente conectada</li>
+              <li>Configuración de ruta predeterminada IPv4 e IPv6 directamente adjunta</li>
+              <li>Configuración de ruta estática flotante IPv4 e IPv6 directamente conectada</li>
+              <li>Direccionamiento IPv4 e IPv6</li>
+            </ul>
+            <br>
+            <br>
+            <h3>Tabla de direccionamiento</h3>
+            <img src="imagen/tabla2.png" class="fotoIT" alt="">
+            <br>
+            <h3>Instrucciones</h3>
+            <br>
+            <h3>Paso 1: Configuración básica del dispositivo</h3>
+            <p>Realizar una configuración básica del dispositivo en  Principal .</p>
+            <ul class="listaIT">
+              <li>Configure el nombre de host del router </li>
+              <li>Evite que el enrutador intente resolver las entradas CLI no reconocidas como nombres de dominio.</li>
+              <li>Proteja las configuraciones de dispositivos del acceso no autorizado con la contraseña secreta encriptada de  cisco</li>
+              <li>Asegure la consola del enrutador   y las   líneas vty con la clase de contraseña </li>
+              <li>Evite que todas las contraseñas se vean en texto sin cifrar en los archivos de configuración del dispositivo.</li>
+              <li>Agregue un banner del mensaje del día de su elección.</li>
+              <li>Proporcionar descripciones en todas las interfaces activas.</li>
+            </ul>
+            <br>
+            <h3>Paso 2: Configurar rutas estáticas predeterminadas, estáticas y flotantes.</h3>
+            <p>Configure rutas estáticas, predeterminadas y estáticas flotantes en los enrutadores.</p>
+            <br>
+            <h4>Principal:</h4>
+            <ul class="listaIT">
+              <li>Configure las interfaces del   enrutador principal con direcciones IPv4 e IPv6 basadas en la  tabla de direccionamiento .</li>
+              <li>Configure  dos rutas estáticas conectadas directamente  en  Main  para llegar a las dos redes LAN IPv4 en el router  Bldg-1 .</li>
+              <li>Configure  dos rutas estáticas conectadas directamente  en  Main  para alcanzar las redes LAN de IPv6 en el router  Bldg-1 .</li>
+              <li>Configure las   rutas estáticas predeterminadas de IPv4 conectadas directamente  para llegar a los hosts fuera de la red.</li>
+              <li>Configure la ruta primaria a través de Serial0 / 0/0.</li>
+              <li>Configure una ruta estática predeterminada flotante para la ruta de respaldo a través de Serial0 / 0/1 con una métrica de  2.</li>
+              <li>Configure  las  rutas estáticas predeterminadas de IPv6 directamente conectadas  para llegar a los hosts fuera de la red.</li>
+              <li>Configure la ruta principal a través de Serial0 / 0/0.</li>
+              <li>Configure la ruta de respaldo a través de Serial0 / 0/1 con una métrica de  2 .</li>
+            </ul>
+            <br>
+            <h4>Edificio 1:</h4>
+            <ul class="listaIT">
+              <li>Configure las interfaces en el   enrutador Bldg-1 con direcciones IPv4 e IPv6 basadas en la  tabla de direccionamiento .</li>
+              <li>Configure una   ruta estática predeterminada IPv4 conectada directamente en  Bldg-1  para llegar a Internet.</li>
+              <li>Configure una   ruta estática predeterminada IPv6 conectada directamente en  Bldg-1  para llegar a Internet.</li>
+            </ul>
+            <br>
+            <h4>paso 3: Configure Host Addressing</h4>
+            <ul class="listaIT">
+              <li>Configure the Host A and Host B hosts with both IPv4 and IPv6 addresses based on the Addressing Table.</li>
+              <li>Las direcciones de la puerta de enlace predeterminada de IPv6 deben ser la dirección local del enlace de la interfaz del enrutador de LAN.</li>
+              <li>Configure the DNS server address for both IPv4 and IPv6.</li>
+              <li>Todos los hosts de PC deben poder llegar al servidor de Internet.</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h2><span class="azul">Introducción - Script de respuestas</span></h2>
+            <h3><span class="azul">Principal</span> o <span class="azul">Central</span> o <span class="azul">HQ</span> (Router 1)</h3>
+            <br>
+            <p>
+              en <br>
+              conf ter <br>
+              Nombre de host principal (o central) (o HQ) <br>
+              sin búsqueda de dominio ip <br>
+              habilitar cisco secreto <br>
+              <br>
+              <br>
+              línea consola 0 <br>
+              clase de contraseña <br>
+              iniciar sesión <br>
+              línea vty 0 15 <br>
+              contraseña de cisco <br>
+              iniciar sesión <br>
+              salida <br>
+              servicio de cifrado de contraseñas  <br>
+              banner motd $ CCNAv6.com $ <br>
+              <br>
+              <br>
+              int s0 / 0/0 <br>
+              Descripción CONEXIÓN PRIMARIA <br>
+              dirección ip 128.107.0.1 255.255.255.252 <br>
+              dirección ipv6 2001: DB8: 2: 1 :: 1/64 <br>
+              dirección ipv6 FE80 :: 1 link-local <br>
+              no apagarse <br>
+              <br>
+              <br>
+              int s0 / 0/1 <br>
+              Descripción CONEXIÓN DE RESPALDO <br>
+              dirección ip 128.107.0.5 255.255.255.252 <br>
+              dirección ipv6 2001: DB8: 3: 1 :: 1/64 <br>
+              dirección ipv6 FE80 :: 1 link-local <br>
+              no apagarse <br>
+              <br>
+              <br>
+              int s0 / 1/1 <br>
+              Descripción Conectar a Bldg-1 <br>
+              dirección ip 10.10.20.1 255.255.255.252 <br>
+              dirección ipv6 2001: DB8: 1: 1 :: 1/64 <br>
+              dirección ipv6 FE80 :: 1 link-local <br>
+              no apagarse <br>
+              salida <br>
+              <br>
+              <br>
+              ruta ip 10.10.1.0 255.255.255.0 s0 / 1/1 <br>
+              <br>
+              ruta ip 10.10.2.0 255.255.255.0 s0 / 1/1 <br>
+              <br>
+              ruta ipv6 2001: DB8: 1: A :: / 64 s0 / 1/1 <br>
+              ruta ipv6 2001: DB8: 1: B :: / 64 s0 / 1/1 <br>
+              <br>
+              ruta ip 0.0.0.0 0.0.0.0 s0 / 0/0 <br>
+              ruta ip 0.0.0.0 0.0.0.0 s0 / 0/1 2 <br>
+              ruta ipv6 :: / 0 s0 / 0/0 <br>
+              ruta ipv6 :: / 0 s0 / 0/1 2 <br>
+              ipv6 unicast-routing <br>
+            </p>
+            <h3><span class="azul">Edificio 1</span> o <span class="azul">Búsqueda</span> o <span class="azul">Rama (Enrutador 2)</span></h3>
+            <br>
+            <p>
+              habilitar  <br>
+              terminal conf <br>
+              <br>
+              <br>
+              int s0 / 0/0 <br>
+              dirección ip 10.10.20.2 255.255.255.252 <br>
+              dirección ipv6 2001: DB8: 1: 1 :: 2/64 <br>
+              dirección ipv6 FE80 :: 2 link-local <br>
+              no apagarse <br>
+              <br>
+              <br>
+              int g0 / 0 <br>
+              dirección ip 10.10.1.254 255.255.255.0 <br>
+              dirección ipv6 2001: DB8: 1: A :: 1/64 <br>
+              dirección ipv6 FE80 :: 2 link-local <br>
+              no apagarse <br>
+              int g0 / 1 <br>
+              dirección ip 10.10.2.254 255.255.255.0 <br>
+              dirección ipv6 2001: DB8: 1: B :: 1/64 <br>
+              dirección ipv6 FE80 :: 2 link-local <br>
+              no apagarse <br>
+              <br>
+              <br>
+              salida <br>
+              int s0 / 0/0 <br>
+              descripción Conexión a Main <br>
+              int g0 / 0 <br>
+              descripción LAN A <br>
+              int g0 / 1 <br>
+              descripción LAN B <br>
+              salida <br>
+              ruta ip 0.0.0.0 0.0.0.0 s0 / 0/0 <br>
+              ruta ipv6 :: / 0 s0 / 0/0 <br>
+              ipv6 unicast-routing <br>
+            </p>
+          </div>
+          <div class="capituloIT">
+            <h3>Configurar direccionamiento de host</h3> <br>
+            <h2>Anfitrión A:</h2> <br>
+            <br>
+            <h4>Configuración de IPv4:</h4>
+            <ul class="listaIT">
+              <li>Dirección IP: 10.10.1.10</li>
+              <li>Máscara de subred: 255.255.255.0 </li>
+              <li>Puerta de enlace: 10.10.1.254 </li>
+              <li>Servidor DNS: 64.100.100.10 </li>
+            </ul>
+            <h4>Configuración de IPv6:</h4> <br>
+            <ul class="listaIT">
+              <li>Dirección IPv6: 2001: DB8: 1: A :: A / 64 </li>
+              <li> Puerta de enlace IPv6: FE80 :: 2 </li>
+              <li>Servidor DNS IPv6: 2001: DB8: FF: F :: 10</li>
+            </ul>
+            <h3>Anfitrión B:</h3><br>
+            <h4>Configuración de IPv4:</h4> <br>
+            <ul class="listaIT">
+              <li>Dirección IP: 10.10.2.10 </li>
+              <li>Máscara de subred: 255.255.255.0 </li>
+              <li>Puerta de enlace: 10.10.2.254 </li>
+              <li>Servidor DNS: 64.100.100.10 </li>
+            </ul>
+            <h4>Configuración de IPv6:</h4> <br>
+            <ul class="listaIT">
+              <li>Dirección IPv6: 2001: DB8: 1: B :: A / 64 </li>
+              <li>Puerta de enlace IPv6: FE80 :: 2 </li>
+              <li>Servidor DNS IPv6: 2001: DB8: FF: F :: 10</li>
+            </ul>
+          </div>
+
+        </div>
+
+  </body>
+</html>

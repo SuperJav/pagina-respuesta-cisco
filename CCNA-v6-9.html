@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA 9</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; hasiendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.¿Qué dos características están asociadas con las sesiones UDP? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Los dispositivos de destino reciben tráfico con un retraso mínimo. *</span></li>
+          <li>Los segmentos de datos transmitidos son rastreados.</li>
+          <li><span class="azul">Los datos recibidos no son reconocidos. *</span></li>
+          <li>Los dispositivos de destino vuelven a ensamblar mensajes y los pasan a una aplicación.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+      TCP: <br>
+      Proporciona seguimiento de segmentos de datos transmitidos <br>
+      Los dispositivos de destino reconocerán los datos recibidos. <br>
+      Los dispositivos de origen retransmitirán los datos no reconocidos.<br>
+      <br>
+      UDP <br>
+      Los dispositivos de destino no reconocerán los datos recibidos
+      Los encabezados usan muy poca sobrecarga y causan un retraso mínimo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.¿Qué sucede si parte de un mensaje FTP no se entrega al destino?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">La parte del mensaje FTP que se perdió se reenvía. *</span></li>
+          <li>El mensaje se pierde porque FTP no utiliza un método de entrega confiable.</li>
+          <li>El host de origen FTP envía una consulta al host de destino.</li>
+          <li>Se reenvía todo el mensaje FTP.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+debido a que FTP utiliza TCP como su protocolo de capa de transporte, los números de secuencia y reconocimiento identificarán los segmentos faltantes, que se reenviarán para completar el mensaje.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.Un dispositivo host debe enviar un archivo de video grande a través de la red mientras proporciona comunicación de datos a otros usuarios. ¿Qué característica permitirá que se produzcan diferentes flujos de comunicación al mismo tiempo, sin tener un solo flujo de datos utilizando todo el ancho de banda disponible?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">multiplexación *</span></li>
+          <li>tamaño de ventana</li>
+          <li>números de puerto</li>
+          <li>expresiones de gratitud</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br> la
+multiplexación es útil para intercalar múltiples flujos de comunicación. El tamaño de la ventana se utiliza para disminuir la velocidad de comunicación de datos. Los números de puerto se utilizan para pasar flujos de datos a sus aplicaciones adecuadas. Los agradecimientos se utilizan para notificar a un dispositivo de envío que se ha recibido o no un flujo de paquetes de datos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>4.¿Qué tipo de puerto debe solicitarse a la IANA para poder utilizarlo con una aplicación específica?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">puerto registrado *</span></li>
+          <li>Puerto privado</li>
+          <li>puerto dinámico</li>
+          <li>Puerto de origen</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+IANA asigna los puertos registrados (números 1024 a 49151) a una entidad solicitante para que los utilice con procesos o aplicaciones específicos. Estos procesos son principalmente aplicaciones individuales que el usuario ha elegido para instalar, en lugar de aplicaciones comunes que recibirían un número de puerto conocido. Por ejemplo, Cisco ha registrado el puerto 1985 para su proceso de Protocolo de enrutamiento Hot Standby (HSRP).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.¿Qué tipo de información se incluye en el encabezado de transporte?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">números de puerto de origen y destino *</span></li>
+          <li>Direcciones lógicas de origen y destino</li>
+          <li>Direcciones físicas de origen y destino</li>
+          <li>datos codificados de la aplicación</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+en un segmento, el encabezado de la capa de transporte incluirá el proceso de origen y destino, o los números de puerto. El direccionamiento físico de origen y destino se incluye en el encabezado del marco. El direccionamiento lógico de origen y destino se incluye en el encabezado de la red. Los datos de la aplicación se codifican en las capas superiores de la pila de protocolos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.¿Qué es un socket?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">la combinación de una dirección IP de origen y un número de puerto o una dirección IP de destino y un número de puerto *</span></li>
+          <li>la combinación de la dirección IP de origen y destino y la dirección Ethernet de origen y destino</li>
+          <li>La combinación de la secuencia de origen y destino y los números de acuse de recibo.</li>
+          <li>la combinación de los números de secuencia de origen y destino y los números de puerto</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+un socket es una combinación de la dirección IP de origen y el puerto de origen o la dirección IP de destino y el número de puerto de destino.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.¿Cuál es el rango completo de puertos TCP y UDP conocidos?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">0 a 1023 *</span></li>
+          <li>0 a 255</li>
+          <li>256 - 1023</li>
+          <li>1024 - 49151</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+hay tres rangos de puertos TCP y UDP. El conocido rango de números de puerto es de 0 a 1023.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>8.¿Qué indicador en el encabezado TCP se usa en respuesta a un FIN recibido para terminar la conectividad entre dos dispositivos de red?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">ACK *</span></li>
+          <li>ALETA</li>
+          <li>RST</li>
+          <li>SYN</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+en una sesión TCP, cuando un dispositivo no tiene más datos para enviar, enviará un segmento con el indicador FIN establecido. El dispositivo conectado que recibe el segmento responderá con un ACK para reconocer ese segmento. El dispositivo que envió el ACK enviará un mensaje FIN para cerrar la conexión que tiene con el otro dispositivo. El envío del FIN debe seguirse con la recepción de un ACK del otro dispositivo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>9.¿Cuál es una característica de un proceso de servidor TCP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Puede haber muchos puertos abiertos simultáneamente en un servidor, uno para cada aplicación de servidor activa. *</span></li>
+          <li>Cada proceso de aplicación que se ejecuta en el servidor debe configurarse para usar un número de puerto dinámico.</li>
+          <li>Un servidor individual puede tener dos servicios asignados al mismo número de puerto dentro de los mismos servicios de la capa de transporte.</li>
+          <li>Un host que ejecuta dos aplicaciones diferentes puede tener ambos configurados para usar el mismo puerto de servidor.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Cada proceso de aplicación que se ejecuta en el servidor está configurado para usar un número de puerto, ya sea de forma predeterminada o manual, por un administrador del sistema. Un servidor individual no puede tener dos servicios asignados al mismo número de puerto dentro de los mismos servicios de la capa de transporte. Un host que ejecuta una aplicación de servidor web y una aplicación de transferencia de archivos no pueden tener ambos configurados para usar el mismo puerto de servidor. Puede haber muchos puertos abiertos simultáneamente en un servidor, uno para cada aplicación de servidor activa.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>10.¿Qué dos indicadores en el encabezado TCP se utilizan en un protocolo de enlace de tres vías TCP para establecer la conectividad entre dos dispositivos de red? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">ACK *</span></li>
+          <li>ALETA</li>
+          <li>PSH</li>
+          <li><span class="azul">SYN *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+TCP utiliza los indicadores SYN y ACK para establecer la conectividad entre dos dispositivos de red.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>11.Una PC está descargando un archivo grande desde un servidor. La ventana TCP es de 1000 bytes. El servidor está enviando el archivo utilizando segmentos de 100 bytes. ¿Cuántos segmentos enviará el servidor antes de que requiera un acuse de recibo de la PC?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">10 segmentos *</span></li>
+          <li>100 segmentos</li>
+          <li>1000 segmentos</li>
+          <li>0 segmentos</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+con una ventana de 1000 bytes, el host de destino acepta segmentos hasta que se hayan recibido los 1000 bytes de datos. Entonces el host de destino envía un acuse de recibo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>12.¿Qué factor determina el tamaño de la ventana TCP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">la cantidad de datos que el destino puede procesar a la vez *</span></li>
+          <li>La cantidad de datos a transmitir.</li>
+          <li>El número de servicios incluidos en el segmento TCP.</li>
+          <li>La cantidad de datos que la fuente puede enviar al mismo tiempo.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br> la
+ventana es el número de bytes que enviará el remitente antes de esperar un acuse de recibo del dispositivo de destino. La ventana inicial se acordó durante el inicio de la sesión a través del protocolo de enlace de tres vías entre el origen y el destino. Se determina según la cantidad de datos que el dispositivo de destino de una sesión TCP pueda aceptar y procesar al mismo tiempo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.Durante una sesión TCP, un dispositivo de destino envía un número de confirmación al dispositivo de origen. ¿Qué representa el número de acuse de recibo?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">el siguiente byte que el destino espera recibir *</span></li>
+          <li>el número total de bytes que se han recibido</li>
+          <li>un número más que el número de secuencia</li>
+          <li>El último número de secuencia que fue enviado por la fuente.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>14.¿Qué información utiliza TCP para volver a montar y reordenar los segmentos recibidos?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">números de secuencia *</span></li>
+          <li>números de puerto</li>
+          <li>números de acuse de recibo</li>
+          <li>números de fragmentos</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+En la capa de transporte, TCP usa los números de secuencia en el encabezado de cada segmento TCP para volver a ensamblar los segmentos en el orden correcto.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>15.¿Qué hace TCP si el origen de envío detecta la congestión de la red en la ruta al destino?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">La fuente disminuirá la cantidad de datos que envía antes de que deba recibir acuses de recibo del destino. *</span></li>
+          <li>El host de origen enviará una solicitud de acuses de recibo más frecuentes al destino.</li>
+          <li>El destino solicitará la retransmisión de todo el mensaje.</li>
+          <li>La fuente reconocerá el último segmento que se envió e incluirá una solicitud para un tamaño de ventana más pequeño en el mensaje.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+si la fuente determina que los segmentos TCP no se reconocen o no se reconocen de manera oportuna, puede reducir la cantidad de bytes que envía antes de recibir una confirmación. Tenga en cuenta que es la fuente la que reduce el número de bytes no reconocidos que envía. Esto no implica cambiar el tamaño de la ventana en el encabezado del segmento.</p>
+      </div>
+
+      <div class="capituloIT">
+        <h3>16.¿Cuál es una característica de UDP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">UDP vuelve a montar los datagramas recibidos en el orden en que se recibieron. *</span></li>
+          <li>Los datagramas UDP toman la misma ruta y llegan en el orden correcto al destino.</li>
+          <li>Las aplicaciones que usan UDP siempre se consideran poco confiables.</li>
+          <li>UDP solo pasa los datos a la red cuando el destino está listo para recibir los datos.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+UDP no tiene forma de reordenar los datagramas en su orden de transmisión, por lo que UDP simplemente vuelve a montar los datos en el orden en que se recibieron y los reenvía a la aplicación.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.¿Qué hace un cliente cuando tiene que enviar datagramas UDP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Simplemente envía los datagramas. *</span></li>
+          <li>Consulta al servidor para ver si está listo para recibir datos.</li>
+          <li>Envía un protocolo de enlace de tres vías simplificado al servidor.</li>
+          <li>Envía al servidor un segmento con el indicador SYN configurado para sincronizar la conversación.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+cuando un cliente tiene datagramas UDP para enviar, simplemente envía los datagramas.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>18.¿Qué sucede si se pierde el primer paquete de una transferencia TFTP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">La aplicación TFTP volverá a intentar la solicitud si no se recibe una respuesta. *</span></li>
+          <li>El cliente esperará indefinidamente la respuesta.</li>
+          <li>El enrutador del siguiente salto o la puerta de enlace predeterminada proporcionarán una respuesta con un código de error.</li>
+          <li>La capa de transporte volverá a intentar la consulta si no se recibe una respuesta.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+el protocolo TFTP utiliza UDP para las consultas, por lo que la aplicación TFTP debe implementar la confiabilidad, si es necesario.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>19.Un dispositivo host recibe video en vivo. ¿Cómo contabiliza el dispositivo los datos de video que se pierden durante la transmisión?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El dispositivo continuará recibiendo la transmisión de video, pero puede haber una interrupción momentánea. *</span></li>
+          <li>El dispositivo solicitará inmediatamente una retransmisión de los datos faltantes.</li>
+          <li>El dispositivo utilizará números de secuencia para pausar la transmisión de video hasta que lleguen los datos correctos.</li>
+          <li>El dispositivo retrasará la transmisión de video hasta que se reciba la transmisión de video completa.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+cuando se utiliza TCP como protocolo de transporte, los datos deben recibirse en una secuencia específica o todos los datos deben recibirse en su totalidad para que se puedan utilizar. TCP utilizará números de secuencia, reconocimientos y retransmisión para lograr esto. Sin embargo, cuando se utiliza UDP como protocolo de transporte, los datos que llegan fuera de orden o con segmentos faltantes pueden causar una interrupción momentánea, pero el dispositivo de destino aún puede usar los datos que ha recibido. Esta tecnología produce la menor demora en la red al proporcionar una confiabilidad mínima. Dado que las aplicaciones de transmisión de video en vivo utilizan UDP como protocolo de transporte, el receptor continuará mostrando el video aunque puede haber un ligero retraso o una reducción en la calidad.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.¿Por qué HTTP utiliza TCP como el protocolo de la capa de transporte?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">porque HTTP requiere entrega confiable *</span></li>
+          <li>para asegurar la velocidad de descarga más rápida posible</li>
+          <li>Porque HTTP es un protocolo de mejor esfuerzo.</li>
+          <li>Porque los errores de transmisión pueden ser tolerados fácilmente.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+cuando un host solicita una página web, se debe garantizar la confiabilidad y la integridad de la transmisión. Por lo tanto, HTTP utiliza TCP como su protocolo de capa de transporte.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>21.¿Cuándo se prefiere UDP a TCP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">cuando una aplicación puede tolerar alguna pérdida de datos durante la transmisión *</span></li>
+          <li>cuando un cliente envía un segmento a un servidor</li>
+          <li>cuando todos los datos deben recibirse en su totalidad antes de que parte de ellos se considere útil</li>
+          <li>cuando los segmentos deben llegar en una secuencia muy específica para ser procesados ​​con éxito</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+se puede usar UDP cuando una aplicación puede tolerar cierta pérdida de datos. UDP es el protocolo preferido para las aplicaciones que proporcionan voz o video que no pueden tolerar el retraso.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>22.¿Qué tres protocolos de capa de aplicación utilizan TCP? (Elige tres.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">SMTP *</span></li>
+          <li><span class="azul">FTP *</span></li>
+          <li><span class="azul">HTTP *</span></li>
+          <li>TETP</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+algunos protocolos requieren el transporte de datos confiable que proporciona TCP. Además, estos protocolos no tienen requisitos de comunicación en tiempo real y pueden tolerar algunas pérdidas de datos al tiempo que minimizan la sobrecarga del protocolo. Ejemplos de estos protocolos son SMTP, FTP y HTTP.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>23.Consulte la presentación. Considere un datagrama que se origina en la PC y que está destinado al servidor web. Haga coincidir las direcciones IP y los números de puerto que se encuentran en ese datagrama con la descripción. (No se utilizan todas las opciones).</h3>
+        <ul class="listaIT">
+          <img src="imagen/i208930v1n1_208930s-1.png" class="fotoIT" alt="">
+          <li>Pregunta</li>
+          <img src="imagen/2017-05-23_143844-768x261.png" class="fotoIT" alt="">
+          <li><span class="azul">Respuesta</span></li>
+          <img src="imagen/2017-05-23_143844-1-768x261.png" class="fotoIT" alt="">
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+un segmento TCP / IP que se originó en la PC tiene 192.168.1.2 como dirección de origen IP. 2578 es la única opción posible para el número de puerto de origen porque el número de puerto de la PC debe estar en el rango de los puertos registrados de 1024 a 49151. El destino es el servidor web, que tiene la dirección IP 192.168.2.2, y el número de puerto de destino es 80 según el estándar de protocolo HTTP.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>24.Consulte la presentación. ¿Cuántos dominios de difusión hay?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i209390v1n1_209390.png" class="fotoIT" alt="">
+          <li><span class="azul">4 *</span></li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>25.¿Cuántas direcciones de host se pueden usar en la subred 192.168.1.32/27?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">30 *</span></li>
+          <li>32</li>
+          <li>54</li>
+          <li>64</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>26.¿Cuántas direcciones de host están disponibles en la red 172.16.128.0 con una máscara de subred de 255.255.252.0?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">1022 *</span></li>
+          <li>510</li>
+          <li>512</li>
+          <li>1024</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>27.Un administrador de red está subdividiendo de forma variable una red. La subred más pequeña tiene una máscara de 255.255.255.248. ¿Cuántas direcciones de host proporcionará esta subred?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">6 *</span></li>
+          <li>4</li>
+          <li>8</li>
+          <li>10</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>28.Consulte la presentación. Una empresa utiliza el bloque de direcciones de 128.107.0.0/16 para su red. ¿Qué máscara de subred proporcionaría el número máximo de subredes de igual tamaño al mismo tiempo que proporciona suficientes direcciones de host para cada subred en la exhibición?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i207609v1n1_207609-1.png" class="fotoIT" alt="">
+          <li><span class="azul">255.255.255.128 *</span></li>
+          <li>255.255.255.192</li>
+          <li>255.255.255.224</li>
+          <li>255.255.255.240</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>29.Consulte la presentación. El administrador de red ha asignado a la LAN de LBMISS un rango de direcciones de 192.168.10.0. Este rango de direcciones se ha dividido en subredes usando un prefijo / 29. Para acomodar un nuevo edificio, el técnico ha decidido utilizar la quinta subred para configurar la nueva red (la subred cero es la primera subred). Según las políticas de la empresa, a la interfaz del enrutador siempre se le asigna la primera dirección de host utilizable y al servidor de grupo de trabajo se le asigna la última dirección de host utilizable. ¿Qué configuración se debe ingresar en las propiedades del servidor de grupo de trabajo para permitir la conectividad a Internet?</h3>
+        <ul class="listaIT">
+          <img src="imagen/p6-exa9-ccna1.png" class="fotoIT" alt="">
+          <li><span class="azul">Dirección IP: 192.168.10.38 máscara de subred: 255.255.255.248, puerta de enlace predeterminada: 192.168.10.33 *</span></li>
+          <li>Dirección IP: 192.168.10.65 máscara de subred: 255.255.255.240, puerta de enlace predeterminada: 192.168.10.76</li>
+          <li>Dirección IP: 192.168.10.38 máscara de subred: 255.255.255.240, puerta de enlace predeterminada: 192.168.10.33</li>
+          <li>Dirección IP: 192.168.10.41 máscara de subred: 255.255.255.248, puerta de enlace predeterminada: 192.168.10.46</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>30.¿Cuántos bits deben tomarse prestados de la parte del host de una dirección para acomodar un enrutador con cinco redes conectadas?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Tres *</span></li>
+          <li>dos</li>
+          <li>cuatro</li>
+          <li>cinco</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>31.Una compañía tiene una dirección de red de 192.168.1.64 con una máscara de subred de 255.255.255.192. La compañía desea crear dos subredes que contendrían 10 hosts y 18 hosts respectivamente. ¿Qué dos redes lograrían eso? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">192.168.1.64/27 *</span></li>
+          <li>192.168.1.16/28</li>
+          <li>192.168.1.128/27</li>
+          <li><span class="azul">192.168.1.96/28 *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>32.En una red que usa IPv4, ¿qué prefijo se ajustaría mejor a una subred que contenga 100 hosts?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">/ 25 *</span></li>
+          <li>/ 23</li>
+          <li>/ 26</li>
+          <li>/ 24</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>33.Consulte la presentación.
+Dada la dirección de red de 192.168.5.0 y una máscara de subred de 255.255.255.224, ¿cuántas direcciones de host totales no se utilizan en las subredes asignadas?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i228280v1n1_209418.png" class="fotoIT" alt="">
+          <li><span class="azul">72 *</span></li>
+          <li>56</li>
+          <li>60</li>
+          <li>68</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>34.Al desarrollar un esquema de direccionamiento IP para una red empresarial, ¿qué dispositivos se recomiendan agrupar en su propia subred o grupo de direccionamiento lógico?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">hosts accesibles desde internet *</span></li>
+          <li>clientes finales</li>
+          <li>clientes de estaciones de trabajo</li>
+          <li>anfitriones móviles y portátiles</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>35.Un administrador de red necesita monitorear el tráfico de red hacia y desde los servidores en un centro de datos. ¿Qué características de un esquema de direccionamiento IP deberían aplicarse a estos dispositivos?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Direcciones IP estáticas predecibles para una identificación más fácil *</span></li>
+          <li>Direcciones estáticas aleatorias para mejorar la seguridad</li>
+          <li>Direcciones de diferentes subredes para redundancia</li>
+          <li>Direcciones dinámicas para reducir la probabilidad de direcciones duplicadas</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>

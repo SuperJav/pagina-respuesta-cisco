@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA 5</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.¿Qué sucede con las tramas runt recibidas por un conmutador Cisco Ethernet?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El marco se ha caído. *</span></li>
+          <li>El marco se devuelve al dispositivo de red de origen.</li>
+          <li>El marco se transmite a todos los demás dispositivos en la misma red.</li>
+          <li>El marco se envía a la puerta de enlace predeterminada.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+en un intento por conservar el ancho de banda y no reenviar tramas inútiles, los dispositivos Ethernet descartan tramas que se consideran runt (menos de 64 bytes) o jumbo (más de 1500 bytes).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.¿Cuáles son los dos tamaños (mínimo y máximo) de un marco Ethernet? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">64 bytes *</span></li>
+          <li>56 bytes</li>
+          <li><span class="azul">1518 bytes *</span></li>
+          <li>1024 bytes</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+La trama de Ethernet mínima es de 64 bytes. La trama máxima de Ethernet es de 1518 bytes. Un técnico de red debe conocer el tamaño mínimo y máximo de trama para reconocer las tramas runt y jumbo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.¿Qué afirmación describe a Ethernet?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Define el tipo de LAN más común en el mundo. *</span></li>
+          <li>Es el estándar requerido de Capa 1 y 2 para la comunicación por Internet.</li>
+          <li>Define un modelo estándar utilizado para describir cómo funciona la red.</li>
+          <li>Conecta múltiples sitios como enrutadores ubicados en diferentes países.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Ethernet es el protocolo LAN más común en el mundo. Funciona en las capas 1 y 2, pero no es necesario para la comunicación por Internet. El modelo OSI se utiliza para describir cómo funcionan las redes. Una WAN conecta múltiples sitios ubicados en diferentes países.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>4.¿Qué dos afirmaciones describen las características o funciones de la subcapa de control de enlace lógico en los estándares de Ethernet? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El control de enlace lógico se implementa en el software. *</span></li>
+          <li>El control de enlace lógico se especifica en el estándar IEEE 802.3.</li>
+          <li>La subcapa LLC agrega un encabezado y un tráiler a los datos.</li>
+          <li><span class="azul">La capa de enlace de datos utiliza LLC para comunicarse con las capas superiores del conjunto de protocolos. *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique: <br>el
+control de enlace lógico se implementa en el software y permite que la capa de enlace de datos se comunique con las capas superiores del conjunto de protocolos. El control de enlace lógico se especifica en el estándar IEEE 802.2. IEEE 802.3 es un conjunto de estándares que definen los diferentes tipos de Ethernet. La subcapa MAC (Control de acceso a los medios) es responsable de la colocación y recuperación de los marcos dentro y fuera de los medios. La subcapa MAC también es responsable de agregar un encabezado y un tráiler a la unidad de datos de protocolo de capa de red (PDU).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.¿Qué afirmación describe una característica de las direcciones MAC?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Deben ser globalmente únicos. *</span></li>
+          <li>Solo son enrutables dentro de la red privada.</li>
+          <li>Se agregan como parte de una PDU de capa 3.</li>
+          <li>Tienen un valor binario de 32 bits.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+cualquier proveedor que venda dispositivos Ethernet debe registrarse en el IEEE para asegurarse de que se le asigna un código único de 24 bits, que se convierte en los primeros 24 bits de la dirección MAC. Los últimos 24 bits de la dirección MAC se generan por dispositivo de hardware. Esto ayuda a garantizar direcciones únicas a nivel mundial para cada dispositivo Ethernet.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.¿Qué afirmación es cierta acerca de las direcciones MAC?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Los primeros tres bytes son utilizados por el proveedor asignado OUI. *</span></li>
+          <li>Las direcciones MAC son implementadas por software.</li>
+          <li>Una NIC solo necesita una dirección MAC si está conectada a una WAN.</li>
+          <li>La ISO es responsable de las regulaciones de direcciones MAC.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Una dirección MAC está compuesta de 6 bytes. Los primeros 3 bytes se usan para la identificación del proveedor y los últimos 3 bytes deben tener asignado un valor único dentro del mismo OUI. Las direcciones MAC se implementan en hardware. Una NIC necesita una dirección MAC para comunicarse a través de la LAN. El IEEE regula las direcciones MAC.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.¿Qué dirección de destino se utiliza en un marco de solicitud ARP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">FFFF.FFFF.FFFF *</span></li>
+          <li>0.0.0.0</li>
+          <li>255.255.255.255</li>
+          <li>127.0.0.1</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+El propósito de una solicitud ARP es encontrar la dirección MAC del host de destino en una LAN Ethernet. El proceso ARP envía una transmisión de Capa 2 a todos los dispositivos en la LAN Ethernet. La trama contiene la dirección IP del destino y la dirección MAC de difusión, FFFF.FFFF.FFFF.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>8.¿Qué información de direccionamiento registra un conmutador para construir su tabla de direcciones MAC?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">la dirección de la capa 2 de origen de las tramas entrantes *</span></li>
+          <li>la dirección de destino de la capa 3 de los paquetes entrantes</li>
+          <li>la dirección de destino de la Capa 2 de los cuadros salientes</li>
+          <li>la dirección de la capa 3 de origen de los paquetes salientes</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+un conmutador crea una tabla de direcciones MAC al inspeccionar los marcos entrantes de la Capa 2 y al registrar la dirección MAC de origen que se encuentra en el encabezado del marco. La dirección MAC descubierta y grabada se asocia con el puerto utilizado para recibir la trama.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>9.Consulte la presentación. La exposición muestra una pequeña red conmutada y el contenido de la tabla de direcciones MAC del conmutador. PC1 ha enviado un marco dirigido a PC3. ¿Qué hará el interruptor con el marco?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i275394v1n1_207267.jpg" class="fotoIT" alt="">
+          <li><span class="azul">El conmutador reenviará el marco a todos los puertos excepto el puerto 4. *</span></li>
+          <li>El interruptor desechará el marco.</li>
+          <li>El interruptor reenviará el marco solo al puerto 2.</li>
+          <li>El interruptor reenviará el marco a todos los puertos.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+la dirección MAC de PC3 no está presente en la tabla MAC del conmutador. Debido a que el conmutador no sabe dónde enviar la trama dirigida a PC3, la enviará a todos los puertos del conmutador, excepto el puerto 4, que es el puerto entrante.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>10.¿Qué método de conmutación utiliza el valor CRC en una trama?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">almacenamiento y reenvio *</span></li>
+          <li>corte a través</li>
+          <li>avance rápido</li>
+          <li>libre de fragmentos</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+cuando se utiliza el método de conmutación de almacenamiento y envío, el conmutador recibe la trama completa antes de reenviarla al destino. La parte de la verificación de redundancia cíclica (CRC) del tráiler se usa para determinar si la trama se ha modificado durante el tránsito. Por el contrario, un interruptor de corte directo reenvía la trama una vez que se lee la dirección de la Capa 2 de destino. Dos tipos de métodos de conmutación por corte son de avance rápido y sin fragmentos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>11.¿Qué es auto-MDIX?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">una característica que detecta el tipo de cable Ethernet *</span></li>
+          <li>un tipo de puerto en un switch Cisco</li>
+          <li>un tipo de conmutador Cisco</li>
+          <li>un tipo de conector Ethernet</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Auto-MDIX es una función que está habilitada en los últimos switches Cisco y que permite que el switch detecte y use cualquier tipo de cable conectado a un puerto específico.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>12.Consulte la presentación. PC1 emite una solicitud ARP porque necesita enviar un paquete a PC2. En este escenario, ¿qué pasará después?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i209824v1n1_209824.jpg" class="fotoIT" alt="">
+          <li><span class="azul">PC2 enviará una respuesta ARP con su dirección MAC. *</span></li>
+          <li>RT1 enviará una respuesta ARP con su dirección MAC Fa0 / 0.</li>
+          <li>RT1 enviará una respuesta ARP con la dirección MAC de PC2.</li>
+          <li>SW1 enviará una respuesta ARP con la dirección MAC de PC2.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+cuando un dispositivo de red desea comunicarse con otro dispositivo en la misma red, envía una solicitud ARP de difusión. En este caso, la solicitud contendrá la dirección IP de PC2. El dispositivo de destino (PC2) envía una respuesta ARP con su dirección MAC.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.¿Cuál es el objetivo de un ataque de suplantación ARP?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">para asociar direcciones IP a la dirección MAC incorrecta *</span></li>
+          <li>para abrumar a los hosts de la red con solicitudes ARP</li>
+          <li>inundar la red con transmisiones de respuesta ARP</li>
+          <li>para rellenar las tablas de direcciones MAC del interruptor con direcciones falsas</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>14.¿Cuál es una característica del almacenamiento en búfer basado en puerto?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Los marcos se almacenan en búfer en colas vinculadas a puertos específicos. *</span></li>
+          <li>Los marcos en el búfer de memoria están vinculados dinámicamente a los puertos de destino.</li>
+          <li>Todos los cuadros se almacenan en un búfer de memoria común.</li>
+          <li>Todos los puertos en un switch comparten un solo buffer de memoria.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br> el almacenamiento en búfer es una técnica utilizada por los conmutadores de Ethernet para almacenar marcos hasta que se puedan transmitir. Con el almacenamiento en búfer basado en puertos, los marcos se almacenan en colas que están vinculadas a puertos entrantes y salientes específicos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>15.¿Cuál es el tamaño mínimo de trama Ethernet que el receptor no descartará como trama runt?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">64 bytes *</span></li>
+          <li>512 bytes</li>
+          <li>1024 bytes</li>
+          <li>1500 bytes</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>16.¿Cuáles son los dos problemas potenciales de la red que pueden resultar de la operación ARP? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">En redes grandes con poco ancho de banda, las transmisiones múltiples de ARP podrían causar retrasos en la comunicación de datos. *</span></li>
+          <li><span class="azul">Los atacantes de red podrían manipular la dirección MAC y las asignaciones de direcciones IP en los mensajes ARP con la intención de interceptar el tráfico de red. *</span></li>
+          <li>La configuración manual de las asociaciones ARP estáticas podría facilitar el envenenamiento ARP o la falsificación de direcciones MAC.</li>
+          <li>Un gran número de difusiones de solicitudes de ARP podrían provocar el desbordamiento de la tabla de direcciones MAC del host e impedir que el host se comunique en la red.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Un gran número de mensajes de difusión de ARP podrían causar retrasos momentáneos en las comunicaciones de datos. Los atacantes de red podrían manipular la dirección MAC y las asignaciones de direcciones IP en los mensajes ARP con la intención de interceptar el tráfico de red. Las solicitudes y respuestas de ARP hacen que las entradas se realicen en la tabla ARP, no en la tabla de direcciones MAC. Los desbordamientos de la tabla ARP son muy improbables. La configuración manual de las asociaciones ARP estáticas es una forma de prevenir, no facilitar, el envenenamiento ARP y la suplantación de direcciones MAC. Para las operaciones normales de reenvío de trama del conmutador se requieren múltiples respuestas ARP que den como resultado que la tabla de direcciones MAC del switch contenga entradas que coincidan con las direcciones MAC de los nodos conectados y que estén asociadas con el puerto del switch correspondiente. No es un problema de red causado por ARP.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.Rellena el espacio en blanco. </h3>
+        <ul class="listaIT">
+          <li>Un fragmento de colisión, también conocido como <span class="azul">RUNT</span> trama , es una trama de menos de 64 bytes de longitud.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+una trama runt es una trama de menos de 64 bytes, generalmente generada por una colisión o un fallo de la interfaz de red.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>18.Rellena el espacio en blanco.</h3>
+        <ul class="listaIT">
+          <li>En un switch Cisco, <span class="azul">basado en puerto</span> almacenamiento en búfer de memoria se utiliza para almacenar tramas en colas vinculadas a puertos de entrada y salida específicos.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>19.Rellena el espacio en blanco.</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Falsificación</span>ARP es una técnica que se utiliza para enviar mensajes falsos de ARP a otros hosts en la LAN. El objetivo es asociar las direcciones IP a las direcciones MAC incorrectas.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br> la
+suplantación de ARP o el envenenamiento de ARP es una técnica utilizada por un atacante para responder a una solicitud de ARP de una dirección IPv4 que pertenece a otro dispositivo, como la puerta de enlace predeterminada.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.¿Qué declaración describe el tratamiento de las solicitudes de ARP en el enlace local?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Todos los dispositivos en la red local los reciben y los procesan. *</span></li>
+          <li>Deben ser reenviados por todos los enrutadores en la red local. </li>
+          <li>Todos los conmutadores de la red local los eliminan.
+Son recibidos y procesados ​​solo por el dispositivo de destino.</li>
+          <li>Ca</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>21.Consulte la presentación. Los interruptores están en su configuración por defecto. El host A necesita comunicarse con el host D, pero el host A no tiene la dirección MAC para su puerta de enlace predeterminada. ¿Qué hosts de red recibirán la solicitud ARP enviada por el host A?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i275353v1n1_275353.jpg" class="fotoIT" alt="">
+          <li>solo host D solo enrutador R1 solo host A, B y C solo host A, B, C y D solo host B y C <span class="azul">solo host B, C y enrutador R1 *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+como el host A no tiene la dirección MAC de la puerta de enlace predeterminada en su tabla ARP, el host A envía una difusión ARP. La transmisión ARP se enviaría a todos los dispositivos de la red local. Los hosts B, C y el enrutador R1 recibirán la transmisión. El enrutador R1 no reenvía el mensaje.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>22.Consulte la presentación. Un conmutador con una configuración por defecto conecta cuatro hosts. Se muestra la tabla ARP para el host A ¿Qué sucede cuando el host A quiere enviar un paquete IP al host D? </h3>
+        <ul class="listaIT">
+          <li>El host A envía una solicitud ARP a la dirección MAC del host D. El host D envía una solicitud ARP al host A. El host A envía el paquete al conmutador. El conmutador envía el paquete solo al host D, que a su vez responde. </li>
+          <li><span class="azul">Host A envía una emisión de FF: FF: FF: FF: FF: FF. Todos los demás hosts conectados al conmutador reciben la transmisión y el host D responde con su dirección MAC. *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+siempre que la dirección MAC de destino no esté contenida en la tabla ARP del host de origen, el host (host A en este ejemplo) enviará una difusión de Capa 2 que tiene una dirección MAC de destino de FF: FF: FF: FF: FF : FF. Todos los dispositivos en la misma red reciben esta transmisión. El anfitrión D responderá a esta transmisión.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>23.¿Verdadero o falso?
+Cuando un dispositivo está enviando datos a otro dispositivo en una red remota, el marco de Ethernet se envía a la dirección MAC de la puerta de enlace predeterminada. </h3>
+        <ul class="listaIT">
+          <li><span class="azul">cierto *</span></li>
+          <li>falso</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+una dirección MAC solo es útil en la red Ethernet local. Cuando los datos se destinan a una red remota de cualquier tipo, los datos se envían al dispositivo de puerta de enlace predeterminado, el dispositivo de Capa 3 que se enruta a la red local.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>24.La tabla ARP en un conmutador asigna dos tipos de direcciones juntas. </h3>
+        <ul class="listaIT">
+          <li><span class="azul">Dirección de la capa 3 a una dirección de la capa 2 * </span></li>
+          <li><span class="azul">Dirección de la *</span></li>
+          <li>capa 4 a una dirección de la capa 2</li>
+          <li>capa 2 a dirección de capa 4</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br> la
+tabla ARP del conmutador mantiene una asignación de direcciones MAC de capa 2 a direcciones IP de capa 3. Estas asignaciones se pueden aprender mediante el cambio de forma dinámica a través de ARP o estáticamente a través de la configuración manual.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>25.Empareja la característica con el método de reenvío. (No se utilizan todas las opciones).</h3>
+        <ul class="listaIT">
+          <li>Pregunta</li>
+          <img src="imagen/2017-05-22_175719-610x250.jpg" class="fotoIT" alt="">
+          <li><span class="azul">Respuesta</span></li>
+          <img src="imagen/2017-05-22_175719-1-610x250.jpg" class="fotoIT" alt="">
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+un interruptor de almacenamiento y reenvío siempre almacena todo el cuadro antes de reenviarlo y comprueba su CRC y la longitud del cuadro. Un interruptor de corte puede reenviar tramas antes de recibir el campo de dirección de destino, por lo que presenta menos latencia que un interruptor de almacenamiento y reenvío. Debido a que la trama puede comenzar a reenviarse antes de que se reciba completamente, el conmutador puede transmitir una trama corrupta o runt. Todos los métodos de reenvío requieren un interruptor de Capa 2 para reenviar tramas de difusión.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>26.¿Cuál es una característica de un método de acceso basado en la contención?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Es un método no determinista. *</span></li>
+          <li>Procesa más gastos generales que los métodos de acceso controlado.</li>
+          <li>Cuenta con mecanismos para rastrear los giros para acceder a los medios.</li>
+          <li>Se escala muy bien bajo el uso de medios pesados.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>27.¿Cuál es el propósito del preámbulo en una trama de Ethernet?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">se utiliza para sincronizar el tiempo *</span></li>
+          <li>Se utiliza como relleno para datos.</li>
+          <li>se utiliza para identificar la dirección de origen</li>
+          <li>se utiliza para identificar la dirección de destino</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>28.¿Cuál es la dirección MAC de multidifusión de capa 2 que corresponde a la dirección de multidifusión IPv4 de capa 3 224.139.34.56?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">01-00-5E-0B-22-38 *</span></li>
+          <li>00-00-00-0B-22-38</li>
+          <li>01-5E-00-0B-22-38</li>
+          <li>FE-80-00-0B-22-38</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>29.¿Qué dos afirmaciones son correctas sobre las direcciones MAC e IP durante la transmisión de datos si NAT no está involucrado? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Las direcciones MAC de origen y destino tienen un significado local y cambian cada vez que una trama va de una LAN a otra. *</span></li>
+          <li>Un paquete que ha cruzado cuatro enrutadores ha cambiado la dirección IP de destino cuatro veces.</li>
+          <li><span class="azul">Las direcciones IP de destino en un encabezado de paquete permanecen constantes a lo largo de toda la ruta a un host de destino. *</span></li>
+          <li>Cada vez que se encapsula una trama con una nueva dirección MAC de destino, se necesita una nueva dirección IP de destino.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>30.¿Cuáles son las dos características de ARP? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Si un host está listo para enviar un paquete a un dispositivo de destino local y tiene la dirección IP pero no la dirección MAC del destino, genera una transmisión ARP. *</span></li>
+          <li>Se envía una solicitud ARP a todos los dispositivos en la LAN Ethernet y contiene la dirección IP del host de destino y su dirección MAC de multidifusión.</li>
+          <li>Cuando un host está encapsulando un paquete en una trama, se refiere a la tabla de direcciones MAC para determinar la asignación de direcciones IP a direcciones MAC.</li>
+          <li><span class="azul">Si un dispositivo que recibe una solicitud ARP tiene la dirección IPv4 de destino, responde con una respuesta ARP. *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>31.Lanzamiento PT. Ocultar y guardar PT Abrir la actividad PT. Realice las tareas en la instrucción de la actividad y luego responda la pregunta. ¿Qué dirección de destino incluirá PC1 en el campo de dirección de destino de la trama de Ethernet que envía a PC2?</h3>
+        <ul class="listaIT">
+          <img src="imagen/p5-exa5-ccna1-1024x549-1024x549-768x412.jpg" class="fotoIT" alt="">
+          <li><span class="azul">0030.a3e5.0401 *</span></li>
+          <li>00e0.b0be.8014</li>
+          <li>0007.ec35.a5c6</li>
+          <li>192.168.0.17</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>32.¿Cómo afecta la adición de una tarjeta de línea Ethernet al factor de forma de un conmutador?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">expandiendo la densidad del puerto *</span></li>
+          <li>aumentando la velocidad de conmutación del plano posterior</li>
+          <li>expandiendo la capacidad de la NVRAM</li>
+          <li>haciendo el interruptor apilable</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>33.¿Qué declaración ilustra un inconveniente del método de acceso CSMA / CD?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Las colisiones pueden disminuir el rendimiento de la red. *</span></li>
+          <li>Los protocolos deterministas de acceso a los medios ralentizan el rendimiento de la red.</li>
+          <li>Las tecnologías CSMA / CD LAN solo están disponibles a velocidades más lentas que otras tecnologías LAN.</li>
+          <li>Es más complejo que los protocolos no deterministas.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>34.El número binario 0000 1010 se puede expresar como " A " en hexadecimal.
+Haga coincidir los siete campos de un marco Ethernet con sus contenidos respectivos. (No se utilizan todas las opciones).</h3>
+        <ul class="listaIT">
+          <li>Pregunta</li>
+          <img src="imagen/p23-exa5-ccna1.png" class="fotoIT" alt="">
+          <li><span class="azul">Respuesta</span></li>
+          <img src="imagen/p23-exa5-ccnsfdsfa1.png" class="fotoIT" alt="">
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>

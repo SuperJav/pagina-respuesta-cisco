@@ -1,0 +1,346 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-image: url("imagen/carabelafondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* este es el menu style*/
+.caja1{
+  width: 99%;
+  height: auto;
+
+  float: left;
+background: linear-gradient(#000000,#212f3d);
+}
+.logo{
+  margin: 3% 0%;
+  width: 10%;
+  height: 10%;
+  float: left;
+
+}
+h1{
+  width:auto;
+  height:auto;
+  color: #ffffff;
+  float:left;
+margin: 8% 0% 0% 0%;
+text-shadow: 5px 2px 4px #04A7B6;
+font-family: 'Gugi', cursive;
+font-size: 30px;
+}
+/*esto es el codigo de menu */
+#contenedor{
+  width: 100%;
+  height: auto;
+}
+#menu{
+background-color:#212f3d;
+width: 100%;
+height: auto;
+font-family: 'Arimo', sans-serif;
+}
+#menu ul{
+  list-style: none;
+margin: 0px;
+padding: 0px;
+}
+#menu ul li{
+  display: inline-block;
+}
+#menu ul li a {
+  color: #ffffff;
+  display: block;
+  padding: 10px 70px;
+  text-decoration: none;
+}
+#menu ul li a:hover{
+  background-color:  #154360;
+}
+/*aqui enpieza todo el stilo de las cajas inicio xdxd*/
+.caja01{
+  border: 3px dashed #f1c40f;
+  background-color: #212f3d;
+  color:  #f0f3f4;
+  margin: 10% 5% 10% 5%;
+  float: left;
+  padding: 2%;
+  font-size: 100%;
+  width: 50%;
+}
+.donacion{
+  font-family: 'Arimo', sans-serif;
+  width: 25%;
+  height: 40%;
+  border: 5px solid #ffffff;
+  background: #000000;
+  float: left;
+  color: #ffffff;
+  float: left;
+  padding: -0px;
+  margin: 10% 3% 5% 5%;
+}
+.fotopaypa{
+  width: 100%;
+  height: 100%;
+}
+.pp{
+  float: left;
+  padding: 5%;
+}
+.donarb{
+float: left;
+background: #3498DB;
+width: 100%;
+text-align: center;
+
+}
+.donarb a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.donarb :hover{
+  background-color: #34495E;
+  color: #f0f3f4;
+}
+.javi{
+  width: 50%;
+  height: 50%;
+  margin: -8% 5% 0% 25%;
+
+}
+/* aqui enpieza stilos de IT de los cajones*/
+.biblioteca01{
+  border: 3px solid #ffffff;
+  margin: 10% 30% 10% 30%;
+  float: left;
+  background: #212f3d;
+  color: #f0f3f4;
+  width: 30%;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+}
+.biblioteca01 a{
+
+  text-decoration: none;
+  display: block;
+  color: blue;
+}
+.biblioteca01 a h4{
+  padding: 10px;
+}
+.biblioteca01 a h4:hover{
+  background-color: #154360;
+  color: #f0f3f4;
+  padding: 10px;
+}
+.biblioteca00{
+  border: 3px solid #ffffff;
+  margin: 5% auto 0% 1%;
+  float: left;
+  background:#212f3d;
+  color: #f0f3f4;
+  text-align: center;
+  width: auto;
+  font-family: 'Arimo', sans-serif;
+
+}
+.fotoIT{
+  width: 100%;
+}
+.tituloIT{
+  margin: 2% 0% 0% 0%;
+}
+.parrafoIT{
+  padding: 5%;
+  font-size: 100%;
+}
+.pie1{
+  color: #ffffff;
+  width: 100%;
+  float: left;
+}
+/* stilo de pagina CNNA*/
+.table{
+background: #000000;
+}
+.aviso2{
+  background: #212f3d;
+  float: left;
+  padding: 5%;
+  margin: 0% 1%;
+  width: 66%;
+  border: 3px dashed #f1c40f;
+}
+.nota{
+  color: #ffffff;
+}
+.consola{
+  background: #000000;
+  color: #ffffff;
+  padding: 5%;
+  border: 3px dashed #f1c40f;
+
+}
+.biblioteca04{
+  border: 3px solid #ffffff;
+  margin: 10% auto 0% 25%;
+  float: left;
+  background: #212f3d;
+  color: #f0f3f4;
+  text-align: center;
+  width: 50%;
+  font-family: 'Arimo', sans-serif;
+}
+.fotoCCNA1v6{
+width: 100%;
+
+}
+
+.biblioteca04 a{
+
+  text-decoration: none;
+  display: block;
+  color: blue;
+}
+.biblioteca04 a h4:hover{
+  background-color: #154360;
+  color: #f0f3f4;
+  padding: 10px;
+}
+.biblioteca04 a h4{
+  padding: 10px;
+}
+.biblioteca05{
+  border: 3px solid #ffffff;
+  margin: 10% auto 0% 25%;
+  float: left;
+  background: #212f3d;
+  color: #f0f3f4;
+  text-align: center;
+  width: 50%;
+  font-family: 'Arimo', sans-serif;
+}
+
+
+.biblioteca05 a{
+
+  text-decoration: none;
+  display: block;
+  color: blue;
+}
+.biblioteca05 a h4:hover{
+  background-color: #154360;
+  color: #f0f3f4;
+
+}
+.biblioteca05 a h4{
+  padding: 10px;
+}
+/*stilo de pagina seguridad*/
+.dialogo{
+
+  background: #3498DB;
+  color: #031E30;
+  margin: 0%;
+  float: left;
+  font-size: 100%;
+  height: 30%;
+  margin: 0% 23% 2% 1%;
+  padding: 1%;
+}
+.biblioteca02{
+  border: 3px solid #ffffff;
+  margin: 5% auto 0% 1%;
+  float: left;
+  background: #212f3d;
+  color: #f0f3f4;
+  text-align: center;
+  width: auto;
+  font-family: 'Arimo', sans-serif;
+}
+.fotoSeguridad{
+  width:100%;
+}
+.tituloSeguridad{
+  margin: 2% 0% 0% 0%;
+}
+.parrafoSeguridad{
+  padding: 5%;
+}
+.biblioteca06{
+  border: 3px solid #ffffff;
+  margin:10% 35% 0% 35%;
+  float: left;
+  background: #212f3d;
+  color: #f0f3f4;
+  width: 30%;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+}
+.biblioteca06 a{
+
+  text-decoration: none;
+  display: block;
+  color: blue;
+}
+.biblioteca06 a h4{
+  padding: 10px;
+}
+.biblioteca06 a h4:hover{
+  background-color: #154360;
+  color: #f0f3f4;
+  padding: 10px;
+
+}
+.biblioteca03{
+  border: 3px solid #ffffff;
+  margin: 10% 30% 10% 30%;
+  float: left;
+  background: #212f3d;
+  color: #f0f3f4;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+}
+.biblioteca03 a{
+  padding: 5%;
+  text-decoration: none;
+  display: block;
+  color: blue;
+}
+.biblioteca03 a h4:hover{
+  background-color: #154360;
+  color: #f0f3f4;
+
+}
+/*todas las respuesta IT*/
+.capituloIT{
+  float: left;
+  width: 70%;
+  height: 75%;
+  padding: 3%;
+  background-color: #154360;
+  color: #ffffff;
+  margin:2% 1%;
+}
+.listaIT{
+  padding: 3% 0% 0% 3%;
+  font-size: 90%;
+}
+.listaIT li{
+  padding: 2%;
+}
+.azul{
+  color: #00ff00;
+}
+h3{
+  width: 100%;
+  font-size: 100%;
+}

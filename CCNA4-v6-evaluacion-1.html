@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA4 Evaluacion 1 </title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>Capítulo 3 SIC: PPP, enrutamiento y acceso remoto VPN</h3>
+        <img src="imagen/De_0-dong-dau-768x566.png" class="fotoIT" alt="CCNA4">
+        <p>Algunas cosas a tener en cuenta al completar esta actividad:</p>
+        <br>
+        <br>
+        <p>1.No utilice el botón <span class="azul">Atrás</span> del navegador ni cierre ni vuelva a cargar las ventanas de examen durante el examen.<br>
+           2.No cierre Packet Tracer cuando haya terminado. Se cerrará automáticamente. <br>
+           3.Haga clic en el botón <span class="azul">Enviar evaluación</span> para enviar su trabajo.</p>
+           <br>
+           <br>
+           <h4>Tabla de direccionamiento</h4>
+           <img src="imagen/0.png" class="fotoIT" alt="CCNA4">
+            <br>
+            <h4>Nota: Todas las contraseñas de la consola del dispositivo son Cisco . Todas las contraseñas habilitadas para dispositivos son de clase .</h4>
+            <br>
+            <h3>Paso 1 Configurar HDLC en el enrutador seguro.</h3>
+            <br>
+            <p>Configure el enlace WAN del enrutador Secure to ISP_1 utilizando encapsulación HDLC.</p>
+            <br>
+            <h3>Paso 2 Configure PPP para conectar HQ a ISP_1.</h3>
+            <br>
+            <p>Configure el enlace WAN desde el HQ del enrutador al ISP_1 utilizando la encapsulación PPP y la autenticación CHAP.</p>
+            <ul class="listaIT">
+              <li>Crea un usuario ISP_1 con la contraseña de cisco123.</li>
+            </ul>
+            <h3>Paso 3 Configurar el enrutamiento eBGP.</h3>
+            <p>a. Configurar enrutador HQ con enrutamiento eBGP.</p>
+            <ul class="listaIT">
+              <li>Configure HQ para que sea compatible con ISP_1.</li>
+              <li>Agregue solo la red interna HQ 10.1.1.0/24 al BGP.</li>
+            </ul>
+            <p>segundo. Configure el router Branch con el enrutamiento de eBGP.</p>
+            <ul class="listaIT">
+              <li>Configure Branch para ver con ISP_1.</li>
+              <li>Agregue la red interna de la sucursal a BGP</li>
+            </ul>
+            <h3>Paso 4 Configurar la tunelización GRE.</h3>
+            <p>a. Configure el HQ del enrutador con una interfaz de túnel para enviar tráfico IP a través de GRE a Branch.</p>
+            <ul class="listaIT">
+              <li>Configure el Túnel 1 con la información de direccionamiento apropiada.</li>
+              <li> Configure la fuente del túnel con la interfaz de salida local.</li>
+              <li>Configure el destino del túnel con la dirección IP de punto final adecuada.</li>
+            </ul>
+            <p>segundo. Configure la rama del enrutador con una interfaz de túnel para enviar tráfico IP a través de GRE a HQ.</p>
+            <ul class="listaIT">
+              <li>Configure el Túnel 1 con la información de direccionamiento apropiada.</li>
+              <li>Configure la fuente del túnel con la interfaz de salida local.</li>
+              <li>Configure el destino del túnel con la dirección IP de punto final adecuada.</li>
+            </ul>
+            <h3>Paso 5 Configurar el enrutamiento OSPF .</h3>
+            <p>La LAN de sucursal debe tener conectividad con la LAN de HQ. Configure OSPF a través del túnel GRE.</p>
+            <ul class="listaIT">
+              <li>Configure el proceso 10 de OSPF en el router Branch.</li>
+              <li>Copia de seguridad debe anunciar la red LAN a través de OSPF.</li>
+              <li>La copia de seguridad debe configurarse para formar un HQ de adyacencia a través del túnel GRE.</li>
+              <li>Deshabilite las actualizaciones de OSPF en la (s) interfaz (es) apropiada (s).</li>
+            </ul>
+            <h3>Paso 6 Configurar el enrutamiento OSPF.</h3>
+            <p>La LAN de HQ debe tener conectividad a la LAN de sucursal. Configure OSPF a través del túnel GRE.</p>
+            <ul class="listaIT">
+              <li>Configure el proceso 10 de OSPF en el router HQ.</li>
+              <li>El HQ debe configurarse para formar una adyacencia con la Rama sobre el túnel GRE.</li>
+              <li> HQ debe anunciar ambas redes LAN a través de OSPF.</li>
+              <li>Deshabilite las actualizaciones de OSPF en la (s) interfaz (es) apropiada (s).</li>
+            </ul>
+            <h3>Paso 7 Conectividad.</h3>
+            <p>a. Verifique la conectividad completa desde Main_PC1 al Web_Server en la red segura.</p>
+            <br>
+            <p>segundo. Verifique la conectividad completa de Teleworker1 a Web_Server en la red segura.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>Respuestas:</h3>
+        <br>
+        <h4>Router: Secure / Storage / OffSite</h4>
+        <br>
+        <p>Verificación de acceso de usuario <br>
+
+         cisco <span class="azul"><~~~~ La contraseña es: cisco</span> <br>
+           en <br>
+         clase <span class="azul"><~~~~ contraseña es: clase</span> <br>
+         conf ter <br>
+         int s0 / 0/0 <br>
+         encapsulación hdlc </p>
+      </div>
+      <div class="capituloIT">
+        <h4>Enrutador: HQ / Corp / Main</h4>
+        <p>Verificación de acceso de usuario
+
+             cisco <span class="azul"><~~~~ La contraseña es: cisco</span> <br>
+             en <br>
+             clase <span class="azul"><~~~~ contraseña es: clase</span> <br>
+             conf ter <br>
+             nombre de usuario ISP_1 contraseña cisco123 <br>
+             int s0 / 0/0 <br>
+             encapsulación ppp <br>
+             autenticación ppp chap <br>
+             salida <br>
+
+             router bgp 65530 <br>
+              máscara de red 10.1.1.0 255.255.255.0 <br>
+              vecino 209.165.200.242 remoto-como 65500 <br>
+             salida <br> <br>
+
+
+               tunel de interfaz 1 <br>
+               dirección ip 192.168.1.1 255.255.255.248  <br>
+               fuente de túnel s0 / 0/0 <br>
+              destino del túnel 209.165.201.17 <br>
+             salida <br> <br>
+
+
+               enrutador ospf 10 <br>
+               red 10.1.1.0 0.0.0.255 área 0 <br>
+               red 10.1.2.0 0.0.0.255 área 0 <br>
+               red 192.168.1.0 0.0.0.7 área 0 <br>
+              interfaz pasiva g0 / 1 <br>
+             interfaz pasiva g0 / 2 <br>
+        </p>
+      </div>
+      <div class="capituloIT">
+        <h4>Router: Branch / Remote / Backup</h4>
+        <p>
+          Verificación de acceso de usuario <br>
+
+             cisco <span class="azul"><~~~~ La contraseña es: cisco</span> <br>
+             en <br>
+              clase <span class="azul"><~~~~ contraseña es: clase</span> <br>
+             conf ter <br>
+             router bgp 65532 <br>
+              máscara de red 10.2.1.0 255.255.255.0 <br>
+               vecino 209.165.201.18 remoto como 65500 <br>
+               salida <br> <br>
+
+               tunel de interfaz 1 <br>
+               dirección ip 192.168.1.2 255.255.255.248 <br>
+               uente de túnel s0 / 0/1 <br>
+               destino del túnel 209.165.200. <br>
+               salida <br> <br>
+
+               enrutador ospf 10 <br>
+               red 10.2.1.0 0.0.0.255 área 0 <br>
+               red 192.168.1.0 0.0.0.7 área 0 <br>
+               interfaz pasiva g0 / 1 <br>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

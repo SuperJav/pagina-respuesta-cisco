@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA4 Evaluacion 2</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+        <div class="contenedorIT">
+          <div class="capituloIT">
+            <h3>Capítulo 5 SIC: Lista de control de acceso y configuración de SNMP</h3>
+            <img src="imagen/0-1.png" class="fotoIT" alt="CCNA4">
+            <br>
+            <p>1.No utilice el botón <span class="azul">Atrás</span> del navegador ni cierre ni vuelva a cargar las ventanas de examen durante el examen. <br>
+              2.No cierre Packet Tracer cuando haya terminado. Se cerrará automáticamente. <br>
+              3.Haga clic en el botón <span class="azul">Enviar evaluación</span> para enviar su trabajo.</p>
+              <br>
+              <h3>Introducción</h3>
+              <br>
+              <p>En esta práctica de la Evaluación basada en habilidades de Packet Tracer, usted:</p>
+              <br>
+              <ul class="listaIT">
+                <li>Configurar cadenas de comunidad SNMP.</li>
+                <li>Configure las ACL IPv4 estándar y extendidas para filtrar el tráfico de red.</li>
+                <li>Configure una ACL de IPv6 para filtrar el tráfico de red.</li>
+              </ul>
+              <br>
+              <h4>Tabla de direccionamiento</h4>
+              <br>
+              <img src="imagen/B0.png" class="fotoIT" alt="CCNA4">
+              <br>
+              <h3>Paso 1: configure las cadenas de la comunidad SNMP en el enrutador HQ.</h3>
+              <br>
+              <p>a. Configure una cadena de comunidad de solo lectura SNMP <span class="azul">hq-monitor .</span> <br>
+                 segundo. Configure una cadena de comunidad SNMP de lectura / escritura <span class="azul">hq-inside .</span></p>
+              <br>
+              <h3>Paso 2: Configure una ACL para NAT en el enrutador HQ.</h3>
+              <br>
+              <p>a. Configure la lista de acceso estándar numerada 1 para permitir NAT para hosts en la red 192.168.10.0 / 24.</p>
+              <br>
+              <h3>Paso 3: configure una ACL estándar para restringir el acceso remoto al enrutador HQ.</h3>
+              <br>
+              <p>a. Configure una ACL estándar numerada 12 para restringir el acceso remoto a HQ.</p>
+              <ul class="listaIT">
+                <li>Permitir que solo el HQ-Admin-PC acceda al enrutador HQ de forma remota a través de VTY.</li>
+                <li>Todas las demás conexiones remotas deberían fallar.</li>
+              </ul>
+              <h3>Paso 4: configure dos ACL extendidas para restringir el acceso a la operación SNMP en el enrutador HQ.</h3>
+              <p>a. Configure una ACL extendida llamada SNMPACCESS.</p>
+              <ul class="listaIT">
+                <li>La operación SNMP ejecuta UDP en el puerto 161.</li>
+                <li>Permitir que solo el HQ-Admin-PC acceda al enrutador HQ para la conexión SNMP.</li>
+                <li>Las conexiones SNMP de otros hosts en la LAN HQ deben fallar.</li>
+                <li>Permitir todo el tráfico IP.</li>
+                <li>Aplique esta ACL en el enrutador HQ, interfaz G0 / 0.</li>
+              </ul>
+              <p>segundo. Configure una ACL extendida llamada SNMPDENY.</p>
+              <ul class="listaIT">
+                <li>Denegar a los hosts que realicen conexiones a SNMP en el enrutador HQ.</li>
+                <li>Permitir todo el tráfico IP.</li>
+                <li>Aplique esta ACL en el enrutador HQ, interfaz G0 / 1.</li>
+              </ul>
+              <h3>Paso 5: configure una ACL extendida para restringir el acceso a la HQ LAN desde Internet.</h3>
+              <p>a. Configure una ACL IPv4 extendida llamada INTOHQ.</p>
+              <ul class="listaIT">
+                <li> Permitir que los hosts de Internet accedan a la Sede de DNS de HQ. Debe haber dos ACE, una para TCP y la otra UDP. Ambos utilizan el puerto 53.</li>
+                <li>Permitir que los hosts de Internet accedan a HQ Web Svr. Solo se necesita el puerto 80.</li>
+                <li>Permitir que pase el tráfico TCP de retorno desde Internet que se inició desde los hosts en las redes de HQ (con la palabra clave <span class="azul">establecida</span> ).</li>
+                <li>Aplicar la ACL a la interfaz HQ S0 / 0/0.</li>
+              </ul>
+                <h3>Paso 6: configure una ACL extendida para restringir el acceso a la red DMZ.</h3>
+                <p>a. Configure una ACL IPv4 extendida llamada IN-DMZ.</p>
+                <ul class="listaIT">
+                  <li>Permitir que los hosts accedan a HQ DNS Svr. Debe haber dos ACE, una para TCP y la otra UDP. Ambos utilizan el puerto 53.</li>
+                  <li>Permitir que cualquier host acceda a HQ Web Svr. Solo se necesita el puerto 80.</li>
+                  <li>Permitir que solo el HQ-Admin-PC tenga acceso de FTP al servidor web de HQ. Debería haber dos ACE, para los puertos 20 y 21.</li>
+                  <li>Aplicar la ACL a la interfaz HQ G0 / 1.</li>
+                </ul>
+                <h3>Paso 7: configure una ACL de IPv6 para restringir el acceso a la red DMZ desde la red de sucursal. ( Tenga en cuenta que el orden de las declaraciones de ACL es significativo solo debido a la necesidad de puntuación en Packet Tracer ) .</h3>
+                <p>a. Configure una ACL de IPv6 llamada DMZFTP.</p>
+                <ul class="listaIT">
+                  <li>Denegar cualquier host en la red de Sucursal para acceder a la operación SNMP del enrutador HQ.</li>
+                  <li>Permitir que solo BR-Admin-PC tenga acceso FTP al servidor web de HQ. Debería haber dos ACE, para los puertos 20 y 21.</li>
+                  <li>Permitir que los hosts en la Red de Sucursales accedan al servidor web de HQ. Solo se necesita el puerto 80.</li>
+                  <li>Aplique la ACL a la interfaz S0 / 0/1 del enrutador HQ.</li>
+                </ul>
+                <h3>Paso 8: Pruebas de conectividad</h3>
+                  <p>a. HQ-Admin-PC puede acceder al servicio FTP en HQ Web Svr.<br>
+
+                    segundo. HQ-User-PC no puede acceder al servicio FTP en HQ Web Svr.<br>
+
+                    do. BR-Admin-PC puede acceder al servicio FTP en HQ Web Svr con su dirección IPv6.<br>
+
+                    re. BR-User-PC no puede acceder al servicio FTP en HQ Web Svr con su dirección IPv6.<br>
+
+                    mi. HQ-Admin-PC, HQ-User-PC y External-PC pueden acceder a HQ Web Svr con URL www.hq.com <br>
+
+                    F. HQ-Admin-PC, HQ-User-PC y External-PC pueden acceder a External Web Srv con URL www.ext-web.com <br>
+
+                    sol. BR-Admin-PC y BR-User-PC pueden acceder a HQ Web Svr con su dirección IPv6 <br>
+
+                    h. BR-Admin-PC y BR-User-PC pueden acceder a External Web Srv con URL www.ext-web.com </p>
+          </div>
+          <div class="capituloIT">
+            <h3>Script de configuración para el enrutador: HQ / Main / Central (100%)</h3>
+            <p>ES <br>
+           conf ter <br>
+            comunidad snmp-server hq-monitor ro <br>
+             comunidad snmp-server hq-inside rw <br>
+
+             Permiso de la lista de acceso 1 192.168.10.0 0.0.0.255 <br>
+
+             lista de acceso 12 permiso de host 192.168.10.5 <br>
+             línea vty 0 1 <br>
+             clase de acceso 12 en <br>
+                salida <br> <br> <br>
+
+              ip access-list extendido SNMPACCESS <br>
+               Permitir udp host 192.168.10.5 host 192.168.10.1 eq 161 <br>
+               negar a udp cualquier host 192.168.10.1 eq 161 <br>
+               Permitir ip cualquiera cualquiera <br>
+               interfaz g0 / <br>
+               ip access-group SNMPACCESS en <br>
+               salida <br> <br>
+
+               ip-lista de acceso extendida SNMPDENY <br>
+               negar a udp cualquier host 172.16.10.1 eq 161 <br>
+               Permitir ip cualquiera cualquiera <br>
+               interfaz g0 / 1 <br>
+               ip access-group SNMPDENY EN <br>
+               salida <br>
+
+               ip access-list extendido INTOHQ <br>
+               Permitir tcp cualquier host 172.16.10.5 eq 53 <br>
+               Permitir udp cualquier host 172.16.10.5 eq 53 <br>
+               permite tcp cualquier host 172.16.10.10 eq 80 <br>
+               Permitir tcp cualquiera establecido <br>
+               interfaz s0 / 0/0 <br>
+               ip access-group INTOHQ IN <br>
+               salida <br> <br> <br>
+
+
+               ip lista de acceso extendida en DMZ <br>
+               Permitir udp cualquier host 172.16.10.5 eq 53 <br>
+               Permitir tcp cualquier host 172.16.10.5 eq 53 <br>
+               permite tcp cualquier host 172.16.10.10 eq 80 <br>
+
+               Permitir host tcp 192.168.10.5 host 172.16.10.10 eq 20 <br>
+               Permitir host tcp 192.168.10.5 host 172.16.10.10 eq 21 <br>
+               interfaz g0 / 1 <br>
+               ip access-group IN-DMZ out <br>
+               salida <br>
+
+
+               ipv6 lista de acceso DMZFTP <br>
+               niega a udp cualquier host 2001: DB8: ABCD: E :: 1 eq 161 <br>
+               Permitir tcp host 2001: DB8: ABCD: B :: 5 host 2001: DB8: ABCD: A :: 10 eq 20 <br>
+               permiso tcp host 2001: DB8: ABCD: B :: 5 host 2001: DB8: ABCD: A :: 10 eq 21 <br>
+               permiso tcp 2001: DB8: ABCD: B :: / 64 host 2001: DB8: ABCD: A :: 10 eq 80 <br>
+               int s0 / 0/1 <br>
+               ipv6 traffic-filter DMZFTP IN </p>
+          </div>
+        </div>
+
+  </body>
+</html>

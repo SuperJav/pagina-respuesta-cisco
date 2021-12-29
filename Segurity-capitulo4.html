@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segurity-capitulo 4</title>
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de styles css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.Además de los criterios utilizados por las ACL extendidas, ¿qué condiciones utiliza un firewall clásico para filtrar el tráfico?</h3>
+        <ul class="listaIT">
+          <li>Números de puerto de origen y destino TCP / UDP</li>
+          <li>Números de protocolo TCP / IP</li>
+          <li>Direcciones IP de origen y destino</li>
+          <li><span class="azul">Información de sesión de protocolo de capa de aplicación *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El firewall clásico proporciona una inspección de estado que incluye protocolos que requieren múltiples canales para la comunicación, como FTP y H.323. Los números de protocolo, los números de puerto y las direcciones IP de origen y destino son todos filtros estándar para ACL extendidas.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.Se ha configurado un enrutador como un firewall clásico y una ACL de entrada aplicada a la interfaz externa. ¿Qué acción realiza el enrutador después de inspeccionar el tráfico de entrada a salida y se crea una nueva entrada en la tabla de estado?</h3>
+        <ul class="listaIT">
+          <li>Cuando el tráfico regresa de su destino, se vuelve a inspeccionar y se agrega una nueva entrada a la tabla de estado.</li>
+          <li>La interfaz interna ACL se reconfigura para permitir el acceso de la dirección IP del host a Internet.</li>
+          <li>La entrada permanece en la tabla de estado después de que se termina la sesión para que el host pueda reutilizarla.</li>
+          <li><span class="azul">Se agrega una entrada de ACL dinámica a la interfaz externa en la dirección de entrada. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El flujo de tráfico de la red interna a la red pública es comúnmente inspeccionado. Los flujos de tráfico hacen que se agreguen entradas dinámicas a la interfaz externa para el tráfico entrante, de modo que el tráfico que se origina en la red interna que va a la red pública puede regresar a la fuente interna.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.Consulte la presentación. Si un pirata informático en la red externa envía un paquete IP con la dirección de origen 172.30.1.50, la dirección de destino 10.0.0.3, el puerto de origen 23 y el puerto de destino 2447, ¿qué hace el firewall Cisco IOS con el paquete?</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-4-Exam-Answer-v2-001.jpg" alt="" class="fotoIT">
+          <li>El paquete inicial se descarta, pero los paquetes posteriores se reenvían.</li>
+          <li>El paquete se reenvía y se genera una alerta.</li>
+          <li>El paquete se reenvía y no se genera ninguna alerta.</li>
+          <li><span class="azul">El paquete se ha caído. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Esta ACL está negando todo el tráfico TCP / IP que entra en la interfaz externa. Debido a que la dirección de origen coincide con cualquier parámetro y debido a que la línea de la lista de acceso se filtra según el acceso denegado (denegar), el paquete se descarta.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>4.¿Cuál es un beneficio de usar un firewall con estado en lugar de un servidor proxy?</h3>
+        <ul class="listaIT">
+          <li>capacidad para realizar la autenticación de usuario</li>
+          <li><span class="azul">mejor presentación *</span></li>
+          <li>capacidad para realizar el filtrado de paquetes</li>
+          <li>prevención de ataques de Capa 7</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Un servidor de seguridad con estado funciona mejor que un servidor proxy. Un firewall con estado no puede autenticar a los usuarios ni evitar ataques de Capa 7. Tanto un firewall con estado como un servidor proxy pueden filtrar paquetes.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.¿Cuál es una limitación de un firewall con estado?</h3>
+        <ul class="listaIT">
+          <li>autenticación de usuario débil</li>
+          <li>no se puede filtrar el tráfico innecesario</li>
+          <li><span class="azul">no es tan efectivo con el tráfico basado en UDP o ICMP *</span></li>
+          <li>mala información de registro</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las limitaciones de los firewalls con estado incluyen lo siguiente:<br>
+Los firewalls con estado no pueden evitar ataques de capa de aplicación. <br>
+Los protocolos como UDP e ICMP no tienen estado y no generan la información necesaria para una tabla de estado. <br>
+En ocasiones, se debe abrir una gama completa de puertos para admitir aplicaciones específicas que abren varios puertos. <br>
+Los firewalls con estado carecen de autenticación de usuario.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.¿Qué declaración describe una política de seguridad típica para una configuración de firewall DMZ?</h3>
+        <ul class="listaIT">
+          <li>El tráfico que se origina desde la interfaz interna generalmente está bloqueado en su totalidad o se permite de manera muy selectiva a la interfaz externa.</li>
+          <li><span class="azul">El tráfico que se origina en la interfaz DMZ se permite de forma selectiva a la interfaz externa. *</span></li>
+          <li>El tráfico que se origina en la interfaz externa puede atravesar el cortafuegos hacia la interfaz interna con pocas o ninguna restricción.</li>
+          <li>El tráfico de retorno desde el interior que está asociado con el tráfico que se origina desde el exterior puede atravesar desde la interfaz interna a la interfaz externa.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Con un diseño de firewall de tres interfaces que tiene conexiones internas, externas y DMZ, las configuraciones típicas incluyen lo siguiente: El
+tráfico que se origina en DMZ destinado a la red interna normalmente está bloqueado. <br>
+El tráfico que se origina en la DMZ destinada a redes externas generalmente se permite en función de los servicios que se utilizan en la DMZ.
+El tráfico que se origina en la red interna destinada desde la DMZ normalmente se inspecciona y se le permite regresar.<br>
+El tráfico que se origina en redes externas (la red pública) generalmente se permite en la DMZ solo para servicios específicos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.Consulte la presentación. ¿Qué enunciado describe la función de las ACE?</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-4-Exam-Answer-v2-002.jpg" alt="" class="fotoIT">
+          <li><span class="azul">Estas ACE permiten el tráfico de descubrimiento de vecinos IPv6. *</span></li>
+          <li>Estas ACE aparecen automáticamente al final de cada ACL de IPv6 para permitir que se produzca el enrutamiento de IPv6.</li>
+          <li>Estas son ACE opcionales que se pueden agregar al final de una ACL de IPv6 para permitir que los mensajes ICMP se definan en grupos de objetos denominados nd-na y nd-ns.</li>
+          <li>Estas ACE se deben agregar manualmente al final de cada ACL de IPv6 para permitir que ocurra el enrutamiento de IPv6.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El protocolo ICMP se utiliza para el descubrimiento de vecinos. Las dos declaraciones de permiso permiten el anuncio de vecinos y los mensajes de solicitud de vecinos entre dispositivos IPv6.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>8.Cuando se está implementando una ACL de tráfico de Internet entrante, ¿qué se debe incluir para evitar la suplantación de identidad de las redes internas?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">ACE para evitar el tráfico desde espacios de direcciones privadas *</span></li>
+          <li>ACE para evitar el tráfico de direcciones de difusión</li>
+          <li>ACE para prevenir el tráfico ICMP</li>
+          <li>ACE para evitar el tráfico HTTP</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las ACE comunes para ayudar con antispoofing incluyen el bloqueo de paquetes que tienen una dirección de origen en el rango 127.0.0.0/8, cualquier dirección privada o cualquier dirección de multidifusión. Además, el administrador no debe permitir ningún paquete saliente con una dirección de origen que no sea una dirección válida que se utiliza en las redes internas de la organización.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>9.Para facilitar el proceso de solución de problemas, ¿qué mensaje ICMP entrante debe permitirse en una interfaz externa?</h3>
+        <ul class="listaIT">
+          <li>solicitud de eco</li>
+          <li>solicitud de sello de tiempo</li>
+          <li><span class="azul">respuesta de eco *</span></li>
+          <li>respuesta de sello de tiempo</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Al permitir que el mensaje de respuesta de eco ICMP ingrese a la organización, los usuarios internos pueden hacer ping a direcciones externas (y el mensaje de respuesta puede regresar).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>10.¿Qué comando se usa para activar una ACL de IPv6 llamada ENG_ACL en una interfaz para que el enrutador filtre el tráfico antes de acceder a la tabla de enrutamiento?</h3>
+        <ul class="listaIT">
+          <li>ipv6 access-class ENG_ACL en</li>
+          <li>ipv6 traffic-filter ENG_ACL out</li>
+          <li><span class="azul">ipv6 traffic-filter ENG_ACL en *</span></li>
+          <li>ipv6 access-class ENG_ACL out</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Para los fines de aplicar una lista de acceso a una interfaz particular, el comando ipv6 traffic-filter IPv6 es equivalente al comando access-group IPv4. También se requiere la dirección en la que se examina el tráfico (dentro o fuera).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>11.Cuando se configura un Firewall de política basado en la zona de Cisco IOS a través de la CLI, ¿qué paso se debe tomar después de que se hayan creado las zonas?</h3>
+        <ul class="listaIT">
+          <li>Asignar interfaces a las zonas.</li>
+          <li><span class="azul">Establecer políticas entre zonas. *</span></li>
+          <li>Identificar subconjuntos dentro de las zonas.</li>
+          <li>Diseñar la infraestructura física.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los pasos para configurar las zonas en un Firewall de políticas basado en zonas son los siguientes: <br>
+Paso 1. Determine las zonas. <br>
+Paso 2. Establecer políticas entre zonas. <br>
+Paso 3. Diseñar la infraestructura física. <br>
+Paso 4. Identifique los subconjuntos dentro de las zonas y combine los requisitos de tráfico.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>12.Un administrador de red está implementando simultáneamente un Firewall clásico y un Firewall basado en zonas en un enrutador. ¿Qué enunciado describe mejor esta implementación?</h3>
+        <ul class="listaIT">
+          <li>Se debe asignar una interfaz a una zona de seguridad antes de que se pueda realizar la inspección de IP.</li>
+          <li>Ambos modelos deben ser implementados en todas las interfaces.</li>
+          <li><span class="azul">Los dos modelos no se pueden implementar en una sola interfaz. *</span></li>
+          <li>Un Firewall clásico y un Firewall basado en zonas no pueden usarse simultáneamente.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Tanto un Firewall clásico como un Firewall basado en zonas pueden implementarse simultáneamente en un enrutador, pero no pueden configurarse en una sola interfaz.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.¿Qué dos reglas sobre interfaces son válidas cuando se implementa un Firewall de políticas basado en zonas? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li>Si una interfaz es un miembro de la zona, pero la otra no lo es, se pasará todo el tráfico.</li>
+          <li><span class="azul">Si ninguna de las interfaces es miembro de la zona, la acción es pasar el tráfico. *</span></li>
+          <li><span class="azul">Si ambas interfaces son miembros de la misma zona, se pasará todo el tráfico. *</span></li>
+          <li>Si una interfaz es un miembro de la zona y existe un par de zonas, se pasará todo el tráfico.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Las reglas para el tráfico que transita a través del enrutador son las siguientes: <br>
+Si ninguna de las interfaces es miembro de la zona, la acción resultante es pasar el tráfico. <br>
+Si ambas interfaces son miembros de la misma zona, la acción resultante es pasar el tráfico. <br>
+Si una interfaz es un miembro de la zona, pero la otra no lo es, la acción resultante es eliminar el tráfico independientemente de si existe un par de zonas. <br>
+Si ambas interfaces pertenecen al mismo par de zonas y existe una política, la acción resultante es inspeccionar, permitir o eliminar, tal como lo define la política.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>14.Si las ACE proporcionadas están en la misma ACL, ¿qué ACE debería aparecer primero en la ACL según las mejores prácticas?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Permitir udp 172.16.0.0 0.0.255.255 host 172.16.1.5 eq snmptrap *</span></li>
+          <li>deny udp any host 172.16.1.5 eq snmptrap</li>
+          <li>negar tcp cualquier eq telnet</li>
+          <li>Permitir ip cualquiera cualquiera</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Una buena práctica para configurar una ACL extendida es asegurarse de que la ACE más específica se ubique más arriba en la ACL. Considere las dos declaraciones UDP de permiso. Si ambos de estos estaban en una ACL, la ACE de SNMP es más específica que la declaración UDP que permite un rango de 10,001 números de puerto UDP. El SNMP ACE se ingresaría antes que el otro UDP ACE. Las ACE de más específico a menos específico son las siguientes:<br>
+permitir udp 172.16.0.0 0.0.255.255 host 172.16.1.5 eq snmptrap
+deny udp cualquier host 172.16.1.5 eq snmptrap
+permite tcp 172.16.0.0 0.0.3.255 cualquier
+deny tcp cualquier cualquier eq
+Permiso de telnet udp any any 10000 20000
+permit ip cualquiera cualquiera</p>
+      </div>
+      <div class="capituloIT">
+        <h3>15.¿Qué herramienta de seguridad supervisa el tráfico de red a medida que fluye dentro y fuera de la organización y determina si los paquetes pertenecen a una conexión existente o son de una fuente no autorizada?</h3>
+        <ul class="listaIT">
+          <li>dispositivo de seguridad web</li>
+          <li>sistema de protección contra intrusos</li>
+          <li>aplicación proxy</li>
+          <li><span class="azul">cortafuegos de estado *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Un firewall con estado filtra los paquetes según la información de estado que se mantiene en una tabla de estado. Debido a que utiliza información de estado, el firewall con estado puede analizar el tráfico en las capas 4 y 5 de OSI.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>16.Una empresa está implementando un nuevo diseño de red en el que el enrutador de frontera tiene tres interfaces. La interfaz Serial0 / 0/0 se conecta al ISP, GigabitEthernet0 / 0 se conecta a la DMZ y GigabitEthernet / 01 se conecta a la red privada interna. ¿Qué tipo de tráfico recibiría la menor cantidad de inspección (tendría la mayor libertad de viaje)?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Tráfico que va desde la red privada a la DMZ *</span></li>
+          <li>Tráfico que regresa de la DMZ después de provenir de la red privada</li>
+          <li>Tráfico que se origina en la red pública y que está destinado a la DMZ.</li>
+          <li>Tráfico que regresa de la red pública después de provenir de la red privada</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La mayoría del tráfico dentro de una organización se origina desde una dirección IP privada. La cantidad de inspección realizada a ese tráfico depende de su destino o si el tráfico que va a esa dirección IP privada originó la conexión. La zona desmilitarizada suele contener servidores. El tráfico que está destinado a esos servidores se filtra según los servicios que proporciona el servidor (HTTP, HTTPS, DNS, etc.).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.Consulte la presentación. La declaración de ACL es la única configurada explícitamente en el enrutador. Basándose en esta información, ¿qué dos conclusiones se pueden extraer con respecto a las conexiones de red de acceso remoto? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-4-Exam-Answer-v2-003.jpg" alt="" class="fotoIT">
+          <li>Se permiten las conexiones SSH desde la red 192.168.2.0/24 a la red 192.168.1.0/24.</li>
+          <li>Se permiten las conexiones Telnet desde la red 192.168.1.0/24 a la red 192.168.2.0/24.</li>
+          <li><span class="azul">Las conexiones de Telnet desde la red 192.168.1.0/24 a la red 192.168.2.0/24 están bloqueadas. *</span></li>
+          <li><span class="azul">Se permiten conexiones SSH desde la red 192.168.1.0/24 a la red 192.168.2.0/24. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La lista de acceso extendido en la exposición está permitiendo el tráfico SSH (puerto TCP 22) que se obtiene de la red 192.168.1.0/24 y viaja a la red 192.168.2.0/24. Los paquetes que cumplen con este criterio se registran en el búfer de registro local (el predeterminado), un servidor de syslog, o ambos, según la configuración del enrutador para la configuración de syslog. El resto del tráfico se deniega debido a la denegación implícita al final de cada ACL.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>18.Considere la siguiente lista de acceso. <br>
+access list.access-list 100 permite ip host 192.168.10.1 cualquier <br>
+access-list 100 deny icmp 192.168.10.0 0.0.0.255 any echo <br>
+access-list 100 perm ip any Cualquiera <br>
+¿Qué dos acciones se toman si la lista de acceso se coloca en una entrada? ¿Puerto Ethernet Gigabit enrutador que tiene la dirección IP 192.168.10.254 asignada? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li>Solo el dispositivo de red asignado a la dirección IP 192.168.10.1 puede acceder al enrutador.</li>
+          <li>Los dispositivos en la red 192.168.10.0/24 no pueden responder a ninguna solicitud de ping.</li>
+          <li><span class="azul">Los dispositivos en la red 192.168.10.0/24 no pueden hacer ping a otros dispositivos en la red 192.168.11.0. *</span></li>
+          <li><span class="azul">Se permite una sesión de Telnet o SSH desde cualquier dispositivo en 192.168.10.0 al enrutador con esta lista de acceso asignada. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El primer ACE permite que el dispositivo 192.168.10.1 realice transacciones basadas en TCP / IP con cualquier otro destino. El segundo ACE evita que los dispositivos en la red 192.168.10.0/24 emitan cualquier ping a cualquier otra ubicación. Todo lo demás está permitido por el tercer ACE. Por lo tanto, se permite una sesión de Telnet / SSH o una respuesta de ping desde un dispositivo en la red 192.168.10.0/24.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>19.¿Cuál es la función de la acción de paso en un Firewall de políticas basado en la zona de Cisco IOS?</h3>
+        <ul class="listaIT">
+          <li>registro de paquetes rechazados o descartados</li>
+          <li>Inspeccionar tráfico entre zonas para control de tráfico.</li>
+          <li>Seguimiento del estado de las conexiones entre zonas.</li>
+          <li><span class="azul">reenvío de tráfico de una zona a otra *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La acción de aprobación realizada por Cisco IOS ZPF permite el reenvío de tráfico de una manera similar a la declaración de permiso en una lista de control de acceso.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.¿Qué comando verificará una configuración de Firewall de Políticas Basadas en la Zona?</h3>
+        <ul class="listaIT">
+          <li>Mostrar interfaces</li>
+          <li>mostrar zonas</li>
+          <li><span class="azul">Mostrar ejecución-config *</span></li>
+          <li>mostrar protocolos</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La configuración de ZPF se puede verificar con show running-config, show policy-map, show class-map, show zone security y show-zone-pair.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>21.Consulte la presentación. La red "A" contiene varios servidores corporativos a los que acceden los hosts desde Internet para obtener información sobre la corporación. ¿Qué término se usa para describir la red marcada como "A"?</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-4-Exam-Answer-v2-005.jpg" alt="" class="fotoIT">
+          <li>red interna</li>
+          <li>red no confiable</li>
+          <li>límite de seguridad perimetral</li>
+          <li><span class="azul">DMZ *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Una zona desmilitarizada o DMZ es un área de red protegida por uno o más cortafuegos. La DMZ normalmente contiene servidores a los que los usuarios externos acceden comúnmente. Un servidor web está comúnmente contenido en una DMZ.</p>
+      </div><div class="capituloIT">
+        <h3>22.¿Qué tipo de paquete no puede ser filtrado por una ACL de salida?</h3>
+        <ul class="listaIT">
+          <li>paquete de multidifusión</li>
+          <li>Paquete ICMP</li>
+          <li>paquete de difusión</li>
+          <li><span class="azul">paquete generado por el enrutador *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El tráfico que se origina dentro de un enrutador, como los pings de un símbolo del sistema, el acceso remoto desde un enrutador a otro dispositivo o las actualizaciones de enrutamiento no se ven afectados por las listas de acceso salientes. El tráfico debe fluir a través del enrutador para que el enrutador aplique las ACE.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>23.Cuando se configura un Firewall de política basado en la zona de Cisco IOS, ¿qué dos acciones se pueden aplicar a una clase de tráfico? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">soltar *</span></li>
+          <li>Iniciar sesión</li>
+          <li>adelante</li>
+          <li><span class="azul">inspeccionar *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p> Las tres acciones que se pueden aplicar son inspeccionar, deje caer, y pasar
+Inspeccionar - Esta acción ofrece control de tráfico basado en estado. <br>
+Descartar: esta es la acción predeterminada para todo el tráfico. De manera similar a la denegación implícita al final de cada ACL, el IOS aplica una caída explícita al final de cada mapa de políticas. <br>
+Pasar: esta acción permite al enrutador reenviar el tráfico de una zona a otra.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>24.Rellena el espacio en blanco. </h3>
+        <ul class="listaIT">
+          <li>Un <span class="azul">estado</span> firewall con supervisa el estado de las conexiones a medida que el tráfico de la red entra y sale de la organización.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p></p>
+      </div>
+      <div class="capituloIT">
+        <h3>25.Rellena el espacio en blanco. </h3>
+        <ul class="listaIT">
+          <li>La acción de <span class="azul">aprobación</span> en un Firewall de políticas basado en la zona de Cisco IOS es similar a una declaración de permiso en una ACL.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>

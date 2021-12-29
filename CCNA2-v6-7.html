@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA2 7</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+        <div class="contenedorIT">
+          <div class="capituloIT">
+            <h4>1.¿En qué configuración se preferiría una ubicación de ACL saliente en lugar de una ubicación de ACL de entrada?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">cuando la ACL se aplica a una interfaz de salida para filtrar paquetes provenientes de múltiples interfaces de entrada antes de que los paquetes salgan de la interfaz *</span></li>
+              <li>cuando un enrutador tiene más de una ACL</li>
+              <li>cuando una ACL de salida está más cerca del origen del flujo de tráfico</li>
+              <li>cuando una interfaz es filtrada por una ACL de salida y la red conectada a la interfaz es la red de origen que se filtra dentro de la ACL</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>2.¿Qué dirección se requiere en la sintaxis de comando de una ACL estándar?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Dirección IP origen *</span></li>
+              <li>dirección MAC de origen</li>
+              <li>dirección MAC de destino</li>
+              <li>Dirección IP de destino</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>3.¿Qué declaración describe una diferencia entre la operación de las ACL entrantes y salientes?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Las ACL entrantes se procesan antes de que los paquetes se enruten, mientras que las ACL salientes se procesan una vez que se completa el enrutamiento. *</span></li>
+              <li>A diferencia de los ALC de salida, las ACL de entrada se pueden usar para filtrar paquetes con múltiples criterios.</li>
+              <li>Las ACL entrantes se pueden usar tanto en los enrutadores como en los conmutadores, pero las ACL salientes solo se pueden usar en los enrutadores.</li>
+              <li>En una interfaz de red, se puede configurar más de una ACL de entrada, pero solo se puede configurar una ACL de salida.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>4.¿Qué tres afirmaciones describen el procesamiento de paquetes ACL? (Elige tres.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Un paquete puede ser rechazado o reenviado según lo indique la ACE que coincida. *</span></li>
+              <li><span class="azul">Un rechazo implícito de cualquier rechazo de cualquier paquete que no coincida con ningún ACE. *</span></li>
+              <li>Un paquete que ha sido denegado por un ACE puede ser permitido por un ACE posterior.</li>
+              <li><span class="azul">Cada declaración se verifica solo hasta que se detecte una coincidencia o hasta el final de la lista de ACE. *</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>5.¿Qué declaración de lista de acceso único coincide con todas las redes siguientes?
+              192.168.16.0 <br>
+              192.168.17.0 <br>
+              192.168.18.0 <br>
+                192.168.19.0 </h4>
+            <ul class="listaIT">
+              <li><span class="azul">permiso de la lista de acceso 10 192.168.16.0 0.0.3.255 *</span></li>
+              <li>Permiso de la lista de acceso 10 192.168.16.0 0.0.0.255</li>
+              <li>Permiso de la lista de acceso 10 192.168.16.0 0.0.15.255</li>
+              <li>Permiso de la lista de acceso 10 192.168.0.0 0.0.15.255</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>6.Un administrador de red necesita configurar una ACL estándar para que solo la estación de trabajo del administrador con la dirección IP 192.168.15.23 pueda acceder al terminal virtual del enrutador principal. ¿Qué dos comandos de configuración pueden lograr la tarea? (Escoge dos.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Router1 (config) # access-list 10 permite el host 192.168.15.23 *</span></li>
+              <li><span class="azul">Router1 (config) # access-list 10 permite 192.168.15.23 0.0.0.0 *</span></li>
+              <li>Router1 (config) # access-list 10 permite 192.168.15.23 0.0.0.255</li>
+              <li>Router1 (config) # access-list 10 permite 192.168.15.23 255.255.255.0</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>7.Si un enrutador tiene dos interfaces y enruta tráfico tanto IPv4 como IPv6, ¿cuántas ACL podrían crearse y aplicarse a él?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">8 *</span></li>
+              <li>4</li>
+              <li>6</li>
+              <li>12</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>8.¿Cuáles son las tres afirmaciones que generalmente se consideran las mejores prácticas en la colocación de ACL? (Elige tres.)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Coloque las ACL extendidas cerca de la dirección IP de origen del tráfico. *</span></li>
+              <li>Coloque las ACL estándar cerca de la dirección IP de origen del tráfico.</li>
+              <li><span class="azul">Filtre el tráfico no deseado antes de que viaje a un enlace de bajo ancho de banda. *</span></li>
+              <li><span class="azul">Coloque las ACL estándar cerca de la dirección IP de destino del tráfico. *</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>9.Consulte la presentación. ¿Qué comando se usaría en una ACL estándar para permitir que solo los dispositivos en la red conectados a la interfaz R2 G0 / 0 accedan a las redes conectadas a R1?</h4>
+            <ul class="listaIT">
+              <img src="imagen/bbf705187ba297fcceb3-1.jpg" class="fotoIT" alt="">
+              <li><span class="azul">Permiso de la lista de acceso 1 192.168.10.96 0.0.0.31 *</span></li>
+              <li>Permiso de la lista de acceso 1 192.168.10.0 0.0.0.63</li>
+              <li>Permiso de la lista de acceso 1 192.168.10.0 0.0.0.255</li>
+              <li>Permiso de la lista de acceso 1 192.168.10.128 0.0.0.63</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>10.Consulte la presentación. Si el administrador de la red creó una ACL estándar que solo permite que los dispositivos que se conectan a la red R2 G0 / 0 accedan a los dispositivos en la interfaz R1 G0 / 1, ¿cómo se debe aplicar la ACL?</h4>
+            <ul class="listaIT">
+              <img src="imagen/i282157v1n1_282156.png" class="fotoIT" alt="">
+              <li><span class="azul">Saliente en la interfaz R1 G0 / 1 *</span></li>
+              <li>Entrante en la interfaz R1 G0 / 1</li>
+              <li>Saliente en la interfaz R2 S0 / 0/1</li>
+              <li>Entrante en la interfaz R2 G0 / 0</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>11.Consulte la siguiente salida. ¿Cuál es el significado de la declaración de 4 coincidencias?
+R1 # <salida omitida>
+permiso 10 192.168.1.56 0.0.0.7
+permiso 20 192.168.1.64 0.0.0.63 (4 coincidencias)
+30 denegar cualquiera (8 coincidencias)</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Se han permitido cuatro paquetes a través del enrutador desde las PC en la red de 192.168.1.64. *</span></li>
+              <li>Se han denegado cuatro paquetes que se han obtenido de cualquier dirección IP.</li>
+              <li>Se han denegado cuatro paquetes que están destinados a la red 192.168.1.64.</li>
+              <li>Se han permitido cuatro paquetes a través del enrutador para llegar a la red de destino de 192.168.1.64/26.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>12.¿En qué router debe ejecutarse el comando show access-lists?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">en el enrutador que tiene la ACL configurada *</span></li>
+              <li>en el enrutador que enruta el paquete al que se hace referencia en la ACL a la red de destino final</li>
+              <li>en el enrutador que enruta el paquete al que se hace referencia en la ACL desde la red de origen</li>
+              <li>en cualquier enrutador a través del cual viaja el paquete al que se hace referencia en la ACL</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>13.¿Cuál es la forma más rápida de eliminar una ACE única de una ACL nombrada?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">Utilice la palabra clave "no" y el número de secuencia del ACE que se eliminará. *</span></li>
+              <li>Utilice el comando no access-list para eliminar la ACL completa, luego vuelva a crearla sin la ACE.</li>
+              <li>Copie la ACL en un editor de texto, elimine la ACE y luego vuelva a copiarla en el enrutador.</li>
+              <li>Cree una nueva ACL con un número diferente y aplique la nueva ACL a la interfaz del enrutador.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>14.¿Qué característica requerirá el uso de una ACL estándar nombrada en lugar de una ACL estándar numerada?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">la capacidad de agregar ACE adicionales en medio de la ACL sin eliminar y volver a crear la lista *</span></li>
+              <li>La capacidad de filtrar tráfico basado en un protocolo específico.</li>
+              <li>la capacidad de filtrar el tráfico en función de un conjunto completo de protocolos y un destino</li>
+              <li>la capacidad de especificar las direcciones de origen y destino para usar al identificar el tráfico</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>15.Un administrador ha configurado una lista de acceso en R1 para permitir el acceso administrativo de SSH desde el host 172.16.1.100. ¿Qué comando aplica correctamente la ACL?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">R1 (config-line) # access-class 1 in *</span></li>
+              <li>R1 (config-if) # ip access-group 1 in</li>
+              <li>R1 (config-if) # ip access-group 1 out</li>
+              <li>R1 (config-line) # access-class 1 out</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>16.¿Qué tipo de conexión de enrutador puede ser asegurada por el comando de clase de acceso?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">vty *</span></li>
+              <li>consola</li>
+              <li>de serie</li>
+              <li>Ethernet</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>17.Considere la siguiente salida para una ACL que se ha aplicado a un enrutador a través de la clase de acceso en el comando. ¿Qué puede determinar un administrador de red a partir de la salida que se muestra?</h4>
+            <p>R1 # <salida omitida> <br>
+Lista de acceso IP estándar 2 <br>
+10 permisos 192.168.10.0, bits comodín 0.0.0.255 (2 coincidencias) <br>
+20 niegan cualquiera (1 partido)</p>
+            <ul class="listaIT">
+              <li><span class="azul">Dos dispositivos pudieron usar SSH o Telnet para obtener acceso al enrutador. *</span></li>
+              <li>Dos dispositivos conectados al enrutador tienen direcciones IP de 192.168.10.x.</li>
+              <li>No se permitió que el tráfico de un dispositivo entrara en un puerto de enrutador y fuera enrutado hacia un puerto de enrutador diferente.</li>
+              <li>Se permitió que el tráfico de dos dispositivos ingresara a un puerto de enrutador y fuera enrutado hacia un puerto de enrutador diferente.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>18.Consulte la presentación. Un enrutador tiene una ACL existente que permite todo el tráfico de la red 172.16.0.0. El administrador intenta agregar una nueva ACE a la ACL que niega los paquetes del host 172.16.0.1 y recibe el mensaje de error que se muestra en la presentación. ¿Qué acción puede tomar el administrador para bloquear los paquetes del host 172.16.0.1 y al mismo tiempo permitir el resto del tráfico de la red 172.16.0.0?</h4>
+            <ul class="listaIT">
+              <img src="imagen/i219448v1n1_209674-1.png" class="fotoIT" alt="">
+              <li><span class="azul">Agregue manualmente el nuevo ACE de denegación con un número de secuencia de 5. *</span></li>
+              <li>Agregue manualmente el nuevo ACE de denegación con un número de secuencia de 15.</li>
+              <li>Cree una segunda lista de acceso que niegue el host y aplíquela a la misma interfaz.</li>
+              <li>Agregue una denegación de cualquier ACE a la lista de acceso 1.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>19.Un administrador de red emite el comando show vlan brief mientras resuelve problemas con un ticket de soporte al usuario. ¿Qué salida se mostrará?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">la asignación de VLAN y la membresía para todos los puertos del switch *</span></li>
+              <li>La asignación de VLAN y encapsulación de enlace troncal</li>
+              <li>La asignación de VLAN y VLAN nativa</li>
+              <li>la asignación de VLAN y la pertenencia a las direcciones MAC del dispositivo</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>20.Consulte la presentación. Se configuró una ACL en R1 con la intención de denegar el tráfico de la subred 172.16.4.0/24 a la subred 172.16.3.0/24. Se debe permitir todo el tráfico en la subred 172.16.3.0/24. Esta ACL estándar se aplicó luego en la interfaz Fa0 / 0. ¿Qué conclusión se puede sacar de esta configuración?</h4>
+            <ul class="listaIT">
+              <img src="imagen/i241884v1n2_241884.png" class="fotoIT" alt="">
+              <li><span class="azul">Se bloqueará todo el tráfico, no solo el tráfico de la subred 172.16.4.0/24. *</span></li>
+              <li>Solo se bloquea el tráfico de la subred 172.16.4.0/24 y se permite el resto del tráfico.</li>
+              <li>Se debe utilizar una ACL extendida en esta situación.</li>
+              <li>La ACL debe aplicarse a la interfaz FastEthernet 0/0 de la entrada R1 para cumplir los requisitos.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>21.Consulte la presentación. ¿Qué sucederá con las ACE de la lista de acceso 10 si el enrutador se reinicia antes de que se implementen otros comandos?</h4>
+            <ul class="listaIT">
+              <img src="imagen/i264408v1n1_ACL-Item-RSE-ch-9-1.png" class="fotoIT" alt="">
+              <li><span class="azul">Las entradas de control de acceso de la lista de acceso 10 se renumerarán. *</span></li>
+              <li>Las entradas de control de acceso de la lista de acceso 10 se eliminarán.</li>
+              <li>Las ACE de la lista de acceso 10 no se verán afectadas.</li>
+              <li>Las ACE de la lista de acceso 10 máscaras de comodín se convertirán en máscaras de subred.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>22.¿Cuál es el efecto de configurar una ACL solo con las ACE que niegan el tráfico?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">La ACL bloqueará todo el tráfico. *</span></li>
+              <li>La ACL permitirá cualquier tráfico que no se niegue específicamente.</li>
+              <li>La ACL debe aplicarse solo de entrada.</li>
+              <li>La ACL debe ser aplicada de salida solamente.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>23.¿Qué tipo de declaraciones de ACL son reordenadas por el IOS de Cisco como las primeras ACE?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">anfitrión *</span></li>
+              <li>distancia</li>
+              <li>permitir cualquier</li>
+              <li>número de secuencia más bajo</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>24.Un administrador de red está configurando una ACL para restringir el acceso a ciertos servidores en el centro de datos. El objetivo es aplicar la ACL a la interfaz conectada a la LAN del centro de datos. ¿Qué sucede si la ACL se aplica incorrectamente a una interfaz en la dirección de entrada en lugar de la dirección de salida?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">La ACL no funciona según lo diseñado. *</span></li>
+              <li>Se niega todo el tráfico.</li>
+              <li>Se permite todo el tráfico.</li>
+              <li>La ACL analizará el tráfico después de enrutarlo a la interfaz de salida.</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>25.¿Cuándo usaría el administrador de la red el comando para borrar los contadores de la lista de acceso?</h4>
+            <ul class="listaIT">
+              <li><span class="azul">al solucionar problemas de una ACL y saber cuántos paquetes coinciden *</span></li>
+              <li>al obtener una línea de base</li>
+              <li>cuando la memoria intermedia es baja</li>
+              <li>cuando se elimina una ACE de una ACL</li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+          <div class="capituloIT">
+            <h4>26.Haga coincidir cada declaración con la subred de ejemplo y el comodín que describe. </h4>
+            <ul class="listaIT">
+              <li>Pregunta</li>
+              <img src="imagen/2017-06-22_110015-768x234.jpg" class="fotoIT" alt="">
+              <li><span class="azul">Respuesta</span></li>
+              <img src="imagen/2017-06-22_110015dfdf-768x234.jpg" class="fotoIT" alt="">
+              <li><span class="azul">dirección con una subred 255.255.255.248</span></li>
+              <li>@javi__super</li>
+            </ul>
+          </div>
+
+        </div>
+
+  </body>
+</html>

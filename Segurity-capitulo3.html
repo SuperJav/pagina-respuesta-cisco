@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segurity-capitulo 3</title>
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de styles css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; hasiendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.Un usuario se queja de no poder acceder a un dispositivo de red configurado con AAA. ¿Cómo determinaría el administrador de la red si el acceso de inicio de sesión para la cuenta de usuario está deshabilitado?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Use el comando de bloqueo del usuario local de mostrar aaa. *</span></li>
+          <li>Use el comando show running-configuration.</li>
+          <li>Utilice el comando show aaa session.</li>
+          <li>Utilice el comando de usuario show aaa.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El comando show aaa local user lockout proporciona a un administrador una lista de las cuentas de usuario que están bloqueadas y no se pueden usar para la autenticación. Este comando también proporciona la fecha y la marca de tiempo de la ocurrencia del bloqueo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.Cuando se configura una lista de métodos para la autenticación AAA, ¿cuál es el efecto de la palabra clave local?</h3>
+        <ul class="listaIT">
+          <li>El inicio de sesión se realiza correctamente, incluso si todos los métodos devuelven un error.</li>
+          <li>Utiliza la contraseña de habilitación para la autenticación.</li>
+          <li>Por defecto, la contraseña de la línea vty para la autenticación.</li>
+          <li><span class="azul">Acepta un nombre de usuario configurado localmente, independientemente del caso *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Al definir la lista de métodos de autenticación AAA, una opción es usar una base de datos local preconfigurada. Hay dos palabras clave, cualquiera de las cuales habilita la autenticación local a través de la base de datos local preconfigurada. La palabra clave local acepta un nombre de usuario independientemente del caso, y la palabra clave local-mayúscula distingue entre mayúsculas y minúsculas tanto para los nombres de usuario como para las contraseñas.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.¿Qué solución admite AAA para los servidores RADIUS y TACACS +?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Implemente solo el Sistema de control de acceso seguro (ACS) de Cisco. *</span></li>
+          <li>Los servidores RADIUS y TACACS + no pueden ser soportados por una sola solución.</li>
+          <li>Implementar una base de datos local.</li>
+          <li>Implementar tanto una base de datos local como Cisco Secure</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El Sistema de control de acceso seguro (ACS) de Cisco es compatible con los servidores TACACS + y RADIUS. Las bases de datos locales no utilizan estos servidores.</p>
+      </div><div class="capituloIT">
+        <h3>4.¿Qué diferencia hay al usar Windows Server como un servidor AAA, en lugar de Cisco Secure ACS?</h3>
+        <ul class="listaIT">
+          <li>Windows Server requiere más comandos de Cisco IOS para configurar.</li>
+          <li>Windows Server solo admite AAA utilizando TACACS.</li>
+          <li><span class="azul">Windows Server utiliza su propio controlador de Active Directory (AD) para la autenticación y autorización. *</span></li>
+          <li>Windows Server no se puede utilizar como un servidor AAA.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La configuración de Cisco IOS es la misma ya sea que se comunique con un servidor AAA de Windows o con cualquier otro servidor RADIUS.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.Cuando se utiliza la autenticación 802.1X, ¿qué dispositivo controla el acceso físico a la red, según el estado de autenticación del cliente?</h3>
+        <ul class="listaIT">
+          <li>El enrutador que sirve como puerta de enlace predeterminada</li>
+          <li>el servidor de autentificación</li>
+          <li><span class="azul">El interruptor al que está conectado el cliente *</span></li>
+          <li>el suplicante</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los dispositivos involucrados en el proceso de autenticación 802.1X son los siguientes: <br>
+El suplicante, que es el cliente que solicita el acceso a la red. <br>
+El autenticador, que es el interruptor al que el cliente se está conectando y que en realidad está controlando el acceso físico a la red. <br>
+El servidor de autenticación, que realiza la autentificación real</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.Debido a los controles de seguridad implementados, un usuario solo puede acceder a un servidor con FTP. ¿Qué componente AAA logra esto?</h3>
+        <ul class="listaIT">
+          <li>contabilidad</li>
+          <li>accesibilidad</li>
+          <li><span class="azul">autorización *</span></li>
+          <li>autenticación</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Uno de los componentes en AAA es la autorización. Una vez que un usuario se autentica a través de AAA, los servicios de autorización determinan a qué recursos puede acceder el usuario y a qué operaciones puede realizar el usuario.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.¿Por qué se prefiere la autenticación con AAA a un método de base de datos local?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Proporciona un método de autenticación de respaldo si el administrador olvida el nombre de usuario o la contraseña. *</span></li>
+          <li>Utiliza menos ancho de banda de red.</li>
+          <li>Especifica una contraseña diferente para cada línea o puerto.</li>
+          <li>Requiere una combinación de inicio de sesión y contraseña en la consola, líneas vty y puertos aux.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El método de autenticación de la base de datos local no proporciona un método de autenticación de reserva si un administrador olvida el nombre de usuario o la contraseña. La recuperación de la contraseña será la única opción. Cuando se utiliza la autenticación con AAA, se puede configurar un método de reserva para permitir que un administrador utilice uno de los muchos métodos de autenticación de copia de seguridad posibles.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>8.¿Cuál es una característica de TACACS +?</h3>
+        <ul class="listaIT">
+          <li>TACACS + usa el puerto UDP 1645 o 1812 para la autenticación, y el puerto UDP 1646 o 1813 para la contabilidad.</li>
+          <li>TACACS + es compatible con versiones anteriores de TACACS y XTACS.</li>
+          <li>TACACS + es un estándar abierto de IETF.</li>
+          <li><span class="azul">TACACS + proporciona la autorización de los comandos del enrutador por usuario o por grupo. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El protocolo TACACS + proporciona flexibilidad en los servicios AAA. Por ejemplo, al usar TACACS +, los administradores pueden seleccionar las políticas de autorización que se aplicarán por usuario o por grupo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>9.Consulte la presentación. El enrutador R1 se ha configurado como se muestra, con el mensaje de registro resultante. Sobre la base de la información que se presenta, ¿qué dos afirmaciones describen el resultado de la operación de autenticación AAA? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-3-Exam-Answer-v2-001.jpg" alt="fotoIT" class="fotoIT">
+          <li><span class="azul">El usuario bloqueado permanece bloqueado hasta que se emite el comando de administrador del usuario local bloqueado aaa. *</span></li>
+          <li><span class="azul">El usuario bloqueado falló en la autenticación. *</span></li>
+          <li>El usuario bloqueado debería haber utilizado el nombre de usuario admin y la contraseña Str0ngPa55w0rd.</li>
+          <li>El usuario bloqueado está bloqueado por 10 minutos de forma predeterminada.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El comando max-fail de los intentos de autenticación local aaa asegura las cuentas de usuario AAA bloqueando las cuentas que tienen demasiados intentos fallidos. Una vez que se alcanza la condición, la cuenta de usuario se bloquea. La cuenta de usuario en efecto permanece bloqueada hasta que un administrador borra el estado.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>10.Un usuario se queja de estar bloqueado de un dispositivo después de demasiados intentos fallidos de inicio de sesión en AAA. ¿Qué podría usar el administrador de red para proporcionar un método de acceso de autenticación seguro sin bloquear a un usuario de un dispositivo?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Utilice el comando de retraso de inicio de sesión para intentos de autenticación. *</span></li>
+          <li>Utilice el comando local de inicio de sesión para autenticar el acceso del usuario.</li>
+          <li>Utilice el comando de modo de configuración global max-fail de los intentos de autenticación aaa con un número mayor de fallos aceptables.</li>
+          <li>Utilice la palabra clave none al configurar la lista de métodos de autenticación.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El comando de retraso de inicio de sesión introduce un retraso entre los intentos fallidos de inicio de sesión sin bloquear la cuenta. Esto proporciona a un usuario intentos ilimitados de acceder a un dispositivo sin que la cuenta de usuario se bloquee y, por lo tanto, requiera la intervención del administrador.</p>
+      </div><div class="capituloIT">
+        <h3>11.¿Qué comando de depuración se usa para centrarse en el estado de una conexión TCP cuando se usa TACACS + para la autenticación?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">eventos debug tacacs *</span></li>
+          <li>debac tacacs</li>
+          <li>debug tacacs contabilidad</li>
+          <li>depurar la autenticación aaa</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>El comando debug tacacs events muestra la apertura y el cierre de una conexión TCP a un servidor TACACS +, los bytes que se leen y escriben sobre la conexión y el estado TCP de la conexión.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>12.¿Qué característica es un aspecto importante de la autorización en un dispositivo de red habilitado para AAA?</h3>
+        <ul class="listaIT">
+          <li>La función de autorización mejora el rendimiento de la red.</li>
+          <li><span class="azul">El acceso de usuarios está restringido a ciertos servicios. *</span></li>
+          <li>Las acciones del usuario se registran para su uso en auditorías y eventos de solución de problemas.</li>
+          <li>Un usuario debe ser identificado antes de conceder el acceso a la red.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La autorización es la capacidad de controlar el acceso de los usuarios a servicios específicos. La autenticación se utiliza para verificar la identidad del usuario. La característica de contabilidad registra las acciones del usuario una vez que el usuario está autenticado y autorizado.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.¿Cuál es el resultado de ingresar el comando de red contable aaa en un enrutador?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El enrutador recopila e informa los datos de uso relacionados con las solicitudes de servicio relacionadas con la red. *</span></li>
+          <li>El enrutador genera datos de contabilidad para todas las sesiones de shell EXEC.</li>
+          <li>El enrutador proporciona datos solo para solicitudes de servicio internas.</li>
+          <li>El enrutador genera datos de contabilidad para todas las conexiones salientes, como SSH y Telnet.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los tres parámetros que se pueden usar con la contabilidad aaa son: la
+red ejecuta la contabilidad de todas las solicitudes de servicio relacionadas con la red, incluidas las
+ejecuciones de PPP, la contabilidad de todas las
+conexiones de la sesión de shell de EXEC : se ejecuta la contabilidad de todas las conexiones salientes, como SSH y Telnet Al aire libre</p>
+      </div>
+      <div class="capituloIT">
+        <h3>14.¿Cuál es una característica de la contabilidad AAA?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Los posibles desencadenantes para el comando predeterminado aaa accounting exec incluyen start-stop y stop-only. *</span></li>
+          <li>La contabilidad solo se puede habilitar para las conexiones de red.</li>
+          <li>La contabilidad se ocupa de permitir y no permitir el acceso de usuarios autenticados a ciertas áreas y programas en la red.</li>
+          <li>No se requiere que los usuarios se autentiquen antes de que la contabilidad AAA registre sus actividades en la red.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La contabilidad AAA permite el seguimiento del uso, como el acceso telefónico y la sesión del shell EXEC, para registrar los datos recopilados en una base de datos y generar informes sobre los datos recopilados. La configuración de la contabilidad AAA con la palabra clave Start-Stop desencadena el proceso de enviar un aviso contable de "inicio" al comienzo de un proceso y un aviso contable de "parada" al final de un proceso. La contabilidad AAA no se limita a las actividades de conexión de red. La contabilidad AAA está vigente, si está habilitada, después de que un usuario se haya autenticado correctamente. Permitir y no permitir el acceso de los usuarios es el alcance de la autorización AAA.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>15.El método de autenticación almacena los nombres de usuario y las contraseñas en el enrutador y es ideal para redes pequeñas.</h3>
+        <ul class="listaIT">
+          <li>AAA local sobre TACACS +</li>
+          <li>basado en servidor AAA sobre TACACS +</li>
+          <li><span class="azul">local AAA *</span></li>
+          <li>AAA local sobre RADIUS</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p></p>
+      </div>
+      <div class="capituloIT">
+        <h3>16.¿Qué componente de AAA le permite a un administrador rastrear a las personas que acceden a los recursos de la red y cualquier cambio que se realice en esos recursos?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">contabilidad *</span></li>
+          <li>accesibilidad</li>
+          <li>autenticación</li>
+          <li>autorización</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Uno de los componentes en AAA es la contabilidad. Después de que un usuario se autentica a través de AAA, los servidores AAA mantienen un registro detallado de exactamente qué acciones realiza el usuario autenticado en el dispositivo.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.¿Qué dos características están incluidas en los protocolos TACACS + y RADIUS? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li>Soporte 802.1X</li>
+          <li>Procesos de autenticación y autorización separados</li>
+          <li><span class="azul">Utilización de protocolos de capa de transporte *</span></li>
+          <li><span class="azul">cifrado de contraseña *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Tanto TACACS + como RADIUS admiten el cifrado de contraseñas (TACACS + cifra todas las comunicaciones) y usan el protocolo de Capa 4 (TACACS + usa TCP y RADIUS usa UDP). TACACS + admite la separación de procesos de autenticación y autorización, mientras que RADIUS combina la autenticación y la autorización como un proceso. RADIUS es compatible con la tecnología de acceso remoto, como 802.1x y SIP; TACACS + no lo hace.</p>
+      </div><div class="capituloIT">
+        <h3>18.¿Qué protocolo de autenticación basado en servidor sería el mejor para una organización que desea aplicar políticas de autorización por grupo?</h3>
+        <ul class="listaIT">
+          <li>SSH</li>
+          <li>RADIO</li>
+          <li>ACS</li>
+          <li><span class="azul">TACACS+ *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>TACACS + se considera más seguro que RADIUS porque todo el tráfico de TACACS + está cifrado en lugar de solo la contraseña del usuario cuando se usa RADIUS.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>19.Consulte la presentación. ¿Qué enunciado describe la configuración de los puertos para Server1?</h3>
+        <ul class="listaIT">
+          <img src="imagen/CCNA-Security-Chapter-3-Exam-Answer-v2-002.jpg" alt="" class="fotoIT">
+          <li>La configuración utilizando los puertos predeterminados para un router Cisco.</li>
+          <li>La configuración de los puertos requiere que se utilice 1812 para la autenticación y los puertos de autorización.</li>
+          <li>La configuración no estará activa hasta que se guarde y Rtr1 se reinicie.</li>
+          <li><span class="azul">Los puertos configurados para Server1 en el enrutador deben ser idénticos a los configurados en el servidor RADIUS. *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los enrutadores Cisco, de forma predeterminada, usan el puerto 1645 para la autenticación y el puerto 1646 para la contabilidad. En la salida de configuración, la configuración de los puertos de autenticación y autorización RADIUS debe coincidir en el enrutador Rtr1 y Server1.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.¿Verdadero o falso?
+La palabra clave de conexión única evita la configuración de varios servidores TACACS + en un enrutador habilitado para AAA.</h3>
+        <ul class="listaIT">
+          <li><span class="azul">falso *</span></li>
+          <li>cierto</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La palabra clave de conexión única mejora el rendimiento de TCP al mantener una conexión TCP única durante toda la sesión. La palabra clave no impide la configuración de varios servidores TACACS +.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>21.¿Por qué un administrador de red incluiría una configuración de nombre de usuario local, cuando el enrutador habilitado para AAA también está configurado para autenticarse usando varios servidores ACS?</h3>
+        <ul class="listaIT">
+          <li>Debido a que los servidores ACS solo admiten el acceso de usuarios remotos, los usuarios locales solo pueden autenticarse utilizando una base de datos de nombre de usuario local.</li>
+          <li>Se requiere una base de datos de nombre de usuario local para configurar la autenticación mediante servidores ACS.</li>
+          <li><span class="azul">La base de datos de nombre de usuario local proporcionará una copia de seguridad para la autenticación en caso de que los servidores de ACS no estén disponibles. *</span></li>
+          <li>Sin una base de datos de nombre de usuario local, el enrutador requerirá una autenticación exitosa con cada servidor ACS.</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La base de datos de nombre de usuario local puede servir como un método de respaldo para la autenticación si no hay servidores de ACS disponibles.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>22.¿Qué método de autenticación almacena los nombres de usuario y las contraseñas en el enrutador y es ideal para redes pequeñas?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">local AAA *</span></li>
+          <li>basado en servidor AAA</li>
+          <li>basado en servidor AAA sobre TACACS +</li>
+          <li>AAA local sobre TACACS +</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>En una red pequeña con unos pocos dispositivos de red, la autenticación AAA se puede implementar con la base de datos local y con los nombres de usuario y las contraseñas almacenados en los dispositivos de red. La autenticación mediante el protocolo TACACS + o RADIUS requerirá servidores ACS dedicados, aunque esta solución de autenticación se adapta bien en una red grande.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>23.¿Qué dispositivo se considera un suplicante durante el proceso de autenticación 802.1X?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El cliente que está solicitando autenticación *</span></li>
+          <li>El enrutador que sirve como puerta de enlace predeterminada</li>
+          <li>El servidor de autenticación que está realizando la autenticación del cliente.</li>
+          <li>CITY</li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Los dispositivos involucrados en el proceso de autenticación 802.1X son los siguientes: <br>
+El suplicante, que es el cliente que solicita el acceso a la red. <br>
+El autenticador, que es el interruptor al que el cliente se está conectando y que en realidad está controlando el acceso físico a la red.<br>
+El servidor de autenticación. que realiza la autenticación real</p>
+      </div>
+      <div class="capituloIT">
+        <h3>24.¿Qué protocolo se usa para encapsular los datos EAP entre el autenticador y el servidor de autenticación que realiza la autenticación 802.1X?</h3>
+        <ul class="listaIT">
+          <li>SSH</li>
+          <li>MD5</li>
+          <li>TACACS +</li>
+          <li><span class="azul">RADIO *</span></li>
+          <li>@Javi__Super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>La encapsulación de datos EAP entre el autenticador y el servidor de autenticación se realiza mediante RADIUS.</p>
+      </div>
+
+    </div>
+
+  </body>
+</html>

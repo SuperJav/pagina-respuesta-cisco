@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA 6</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.¿Qué característica de la capa de red en el modelo OSI permite transportar paquetes para múltiples tipos de comunicaciones entre muchos hosts?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">la capacidad de operar sin tener en cuenta los datos que se llevan en cada paquete *</span></li>
+          <li>La desencapsulación de los encabezados de las capas inferiores.</li>
+          <li>La selección de rutas y paquetes directos hacia el destino.</li>
+          <li>La capacidad de gestionar el transporte de datos entre procesos que se ejecutan en hosts.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+la función de los protocolos de capa de red especifica la estructura de paquetes y el procesamiento utilizado para llevar los datos de un host a otro host. Los datos de comunicación reales están encapsulados en la PDU de la capa de red. La característica de su operación, independientemente de los datos transportados en cada paquete, permite a la capa de red transportar paquetes para múltiples tipos de comunicaciones.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.¿Cuáles son dos características de la propiedad intelectual? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">no requiere una conexión dedicada de extremo a extremo *</span></li>
+          <li><span class="azul">opera independientemente de los medios de la red *</span></li>
+          <li>retransmite paquetes si ocurren errores</li>
+          <li>vuelve a ensamblar los paquetes desordenados en el orden correcto en el extremo del receptor</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+El Protocolo de Internet (IP) es un protocolo de mejor esfuerzo, sin conexión. Esto significa que IP no requiere una conexión de extremo a extremo ni garantiza la entrega de paquetes. IP también es independiente de los medios, lo que significa que funciona independientemente de los medios de la red que transportan los paquetes.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.Cuando se utiliza un protocolo sin conexión en una capa inferior del modelo OSI, ¿cómo se detectan los datos faltantes y se retransmiten si es necesario?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Los protocolos orientados a la conexión de la capa superior realizan un seguimiento de los datos recibidos y pueden solicitar la retransmisión de los protocolos de nivel superior en el host de envío. *</span></li>
+          <li>Los acuses de recibo sin conexión se utilizan para solicitar la retransmisión.</li>
+          <li>Los protocolos IP de capa de red administran las sesiones de comunicación si los servicios de transporte orientados a la conexión no están disponibles.</li>
+          <li>El proceso de entrega de mejor esfuerzo garantiza que se reciban todos los paquetes que se envían.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+cuando los protocolos sin conexión están en uso en una capa inferior del modelo OSI, es posible que los protocolos de nivel superior tengan que trabajar juntos en los hosts de envío y recepción para tener en cuenta y retransmitir los datos perdidos. En algunos casos, esto no es necesario, porque para algunas aplicaciones es tolerable una cierta cantidad de pérdida de datos.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>4.¿Qué campo en el encabezado de IPv4 se usa para evitar que un paquete atraviese una red sin fin?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Tiempo para vivir *</span></li>
+          <li>Secuencia de números</li>
+          <li>Número de acuse de recibo</li>
+          <li>Servicios diferenciados</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+el valor del campo Tiempo de vida (TTL) en el encabezado de IPv4 se usa para limitar la vida útil de un paquete. El host de envío establece el valor TTL inicial; que se reduce en uno cada vez que el paquete es procesado por un enrutador. Si el campo TTL se reduce a cero, el enrutador descarta el paquete y envía un mensaje de tiempo excedido del Protocolo de mensajes de control de Internet (ICMP) a la dirección IP de origen. El campo Servicios diferenciados (DS) se usa para determinar la prioridad de cada paquete. El Número de secuencia y el Número de acuse de recibo son dos campos en el encabezado TCP.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.¿Qué campo de encabezado de IPv4 identifica el protocolo de capa superior transportado en el paquete?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Protocolo *</span></li>
+          <li>Identificación</li>
+          <li>Versión</li>
+          <li>Servicios diferenciados</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+es el campo Protocolo en el encabezado IP el que identifica el protocolo de capa superior que lleva el paquete. El campo Versión identifica la versión de IP. El campo Servicios diferenciales se usa para establecer la prioridad de paquetes. El campo de identificación se utiliza para reordenar paquetes fragmentados.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.¿Cuál es una de las ventajas que ofrece el encabezado simplificado de IPv6 sobre IPv4?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">manejo eficiente de paquetes *</span></li>
+          <li>encabezado de menor tamaño</li>
+          <li>Poco requerimiento para procesar sumas de comprobación.</li>
+          <li>Direcciones IP de origen y destino de menor tamaño</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+El encabezado simplificado de IPv6 ofrece varias ventajas sobre IPv4: <br>
+· Mejor eficiencia de enrutamiento y manejo eficiente de paquetes para el rendimiento y la escalabilidad de la tasa de reenvío <br>
+· No hay requisitos para procesar sumas de comprobación <br>
+· Mecanismos de encabezado de extensión simplificados y más eficientes (en oposición al campo Opciones de IPv4) <br>
+· Un campo Etiqueta de flujo para el procesamiento por flujo sin necesidad de abrir el paquete interno de transporte para identificar los distintos flujos de tráfico</p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.Consulte la presentación. ¿Qué ruta de la tabla de enrutamiento de PC1 se utilizará para llegar a PC2?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i275479v1n1_206386.jpg" class="fotoIT" alt="">
+          <li>A</li>
+          <img src="imagen/aaa.jpg" class="fotoIT" alt="">
+          <li>SEGUNDO</li>
+          <img src="imagen/bbb.jpg" class="fotoIT" alt="">
+          <li>DO</li>
+          <img src="imagen/ccc.jpg" class="fotoIT" alt="">
+          <li>RE</li>
+          <img src="imagen/ddd.jpg" class="fotoIT" alt="">
+          <li><span class="azul">Respuesta correcta: A *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+PC1 y PC2 están en la red 192.168.10.0 con la máscara 255.255.255.0, por lo que no es necesario acceder a la puerta de enlace predeterminada (entrada 0.0.0.0 0.0.0.0). La entrada 127.0.0.1 255.255.255.255 es la interfaz de bucle invertido y la entrada 192.168.10.10 255.255.255.255 identifica la interfaz de dirección PC1.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>8.Consulte la presentación. R1 recibe un paquete destinado a la dirección IP 192.168.2.10. ¿Qué interfaz reenviará R1 el paquete?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i206421v1n1_Question3.jpg" class="fotoIT" alt="">
+          <li><span class="azul">Serial0 / 0/1 *</span></li>
+          <li>Serial0 / 0/0</li>
+          <li>FastEthernet0 / 1</li>
+          <li>FastEthernet0 / 0</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>9.¿Qué tipo de ruta se indica con el código C en una tabla de enrutamiento IPv4 en un enrutador Cisco?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">ruta conectada directamente *</span></li>
+          <li>ruta estática</li>
+          <li>Ruta por defecto</li>
+          <li>Ruta dinámica que se aprende a través de EIGRP.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>10.¿Qué entrada de la tabla de enrutamiento tiene una dirección de siguiente salto asociada con una red de destino?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">rutas remotas *</span></li>
+          <li>rutas conectadas directamente</li>
+          <li>rutas locales</li>
+          <li>Rutas fuente C y L</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br> las
+entradas de la tabla de enrutamiento para rutas remotas tendrán una dirección IP de siguiente salto. La dirección IP del siguiente salto es la dirección de la interfaz del enrutador del siguiente dispositivo que se utilizará para llegar a la red de destino. Las rutas locales y conectadas directamente no tienen siguiente salto, ya que no requieren pasar por otro enrutador para ser alcanzadas.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>11.¿Qué declaración describe una característica de hardware de un enrutador Cisco 1941 que tiene la configuración de hardware predeterminada?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Tiene dos tipos de puertos que se pueden usar para acceder a la consola. *</span></li>
+          <li>No tiene un puerto AUX.</li>
+          <li>Cuenta con tres interfaces FastEthernet para acceso LAN.</li>
+          <li>No requiere una CPU porque se basa en Compact Flash para ejecutar el IOS.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>12.Siguiendo la configuración predeterminada, ¿cuál es el siguiente paso en la secuencia de inicio del enrutador después de que el IOS se cargue desde la memoria flash?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Localice y cargue el archivo de configuración de inicio desde la NVRAM. *</span></li>
+          <li>Realizar la rutina POST.</li>
+          <li>Cargue el programa bootstrap desde la ROM.</li>
+          <li>Cargue el archivo de configuración en ejecución desde la RAM.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:
+Hay tres pasos principales para la secuencia de inicio del enrutador:<br>
+Realizar la autoprueba de encendido (POST) <br>
+Cargar el IOS desde el servidor Flash o TFTP <br>
+Cargar el archivo de configuración de inicio desde la NVRAM</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.¿Cuáles son dos tipos de interfaces de enrutador? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">LAN *</span></li>
+          <li><span class="azul">PÁLIDO *</span></li>
+          <li>DHCP</li>
+          <li>Telnet</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>14.¿Qué dos elementos de información se encuentran en la memoria RAM de un enrutador Cisco durante el funcionamiento normal? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Cisco IOS *</span></li>
+          <li><span class="azul">Tabla de enrutamiento IP *</span></li>
+          <li>software de diagnóstico básico</li>
+          <li>archivo de configuración de inicio</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+el archivo IOS de Cisco se almacena en la memoria flash y se copia en la RAM durante el arranque. La tabla de enrutamiento IP también se almacena en la memoria RAM. El software de diagnóstico básico se almacena en la ROM y el archivo de configuración de inicio se almacena en la NVRAM.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>15.Un enrutador arranca y entra en modo de configuración. ¿Cuál es la razón para esto?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Falta el archivo de configuración de la NVRAM. *</span></li>
+          <li>La imagen de IOS está corrupta.</li>
+          <li>Cisco IOS no se encuentra en la memoria flash.</li>
+          <li>El proceso POST ha detectado un fallo de hardware.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>16.¿Cuál es el propósito del archivo de configuración de inicio en un enrutador Cisco?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">para contener los comandos que se utilizan para configurar inicialmente un enrutador en el inicio *</span></li>
+          <li>Facilitar el funcionamiento básico de los componentes de hardware de un dispositivo.</li>
+          <li>para contener los comandos de configuración que el router IOS está utilizando actualmente</li>
+          <li>para proporcionar una versión de respaldo limitada del IOS, en caso de que el enrutador no pueda cargar el IOS completo</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+el archivo de configuración de inicio se almacena en la NVRAM y contiene los comandos necesarios para configurar inicialmente un enrutador. También crea el archivo de configuración en ejecución que se almacena en la memoria RAM.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.¿Qué tres comandos se utilizan para configurar el acceso seguro a un enrutador a través de una conexión a la interfaz de la consola? (Elige tres.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">línea consola 0 *</span></li>
+          <li>interfaz fastethernet 0/0</li>
+          <li><span class="azul">contraseña cisco *</span></li>
+          <li><span class="azul">iniciar sesión *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>18.¿Qué característica describe una mejora de IPv6 sobre IPv4?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El encabezado de IPv6 es más simple que el encabezado de IPv4, lo que mejora el manejo de paquetes. *</span></li>
+          <li>Las direcciones IPv6 se basan en un direccionamiento plano de 128 bits en lugar de IPv4 que se basa en un direccionamiento jerárquico de 32 bits.</li>
+          <li>Tanto IPv4 como IPv6 admiten la autenticación, pero solo IPv6 admite capacidades de privacidad.</li>
+          <li>El espacio de direcciones IPv6 es cuatro veces más grande que el espacio de direcciones IPv4.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+las direcciones IPv6 se basan en un direccionamiento jerárquico de 128 bits, y el encabezado de IPv6 se ha simplificado con menos campos, mejorando el manejo de paquetes. IPv6 admite de forma nativa las capacidades de autenticación y privacidad en lugar de IPv4 que necesita funciones adicionales para admitirlas. El espacio de direcciones IPv6 es mucho más grande que el espacio de direcciones IPv4.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>19.Abra la actividad PT. La contraseña habilitada en todos los dispositivos es cisco.
+Realice las tareas en las instrucciones de la actividad y luego responda la pregunta.
+¿Por qué razón está ocurriendo la falla?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">SW1 no tiene una puerta de enlace predeterminada configurada. *</span></li>
+          <li>La dirección IP de SW1 está configurada en una subred incorrecta.</li>
+          <li>PC2 tiene una puerta de enlace predeterminada incorrecta configurada.</li>
+          <li>ca</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Falta el comando ip default-gateway en la configuración de SW1. Los paquetes de PC2 pueden alcanzar el SW1 con éxito, pero SW1 no puede reenviar paquetes de respuesta más allá de la red local sin que se haya emitido el comando ip default-gateway.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.Haga coincidir el comando con el modo del dispositivo en el que se ingresa el comando. (No se utilizan todas las opciones).</h3>
+        <ul class="listaIT">
+          <li>Pregunta</li>
+          <img src="imagen/2017-05-23_115945-610x250.jpg" class="fotoIT" alt="">
+          <li><span class="azul">Respuesta</span></li>
+          <img src="imagen/2017-05-23_115945-1-610x250.jpg" class="fotoIT" alt="CCNA 6">
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+el comando de habilitación se ingresa en el modo R1>. El comando de inicio de sesión se ingresa en el modo R1 (config-line) #. El comando copy running-config startup-config se ingresa en el modo R1 #. El comando de la dirección IP 192.168.4.4 255.255.255.0 se ingresa en el modo R1 (config-if) #. El comando de cifrado de contraseña de servicio se ingresa en el modo de configuración global.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>21.Cuando los protocolos sin conexión se implementan en las capas más bajas del modelo OSI, ¿qué se suele utilizar para confirmar el recibo de los datos y solicitar la retransmisión de los datos faltantes?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Protocolos orientados a la conexión de capa superior *</span></li>
+          <li>reconocimientos sin conexión</li>
+          <li>Protocolos IP de capa de red</li>
+          <li>Protocolos UDP de la capa de transporte</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>22.¿Qué campo de encabezado de IPv4 es responsable de definir la prioridad del paquete?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">servicios diferenciados *</span></li>
+          <li>etiqueta de flujo</li>
+          <li>banderas</li>
+          <li>clase de tráfico</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>23.¿Por qué no se necesita NAT en IPv6?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">¿Cualquier host o usuario puede obtener una dirección de red pública de IPv6 porque el número de direcciones IPv6 disponibles es extremadamente alto?</span></li>
+          <li>Debido a que IPv6 tiene seguridad integrada, no es necesario ocultar las direcciones IPv6 de las redes internas.</li>
+          <li>Los problemas inducidos por las aplicaciones NAT se resuelven porque el encabezado de IPv6 mejora el manejo de paquetes por parte de los enrutadores intermedios.</li>
+          <li>Los problemas de conectividad de extremo a extremo causados ​​por NAT se solucionan porque el número de rutas aumenta con el número de nodos que están conectados a Internet.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>24.¿Qué es un servicio proporcionado por el campo Etiqueta de flujo del encabezado de IPv6?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Informa a los dispositivos de red para mantener la misma ruta para los paquetes de aplicaciones en tiempo real. *</span></li>
+          <li>Limita la vida útil de un paquete.</li>
+          <li>Identifica la longitud total del paquete IPv6.</li>
+          <li>Clasifica los paquetes para el control de congestión de tráfico.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>25.¿Cómo aseguran los hosts que sus paquetes se dirigen al destino de red correcto?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">¿Tienen que mantener su propia tabla de enrutamiento local que contiene una ruta a la interfaz de bucle invertido, una ruta de red local y una ruta predeterminada remota?</span></li>
+          <li>Siempre dirigen sus paquetes a la puerta de enlace predeterminada, que será responsable de la entrega del paquete.</li>
+          <li>Buscan en su propia tabla de enrutamiento local una ruta a la dirección de destino de la red y pasan esta información a la puerta de enlace predeterminada.</li>
+          <li>Envían un paquete de consulta a la puerta de enlace predeterminada que solicita la mejor ruta.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>26.¿Qué dos comandos se pueden usar en un host de Windows para mostrar la tabla de enrutamiento? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">impresión de la ruta *</span></li>
+          <li>netstat -s</li>
+          <li><span class="azul">netstat -r *</span></li>
+          <li>mostrar ruta ip</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>27.Durante el proceso de reenvío de tráfico, ¿qué hará el enrutador inmediatamente después de hacer coincidir la dirección IP de destino con una red en una entrada de la tabla de enrutamiento conectada directamente?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">cambiar el paquete a la interfaz directamente conectada *</span></li>
+          <li>buscar la dirección del siguiente salto para el paquete</li>
+          <li>Descartar el tráfico tras consultar la tabla de rutas.</li>
+          <li>analizar la dirección IP de destino</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>28.Un técnico está configurando un enrutador que se está ejecutando activamente en la red. De repente, el poder del enrutador se pierde. Si el técnico no ha guardado la configuración, ¿qué dos tipos de información se perderán? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">tabla de ruteo *</span></li>
+          <li>Archivo de imagen Cisco IOS</li>
+          <li><span class="azul">Caché ARP *</span></li>
+          <li>archivo de arranque</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>29.¿Cuáles dos interfaces permitirán el acceso a través de las líneas VTY para configurar el enrutador? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li>interfaces auxiliares</li>
+          <li><span class="azul">Interfaces LAN *</span></li>
+          <li><span class="azul">Interfaces WAN *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>30.¿Qué dos archivos, si se encuentran, se copian en la RAM cuando se inicia un enrutador con la configuración de registro de configuración predeterminada? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Archivo de imagen IOS *</span></li>
+          <li>configuración en ejecución</li>
+          <li><span class="azul">configuración de inicio *</span></li>
+          <li>Diagnóstico POST</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>31.¿Cuándo se usará la imagen de Cisco IOS que se encuentra en la ROM para iniciar el enrutador?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">cuando no se puede encontrar el IOS completo *</span></li>
+          <li>durante una operación de transferencia de archivos</li>
+          <li>durante un proceso de arranque normal</li>
+          <li>Cuando la configuración en ejecución le indica al enrutador que haga esto</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>32.Después de solucionar el problema de un enrutador, el administrador de red desea guardar la configuración del enrutador para que se use automáticamente la próxima vez que se reinicie el enrutador. ¿Qué orden se debe emitir?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">copia running-config startup-config *</span></li>
+          <li>recargar *</li>
+          <li>Copiar el flash de configuración de inicio</li>
+          <li>copia de ejecución de configuración de flash</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>33.¿Qué tres comandos se usan para configurar una contraseña para una persona que conecta un cable a un nuevo enrutador para que se pueda realizar una configuración inicial? (Elige tres.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">línea consola 0 *</span></li>
+          <li><span class="azul">iniciar sesión *</span></li>
+          <li><span class="azul">contraseña cisco *</span></li>
+          <li>habilitar cisco secreto</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+      <div class="capituloIT">
+        <h3>34.¿Qué afirmación sobre las interfaces del enrutador es cierta?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Una interfaz de enrutador configurada y activada debe estar conectada a otro dispositivo para poder funcionar. *</span></li>
+          <li>Los comandos que aplican una dirección IP y una máscara de subred a una interfaz se ingresan en el modo de configuración global.</li>
+          <li><span class="azul">Una vez que se da el comando de no apagar, la interfaz del enrutador está activa y operativa. *</span></li>
+          <li>Las interfaces LAN del enrutador no están activadas de forma predeterminada, pero las interfaces WAN del enrutador sí lo están.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>35.Consulte la presentación. Rellena el espacio en blanco. </h3>
+        <ul class="listaIT">
+          <img src="imagen/i206377v1n1_New-file-206377 (1).png" class="fotoIT" alt="">
+          <h3>Un paquete que sale de PC-1 tiene que atravesar 3 saltos para alcanzar PC-4.</h3>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>36.Rellena el espacio en blanco.</h3>
+          <ul class="listaIT">
+          <li> En un enrutador, la <span class="azul">ROM</span> es la memoria no volátil donde se almacenan el software de diagnóstico, las instrucciones de inicio y un IOS limitado.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>

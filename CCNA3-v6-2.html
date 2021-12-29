@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA3 2</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h4>1.Un conmutador está participando en un dominio VTP y configurado como un servidor VTP. El conmutador debe propagar la VLAN 10 (utilizada por el departamento de fabricación) a través del dominio VTP, pero no tiene ningún host conectado directamente que use esa VLAN en particular. ¿Qué configuración satisfaría este requisito?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">nombre de vlan 10 Fabricación <br>
+              salida *</span></li>
+          <li>interfaz fa0 / 24 <br>
+              modo de puerto de conmutación acceso al <br>
+              puerto de conmutación vlan 10</li>
+          <li>Vtp modo servidor <br>
+              vtp contraseña Fabricación</li>
+          <li>interfaz g0 / 1
+                modo
+                conmutación troncal conmutación troncal vlan nativo 10</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>2.¿Qué comando debe implementar el administrador de red para evitar la transferencia de tramas DTP entre un conmutador Cisco y un conmutador que no es Cisco?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">S1 (config-if) # switchport no negociar *</span></li>
+          <li>S1 (config-if) # troncal modo switchport</li>
+          <li>S1 (config-if) # conmutador troncal permitido vlan ninguno</li>
+          <li>S1 (config-if) # modo de puerto de conmutación dinámico deseable</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>3.Al configurar el enrutamiento entre VLAN en un conmutador multicapa, un administrador de red ejecuta el comando no switchport en una interfaz que está conectada a otro conmutador. ¿Cuál es el propósito de este comando?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">para crear un puerto enrutado para una sola red *</span></li>
+          <li>para crear una interfaz virtual conmutada</li>
+          <li>para proporcionar un enlace troncal estático</li>
+          <li>para proporcionar un enlace de acceso que etiqueta el tráfico VLAN</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>4.¿Qué sucede si se cambian los puertos después de eliminar la VLAN a la que están asignados?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">Los puertos dejan de comunicarse con los dispositivos conectados. *</span></li>
+          <li>Los puertos se colocan en modo troncal.</li>
+          <li>Los puertos están asignados a VLAN1, la VLAN predeterminada.</li>
+          <li>Los puertos están deshabilitados.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>5.Dada la siguiente configuración, ¿cuáles dos afirmaciones son verdaderas? (Elija dos).
+            Switch (vlan) # vtp versión 2 <br>
+            switch (vlan) # vtp mode server <br>
+            switch (vlan) # vtp dominio Cisco <br>
+            switch (vlan) # vtp contraseña mypassword</h4>
+        <ul class="listaIT">
+          <li><span class="azul">Este conmutador puede enviar y recibir anuncios solo del dominio de Cisco. *</span></li>
+          <li>Este conmutador puede anunciar su configuración de VLAN a otros conmutadores en el dominio de Cisco solamente, pero puede recibir anuncios de otros dominios.</li>
+          <li>Este conmutador mantiene una lista completa de todas las VLAN y puede crear VLAN, pero no puede eliminar ni modificar las VLAN existentes.</li>
+          <li><span class="azul">Este conmutador puede crear, modificar y eliminar todas las VLAN dentro del dominio de Cisco. *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>6.¿Cuál es una característica de un puerto enrutado en un conmutador de Capa 3?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">No está asignado a una VLAN.</span></li>
+          <li>Se utiliza comúnmente como un enlace WAN.</li>
+          <li>Es compatible con el enlace troncal.</li>
+          <li>No puede tener una dirección IP asignada.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>7.¿Dónde se almacena el archivo vlan.dat en un switch?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">en memoria flash *</span></li>
+          <li>en el medio de almacenamiento externo o en el disco duro interno</li>
+          <li>en la memoria RAM</li>
+          <li>en NVRAM</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>8.¿Cómo se ven afectados los diseños de direccionamiento IP por las implementaciones de VLAN?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">Cada VLAN debe tener un número de red diferente. *</span></li>
+          <li>Las VLAN no utilizan una dirección de transmisión.</li>
+          <li>Las VLAN no son compatibles con VLSM.</li>
+          <li>Cada VLAN debe tener una máscara de subred diferente.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>9.¿Qué es una desventaja de usar conmutadores multicapa para el enrutamiento entre VLAN?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">Los conmutadores de múltiples capas son más caros que las implementaciones de enrutador en un palo. *</span></li>
+          <li>Los switches multicapa tienen una latencia más alta para el enrutamiento de Capa 3.</li>
+          <li>El árbol de expansión debe estar deshabilitado para implementar el enrutamiento en un conmutador multicapa.</li>
+          <li>Los conmutadores multicapa están limitados al uso de enlaces troncales para el enrutamiento de Capa 3.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>10.Consulte la presentación. El conmutador realiza el enrutamiento de los hosts que se conectan a la VLAN 5. Si la PC accede a un servidor web desde Internet, ¿en qué momento se agregará un número de VLAN al marco?</h4>
+        <ul class="listaIT">
+          <img src="imagen/i212621v1n1_212621.png" class="fotoIT" alt="">
+          <p>el administrador está configurando el enrutamiento entre VLAN. Sin embargo, la comunicación entre VLAN 10 y VLAN 20 f.</p>
+          <li><span class="azul">No se agrega ningún número de VLAN al marco en este diseño. *</span></li>
+          <li>punto E</li>
+          <li>punto B</li>
+          <li>punto D</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>11.Rellena el espacio en blanco. </h4>
+        <ul class="listaIT">
+          <li>En un switch de Cisco, la información de VLAN de rango extendido se almacena en el archivo _____________. <span class="azul"> Respuesta correcta: configuración en ejecución</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>12.¿Qué tres acciones pueden causar problemas con una implementación de VTP? (Elige tres.)</h4>
+        <ul class="listaIT">
+          <li><span class="azul">utilizando un enlace no troncal para conectar conmutadores *</span></li>
+          <li><span class="azul">usar minúsculas en un conmutador y mayúsculas en otro conmutador para nombres de dominio *</span></li>
+          <li>No usar contraseñas VTP en ningún conmutador</li>
+          <li><span class="azul">utilizando conmutadores que no sean de Cisco *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>13.¿Qué dos eventos harán que cambie el número de revisión de VTP en un servidor VTP? (Escoge dos.)</h4>
+        <ul class="listaIT">
+          <li><span class="azul">añadiendo VLAN *</span></li>
+          <li>cambiando el interruptor a un cliente VTP</li>
+          <li>reiniciando el interruptor</li>
+          <li><span class="azul">cambiando el nombre de dominio VTP *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>14.En un conmutador Cisco, ¿dónde se almacena la información de VLAN de rango extendido?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">ejecutando el archivo de configuración *</span></li>
+          <li>NVRAM</li>
+          <li>archivo de configuración de inicio</li>
+          <li>destello</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>15.Consulte la presentación. PC1 no puede comunicarse con el servidor 1. El administrador de red emite el comando show interfaces trunk para comenzar la solución de problemas. ¿Qué conclusión se puede hacer en base a la salida de este comando?</h4>
+        <ul class="listaIT">
+          <img src="imagen/hfdhds2324.png" class="fotoIT" alt="">
+          <li><span class="azul">La interfaz G0 / 2 no está configurada como una troncal. *</span></li>
+          <li>La encapsulación en la interfaz G0 / 1 es incorrecta.</li>
+          <li>VLAN 20 no se ha creado.</li>
+          <li>El modo DTP está configurado incorrectamente como automático dinámico en la interfaz G0 / 1.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>16.Consulte la presentación. La comunicación entre las VLAN no está ocurriendo. ¿Cual podría ser el problema?</h4>
+        <ul class="listaIT">
+          <img src="imagen/i212626v1n2_212626-1.png" class="fotoIT" alt="">
+          <li><span class="azul">El puerto del interruptor Gi1 / 1 no está en modo de enlace troncal. *</span></li>
+          <li>Existe un problema de dúplex entre el conmutador y el enrutador.</li>
+          <li>Las puertas de enlace predeterminadas no se han configurado para cada VLAN.</li>
+          <li>Se ha utilizado el puerto incorrecto en el enrutador.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>17.¿Qué dos parámetros VTP deben ser idénticos en todos los switches en la red para poder participar en el mismo dominio VTP? (Escoge dos.)</h4>
+        <ul class="listaIT">
+          <li><span class="azul">Contraseña de dominio VTP *</span></li>
+          <li>Modo VTP modo de servidor transparente VTP</li>
+          <li>Modo cliente VTP</li>
+          <li><span class="azul">Nombre de dominio VTP *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>18.¿Cuál es una característica del VTP?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">Los conmutadores en modo transparente VTP reenvían anuncios VTP. *</span></li>
+          <li>Los conmutadores en modo transparente VTP vuelven al modo servidor VTP después de reiniciar.</li>
+          <li>Los conmutadores en el modo de servidor VTP no pueden actualizarse mediante los conmutadores en el modo de cliente VTP.</li>
+          <li>Los conmutadores en el modo cliente VTP almacenan la información de VLAN en la NVRAM.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>19.¿En qué dos ocasiones debería un administrador deshabilitar el DTP al administrar una red de área local? (Escoge dos.)</h4>
+        <ul class="listaIT">
+          <li><span class="azul">al conectar un conmutador Cisco a un conmutador que no sea Cisco *</span></li>
+          <li>en enlaces que deberían intentar dinámicamente trunking</li>
+          <li>cuando un interruptor vecino usa un modo DTP de auto dinámico</li>
+          <li><span class="azul">en enlaces que no deben ser trunking *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>20.Consulte la presentación. Un administrador de red está configurando el enrutamiento entre VLAN. Sin embargo, la comunicación entre VLAN 10 y VLAN 20 falla. Según la salida del programa vlancommand, ¿cuál es la causa del problema?</h4>
+        <ul class="listaIT">
+          <img src="imagen/i212674v1n2_212674.png" class="fotoIT" alt="">
+
+          <li><span class="azul">Gi1 / 1 y Gi1 / 2 no están asignados a sus respectivas VLAN. *</span></li>
+          <li>Gi1 / 1 y Gi1 / 2 no están configurados como modo troncal.</li>
+          <li>Las direcciones IP en Gi0 / 0 y Gi0 / 1 se cambian por error.</li>
+          <li>Las direcciones IP en Gi0 / 0 y Gi0 / 1 no están en la misma red.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>21.Abra la actividad PT. Realice las tareas en las instrucciones de la actividad y luego responda la pregunta. Rellena el espacio en blanco. No utilice abreviaturas. ¿Qué comando falta en el conmutador de Capa 3 para restaurar la conectividad completa entre la PC1 y el servidor web? (Tenga en cuenta que al escribir sin apagado no se solucionará este problema).</h4>
+        <ul class="listaIT">
+          <li><span class="azul">Respuesta correcta: dirección IP 192.168.20.1 255.255.255.0</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>22.¿Cómo se enruta el tráfico entre varias VLAN en un conmutador multicapa?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">El tráfico se enruta a través de interfaces VLAN internas. *</span></li>
+          <li>El tráfico se difunde en todas las interfaces físicas.</li>
+          <li>El tráfico se enruta a través de subinterfaces.</li>
+          <li>El tráfico se enruta a través de interfaces físicas.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>23.Consulte la presentación. Un administrador de red está verificando la configuración del enrutamiento entre VLAN. Los usuarios se quejan de que PC2 no puede comunicarse con PC1. Según la salida, ¿cuál es la posible causa del problema?</h4>
+        <ul class="listaIT">
+          <img src="imagen/i212684v1n3_212684-1.png" class="fotoIT" alt="">
+          <li><span class="azul">El comando de encapsulación dot1Q 5 contiene la VLAN incorrecta. *</span></li>
+          <li>La interfaz de comando GigabitEthernet0 / 0.5 se ingresó incorrectamente.</li>
+          <li>El comando no shutdown no se ingresa en las subinterfaces.</li>
+          <li>Gi0 / 0 no está configurado como un puerto troncal.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>24.Consulte la presentación. Se implementó una configuración de enrutador en una palanca para las VLAN 15, 30 y 45, de acuerdo con la salida del comando show running-config. Las PC en la VLAN 45 que utilizan la red 172.16.45.0 / 24 tienen problemas para conectarse a las PC en la VLAN 30 en la red 172.16.30.0 / 24. ¿Qué error es más probable que esté causando este problema?</h4>
+        <ul class="listaIT">
+          <img src="imagen/dsfdeee.jpg" class="fotoIT" alt="">
+          <li><span class="azul">Hay una dirección IP incorrecta configurada en GigabitEthernet 0 / 0.30. *</span></li>
+          <li>A la interfaz GigabitEthernet 0/0 le falta una dirección IP.</li>
+          <li>La VLAN incorrecta se ha configurado en GigabitEthernet 0 / 0.45.</li>
+          <li>El comando no shutdown falta en GigabitEthernet 0 / 0.30.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>25.Consulte la presentación. Después de intentar ingresar la configuración que se muestra en el RTA del enrutador, un administrador recibe un error y los usuarios en la VLAN 20 informan que no pueden comunicarse con los usuarios en la VLAN 30. ¿Qué está causando el problema?</h4>
+        <ul class="listaIT">
+          <img src="imagen/sdsfr43f.jpg" class="fotoIT" alt="">
+          <li><span class="azul">RTA está utilizando la misma subred para VLAN 20 y VLAN 30. *</span></li>
+          <li>No hay ninguna dirección en Fa0 / 0 para usar como puerta de enlace predeterminada.</li>
+          <li>El comando de no cierre debería haberse emitido en Fa0 / 0.20 y Fa0 / 0.30.</li>
+          <li>Dot1q no soporta subinterfaces.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>26.¿Qué comando muestra el tipo de encapsulación, la ID de VLAN de voz y la VLAN de modo de acceso para la interfaz Fa0 / 1?</h4>
+        <ul class="listaIT">
+          <li><span class="azul">mostrar interfaces Fa0 / 1 switchport *</span></li>
+          <li>Mostrar interfaces troncales</li>
+          <li>Mostrar la interfaz de la tabla de direcciones mac Fa0 / 1</li>
+          <li>mostrar vlan breve</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h4>27.Pregunta presentada: empareja el modo DTP con su función. (No se utilizan todas las opciones).</h4>
+        <ul class="listaIT">
+          <li>Pregunta</li>
+          <img src="imagen/2017-07-08_153447-768x202.jpg" class="fotoIT" alt="">
+          <li><span class="azul">Respuesta</span></li>
+          <img src="imagen/2017-07-dsadd08_153447-768x202.jpg" class="fotoIT" alt="">
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>

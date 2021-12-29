@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA v6 6 Practica</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+
+  <div class="aviso2">
+    <h2 class="nota">NOTA:</h2><br><span class="azul">"TIPO A" "TIPO B" "TIPO C" on los mismos. <br><br>
+    Sólo diferente orden de clasificación y nombre del dispositivo.</span>
+  </div>
+  <div class="capituloIT">
+    <img src="imagen/new-ccna-1-ch6-skill-type-C.jpg" class="fotoIT" alt="">
+    <h4>Recibirás una de las tres topologías posibles.</h4>
+    <br>
+    <h3>Tabla de direccionamiento</h3>
+    <br>
+    <table border="1" align="center" class="table" >
+      <tr>
+        <td><strong>Dispositivo</strong></td>
+        <td><strong>Interfaz</strong></td>
+        <td><strong>Dirección</strong></td>
+        <td><strong>Máscara de subred</strong></td>
+        <td><strong>Puerta de enlace predeterminada</strong></td>
+      </tr>
+      <tr>
+        <td>Universidad</td>
+        <td>G0 / 0</td>
+        <td>172.16.5.1</td>
+        <td>255.255.255.0</td>
+        <td>N / A</td>
+      </tr>
+      <tr>
+        <td>Universidad</td>
+        <td>G0 / 1</td>
+        <td>192.168.5.1</td>
+        <td>255.255.255.0</td>
+        <td>N / A</td>
+      </tr>
+      <tr>
+        <td>Facultad</td>
+        <td>VLAN 1</td>
+        <td>172.16.5.2</td>
+        <td>255.255.255.0</td>
+        <td><span class="azul">172.16.5.1</span></td>
+      </tr>
+      <tr>
+        <td>Administración</td>
+        <td>VLAN 1</td>
+        <td>192.168.5.252</td>
+        <td>255.255.255.0</td>
+        <td><span class="azul"> 192.168.5.1</span></td>
+      </tr>
+      <tr>
+        <td>Prof X</td>
+        <td>NIC</td>
+        <td>172.16.5.10</td>
+        <td>255.255.255.0</td>
+        <td><span class="azul"> 172.16.5.1</span></td>
+      </tr>
+      <tr>
+        <td>Prof Y</td>
+        <td>NIC</td>
+        <td>172.16.5.11</td>
+        <td>255.255.255.0</td>
+        <td><span class="azul"> 172.16.5.1</span></td>
+      </tr>
+      <tr>
+        <td>Decano x</td>
+        <td>NIC</td>
+        <td>192.168.5.10</td>
+        <td>255.255.255.0</td>
+        <td><span class="azul"> 192.168.5.1</span></td>
+      </tr>
+      <tr>
+        <td>Dean Y</td>
+        <td>NIC</td>
+        <td>192.168.5.11</td>
+        <td>255.255.255.0</td>
+        <td><span class="azul"> 192.168.5.1</span></td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <h3>Los objetivos</h3>
+    <ul class="listaIT">
+      <li> Realice tareas básicas de configuración de dispositivos en un enrutador y un conmutador </li>
+      <li>Configure los ajustes de direccionamiento IP en dispositivos de red </li>
+      <li> Verifique la conectividad de Capa 3 y resuelva los problemas de conectividad</li>
+    </ul>
+    <h3>Guión</h3>
+    <p>Está trabajando en una red que ya se ha configurado parcialmente. En esta evaluación, completará un conjunto de requisitos configurando algunas configuraciones adicionales en el conmutador de la Facultad y el enrutador. Utilice el conocimiento que ha adquirido en el laboratorio y en los laboratorios para cumplir con los requisitos a continuación.</p>
+    <br>
+    <p><strong>Nota: Si necesita un valor que no se le ha dado, puede usar cualquier valor que desee. Sin embargo, debe usar los valores correctos para las puertas de enlace predeterminadas para que los hosts puedan comunicarse.</strong></p>
+    <h3>Requerimientos</h3>
+    <ul class="listaIT">
+      <li> Determine los valores que faltan en la Tabla de direcciones </li>
+      <li>Configure todos los dispositivos con los valores de la puerta de enlace predeterminados faltantes </li>
+      <li>Nombre el interruptor de Facultad Facultad Su configuración debe coincidir exactamente con este valor </li>
+      <li>Acceso seguro a todas las líneas de configuración del interruptor de Facultad </li>
+      <li>Acceso seguro a la configuraciones de dispositivos del conmutador de la Facultad mediante la contraseña cifrada</li>
+      <li>Asegúrese de que todas las contraseñas de texto sin formato en el conmutador de la Facultad estén cifradas </li>
+      <li> Configure un banner apropiado en el conmutador de la Facultad </li>
+      <li>Configure el direccionamiento para todos los dispositivos de acuerdo con la Tabla de direccionamiento La mayoría de los valores se proporcionan en la tabla , otros debes determinar</li>
+      <li> Interfaces de documentos con descripciones en las interfaces de enrutador de College y la interfaz virtual de conmutador de Facultad </li>
+      <li>Guarde sus configuraciones </li>
+      <li>Verifique la conectividad entre todos los dispositivos Todos los dispositivos deben poder hacer ping a todos los demás dispositivos </li>
+      <li>Solucionar problemas de conectividad</li>
+    </ul>
+    <br>
+    <h3><strong>Todos los dispositivos deben poder hacer ping entre sí cuando haya completado con éxito la actividad.</strong></h3>
+    <br>
+    <h2>Configuración del enrutador de la universidad</h2>
+    <br>
+    <div class="consola">
+      <p>
+        habilitar
+        <br>
+        configurar terminal
+        <br>
+        nombre de host College
+        <br>
+        habilitar cisco secreto
+        <br>
+        linea consola 0
+        <br>
+        contraseña de cisco
+        <br>
+        iniciar sesión
+        <br>
+        salida
+        <br>
+        <br>
+        linea vty 0 4
+        <br>
+        contraseña de cisco
+        <br>
+        iniciar sesión
+        <br>
+        salida
+        <br>
+        <br>
+        servicio de cifrado de contrasenas
+      <br>
+      banner motd $ Sólo personal autorizado $
+      <br>
+      interfaz g0 / 0
+      <br>
+      dirección ip <span class="azul">172.16.5.1  255.255.255.0</span>
+      <br>
+      no apagarse
+      <br>
+      descripción <span class="azul">Facultad LAN</span>
+      <br>
+      salida
+      <br>
+      <br>
+      interfaz g0 / 1
+      <br>
+      dirección ip <span class="azul">192.168.5.1 255.255.255.0</span>
+      <br>
+      no apagarse
+      <br>
+      descripción <span class="azul">Admin LAN</span>
+      <br>
+      fin
+      <br>
+      <br>
+     </p>
+    </div>
+    <br>
+    <h2>Configuración del interruptor de la facultad</h2>
+    <div class="consola">
+      <p>
+        habilitar
+        <br>
+        configurar terminal
+        <br>
+        nombre de la facultad
+        <br>
+        habilitar clase secreta
+        <br>
+        <br>
+        linea consola 0
+        <br>
+        contraseña de cisco
+        <br>
+        iniciar sesión
+        <br>
+        salida
+        <br>
+        <br>
+        linea vty 0 4
+        <br>
+        contraseña de cisco
+        <br>
+        iniciar sesión
+        <br>
+        salida
+        <br>
+        <br>
+        servicio de cifrado de contraseñas
+        <br>
+        banner motd $ Sólo personal autorizado $
+        <br>
+        interfaz vlan 1 <br>
+        dirección ip 172.16.5.2 255.255.255.0 <br>
+        no apagarse <br>
+        Descripción Facultad - Colegio LAN <br>
+        salida
+        <br>
+        ip por defecto de la puerta de enlace 172.16.5.1
+        <br>
+        fin <br>
+        escribir
+
+      </p>
+    </div>
+
+    <br>
+    <h2>Configuración del conmutador de administración</h2>
+    <div class="consola">
+      habilitar <br>
+      configurar terminal
+        <br>
+        nombre de host admin
+        <br>
+        habilitar clase secreta
+        <br>
+          línea consola 0 <br>
+          contraseña de cisco <br>
+        iniciar sesión <br>
+        salida <br>
+        <br>
+        linea vty 0 4 <br>
+        contraseña de cisco <br>
+        iniciar sesión <br>
+        salida <br>
+        <br>
+        servicio de cifrado de contraseñas <br>
+        <br>
+        banner motd $ Sólo personal autorizado $ <br>
+
+        interfaz vlan 1  <br>
+        dirección ip 192.168.5.252 255.255.255.0 <br>
+        no apagarse <br>
+        descripción Admin - College LAN <br>
+        salida <br>
+
+          ip default-gateway <span class="azul">192.168.5.1</span> <br>
+          fin <br>
+
+          escribir
+    </div>
+    <br>
+
+  </div>
+  <div class="capituloIT">
+    <h3>Prof X</h3>
+    <ul class="listaIT">
+      <li>Dirección IP: 172.16.5.10 <br>
+          Máscara de subred: 255.255.255.0 <br>
+          Puerta de enlace predeterminada: br
+          <span class="azul">172.16.5.1</span></li>
+    </ul>
+    <h3>Prof Y</h3>
+    <ul class="listaIT">
+      <li>Dirección IP: 172.16.5.11 <br>
+          Máscara de subred: 255.255.255.0 <br>
+          Puerta de enlace predeterminada:<br><span class="azul">172.16.5.1</span> </li>
+    </ul>
+    <h3>Decano x</h3>
+    <ul class="listaIT">
+      <li>Dirección IP: 192.168.5.10 <br>
+      Máscara de subred: 255.255.255.0 <br>
+      Puerta de enlace predeterminada: <br>
+      <span class="azul">192.168.5.1</span> </li>
+    </ul>
+    <h3>Dean Y</h3>
+    <ul class="listaIT">
+      <li>Dirección IP: 192.168.5.11 <br>
+          Máscara de subred: 255.255.255.0 <br>
+          Puerta de enlace predeterminada:<br>
+          <span class="azul">192.168.5.1</span></li>
+    </ul>
+  </div>
+  </body>
+</html>

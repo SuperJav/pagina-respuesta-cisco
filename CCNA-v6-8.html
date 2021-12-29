@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA 8</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; hasiendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+
+    <div class="contenedorIT">
+      <div class="capituloIT">
+        <h3>1.¿Cuál es el resultado de conectar dos o más interruptores juntos?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">El tamaño del dominio de transmisión aumenta. *</span></li>
+          <li>El número de dominios de difusión aumenta.</li>
+          <li>El número de dominios de colisión se reduce.</li>
+          <li>El tamaño del dominio de colisión se incrementa.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+cuando dos o más conmutadores están conectados entre sí, el tamaño del dominio de transmisión aumenta y también el número de dominios de colisión. El número de dominios de difusión aumenta solo cuando se agregan enrutadores.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>2.Consulte la presentación. ¿Cuántos dominios de difusión hay?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i209390v1n1_209390.jpg" class="fotoIT">
+          <li>1</li>
+          <li>2</li>
+          <li><span class="azul">4 *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+se utiliza un enrutador para enrutar el tráfico entre diferentes redes. No se permite que el tráfico de transmisión cruce el enrutador y, por lo tanto, estará contenido dentro de las subredes respectivas donde se originó.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>3.¿Cuáles son dos razones por las que un administrador de red podría querer crear subredes? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">mejora el rendimiento de la red *</span></li>
+          <li>simplifica el diseño de la red</li>
+          <li><span class="azul">Políticas de seguridad más fáciles de implementar *</span></li>
+          <li>Reducción en el número de enrutadores necesarios.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+dos razones para crear subredes incluyen la reducción del tráfico de la red en general y la mejora del rendimiento de la red. Las subredes también permiten que un administrador implemente políticas de seguridad basadas en subredes. El número de enrutadores o conmutadores no se ve afectado. Las subredes no simplifican el diseño de la red.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>4.Consulte la presentación. Una empresa utiliza el bloque de direcciones de 128.107.0.0/16 para su red. ¿Qué máscara de subred proporcionaría el número máximo de subredes de igual tamaño al mismo tiempo que proporciona suficientes direcciones de host para cada subred en la exhibición?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i207609v1n1_207609.jpg" class="fotoIT" alt="">
+          <li><span class="azul">255.255.255.128 *</span></li>
+          <li>255.255.255.0</li>
+          <li>255.255.255.192</li>
+          <li>255.255.255.224</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+la subred más grande en la topología tiene 100 hosts, por lo que la máscara de subred debe tener al menos 7 bits de host (27-2 = 126). 255.255.255.0 tiene 8 bits de host, pero esto no cumple con el requisito de proporcionar el número máximo de subredes.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>5.Consulte la presentación. El administrador de red ha asignado a la LAN de LBMISS un rango de direcciones de 192.168.10.0. Este rango de direcciones se ha dividido en subredes usando un prefijo / 29. Para acomodar un nuevo edificio, el técnico ha decidido utilizar la quinta subred para configurar la nueva red (la subred cero es la primera subred). Según las políticas de la empresa, a la interfaz del enrutador siempre se le asigna la primera dirección de host utilizable y al servidor de grupo de trabajo se le asigna la última dirección de host utilizable. ¿Qué configuración se debe ingresar en las propiedades del servidor de grupo de trabajo para permitir la conectividad a Internet?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Dirección IP: 192.168.10.38 máscara de subred: 255.255.255.248, puerta de enlace predeterminada: 192.168.10.33 *</span></li>
+          <li>Dirección IP: 192.168.10.65 máscara de subred: 255.255.255.240, puerta de enlace predeterminada: 192.168.10.76</li>
+          <li>Dirección IP: 192.168.10.38 máscara de subred: 255.255.255.240, puerta de enlace predeterminada: 192.168.10.33</li>
+          <li>Dirección IP: 192.168.10.254 máscara de subred: 255.255.255.0, puerta de enlace predeterminada: 192.168.10.1</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br> el
+uso de un prefijo / 29 para la subred 192.168.10.0 produce subredes que aumentan en 8: <br>
+192.168.10.0 (1) <br>
+192.168.10.8 (2) <br>
+192.168.10.16 (3) <br>
+192.168.10.24 (4) <br>
+192.168.10.32 (5)</p>
+      </div>
+      <div class="capituloIT">
+        <h3>6.Si un dispositivo de red tiene una máscara de / 28, ¿cuántas direcciones IP están disponibles para los hosts en esta red?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">14 *</span></li>
+          <li>256</li>
+          <li>254</li>
+          <li>62</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br> la
+máscara A / 28 es lo mismo que 255.255.255.240. Esto deja 4 bits de host. Con 4 bits de host, son posibles 16 direcciones IP, pero una dirección representa el número de subred y una dirección representa la dirección de transmisión. Luego se pueden usar 14 direcciones para asignar a dispositivos de red.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>7.¿Qué máscara de subred se usaría si hay 5 bits de host disponibles?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">255.255.255.224 *</span></li>
+          <li>255.255.255.128</li>
+          <li>255.255.255.0</li>
+          <li>255.255.255.240</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+La máscara de subred de 255.255.255.0 tiene 8 bits de host. La máscara de 255.255.255.128 da como resultado 7 bits de host. La máscara de 255.255.255.224 tiene 5 bits de host. Finalmente, 255.255.255.240 representa 4 bits de host.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>8.¿Cuántas direcciones de host están disponibles en la red 172.16.128.0 con una máscara de subred de 255.255.252.0?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">1022 *</span></li>
+          <li>510</li>
+          <li>512</li>
+          <li>1024</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+una máscara de 255.255.252.0 es igual a un prefijo de / 22. El prefijo A / 22 proporciona 22 bits para la porción de red y deja 10 bits para la porción de host. Los 10 bits en la parte del host proporcionarán 1022 direcciones IP utilizables (2 ^ 10 - 2 = 1022).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>9.¿Cuántos bits deben tomarse prestados de la parte del host de una dirección para acomodar un enrutador con cinco redes conectadas?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Tres *</span></li>
+          <li>dos</li>
+          <li>cuatros</li>
+          <li>dos</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Cada red que está conectada directamente a una interfaz en un enrutador requiere su propia subred. La fórmula 2n, donde n es el número de bits prestados, se utiliza para calcular el número disponible de subredes cuando se toma prestado un número específico de bits.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>10.Un administrador de red desea tener la misma máscara de red para todas las redes en un sitio pequeño en particular. El sitio tiene las siguientes redes y número de dispositivos:
+Teléfonos IP - 22 direcciones
+PC - 20 direcciones necesarias
+Impresoras - 2 direcciones necesarias
+Escáneres - 2 direcciones necesarias
+El administrador de red ha considerado que 192.168.10.0/24 es la red utilizada en este sitio. ¿Qué máscara de subred única haría el uso más eficiente de las direcciones disponibles para usar en las cuatro subredes?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">255.255.255.224 *</span></li>
+          <li>255.255.255.0</li>
+          <li>255.255.255.192</li>
+          <li>255.255.255.240</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+si se va a usar la misma máscara, entonces se debe examinar la red con la mayoría de los hosts para el número de hosts, que en este caso son 22 hosts. Por lo tanto, se necesitan 5 bits de host. La máscara de subred / 27 o 255.255.255.224 sería apropiada para usar en estas redes.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>11.Una compañía tiene una dirección de red de 192.168.1.64 con una máscara de subred de 255.255.255.192. La compañía desea crear dos subredes que contendrían 10 hosts y 18 hosts respectivamente. ¿Qué dos redes lograrían eso? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">192.168.1.64/27 *</span></li>
+          <li>192.168.1.16/28</li>
+          <li><span class="azul">192.168.1.96/28 *</span></li>
+          <li>192.168.1.128/27</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br> la
+subred 192.168.1.64 / 27 tiene 5 bits asignados para direcciones de host y, por lo tanto, podrá admitir 32 direcciones, pero solo 30 direcciones IP de host válidas. La subred 192.168.1.96/28 tiene 4 bits para direcciones de host y podrá admitir 16 direcciones, pero solo 14 direcciones IP de host válidas</p>
+      </div>
+      <div class="capituloIT">
+        <h3>12.Un administrador de red está subdividiendo de forma variable una red. La subred más pequeña tiene una máscara de 255.255.255.248. ¿Cuántas direcciones de host utilizables proporcionará esta subred?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">6 *</span></li>
+          <li>4</li>
+          <li>8</li>
+          <li>12</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+la máscara 255.255.255.248 es equivalente al prefijo / 29. Esto deja 3 bits para los hosts, proporcionando un total de 6 direcciones IP utilizables (23 = 8 - 2 = 6).</p>
+      </div>
+      <div class="capituloIT">
+        <h3>13.Consulte la presentación. Dada la dirección de red de 192.168.5.0 y una máscara de subred de 255.255.255.224, ¿cuántas direcciones de host totales no se utilizan en las subredes asignadas?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i282594v1n1_209418.jpg" class="fotoIT" alt="">
+          <li><span class="azul">72 *</span></li>
+          <li>56</li>
+          <li>64</li>
+          <li>68</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+La dirección IP de red 192.168.5.0 con una máscara de subred de 255.255.255.224 proporciona 30 direcciones IP utilizables para cada subred. La subred A necesita 30 direcciones de host. No hay direcciones desperdiciadas. La subred B usa 2 de las 30 direcciones IP disponibles, porque es un enlace serial. En consecuencia, se desperdician 28 direcciones. Asimismo, la subred C desperdicia 28 direcciones. La subred D necesita 14 direcciones, por lo que desperdicia 16 direcciones. El total de direcciones desperdiciadas son 0 + 28 + 28 + 16 = 72 direcciones.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>14.Consulte la presentación. Teniendo en cuenta las direcciones ya utilizadas y teniendo que permanecer dentro del rango de red 10.16.10.0/24, ¿qué dirección de subred podría asignarse a la red que contiene 25 hosts?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i274512v1n1_274512.jpg" class="fotoIT" alt="">
+          <li><span class="azul">10.16.10.64/27 *</span></li>
+          <li>10.16.10.160/26</li>
+          <li>10.16.10.128/28</li>
+          <li>10.16.10.224/26</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>15.Consulte la presentación. Dada la dirección de red de 192.168.5.0 y una máscara de subred de 255.255.255.224 para todas las subredes, ¿cuántas direcciones de host totales no se utilizan en las subredes asignadas?</h3>
+        <ul class="listaIT">
+          <img src="imagen/i282594v1n1_209418-1.jpg" class="fotoIT" alt="">
+          <li><span class="azul">72 *</span></li>
+          <li>64</li>
+          <li>60</li>
+          <li>56</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>16.Un administrador de red necesita monitorear el tráfico de red hacia y desde los servidores en un centro de datos. ¿Qué características de un esquema de direccionamiento IP deberían aplicarse a estos dispositivos?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Direcciones IP estáticas predecibles para una identificación más fácil *</span></li>
+          <li>Direcciones estáticas aleatorias para mejorar la seguridad</li>
+          <li>Direcciones dinámicas para reducir la probabilidad de direcciones duplicadas</li>
+          <li>Direcciones de diferentes subredes para redundancia</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+al monitorear servidores, un administrador de red debe poder identificarlos rápidamente. El uso de un esquema de direccionamiento estático predecible para estos dispositivos hace que sean más fáciles de identificar. La seguridad del servidor, la redundancia y la duplicación de direcciones no son características de un esquema de direccionamiento IP.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>17.¿Cuáles dos razones generalmente hacen que el DHCP sea el método preferido para asignar direcciones IP a hosts en redes grandes? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Elimina la mayoría de los errores de configuración de direcciones. *</span></li>
+          <li>Asegura que las direcciones solo se apliquen a dispositivos que requieren una dirección permanente.</li>
+          <li>Garantiza que cada dispositivo que necesite una dirección obtendrá uno.</li>
+          <li><span class="azul">Reduce la carga en el personal de soporte de red. *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+DHCP es generalmente el método preferido para asignar direcciones IP a hosts en redes grandes porque reduce la carga en el personal de soporte de red y prácticamente elimina los errores de entrada. Sin embargo, el propio DHCP no discrimina entre dispositivos autorizados y no autorizados y asignará parámetros de configuración a todos los dispositivos solicitantes. Los servidores DHCP generalmente están configurados para asignar direcciones desde un rango de subred, por lo que no hay garantía de que todos los dispositivos que necesiten una dirección obtendrán una.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>18.Un servidor DHCP se usa para asignar direcciones IP dinámicamente a los hosts en una red. El conjunto de direcciones está configurado con 192.168.10.0/24. Hay 3 impresoras en esta red que necesitan usar direcciones IP estáticas reservadas del grupo. ¿Cuántas direcciones IP en el grupo quedan para ser asignadas a otros hosts?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">251 *</span></li>
+          <li>254</li>
+          <li>251</li>
+          <li>256</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicar:<br>
+si el bloque de direcciones asignadas al grupo es 192.168.10.0/24, hay 254 direcciones IP que se asignarán a los hosts en la red. Como hay 3 impresoras que necesitan tener sus direcciones asignadas de forma estática, entonces quedan 251 direcciones IP para asignar.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>19.Consulte la presentación. Una empresa está implementando un esquema de direccionamiento IPv6 para su red. El documento de diseño de la compañía indica que la porción de subred de las direcciones IPv6 se usa para el nuevo diseño jerárquico de la red, con la subsección del sitio para representar múltiples sitios geográficos de la compañía, la sección del subsitio para representar varios campus en cada sitio y la Sección de subred para indicar cada segmento de red separado por enrutadores. Con un esquema de este tipo, ¿cuál es el número máximo de subredes alcanzadas por subsitio?</h3>
+        <ul class="listaIT">
+          <img src="imagen/new-ccna-1-chap8-p42.png" class="fotoIT" alt="">
+          <li><span class="azul">dieciséis *</span></li>
+          <li>0</li>
+          <li>4</li>
+          <li>256</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br> como
+solo se utiliza un carácter hexadecimal para representar la subred, ese carácter puede representar 16 valores diferentes de 0 a F.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>20.¿Cuál es el prefijo para la dirección de host 2001: DB8: BC15: A: 12AB :: 1/64?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">2001: DB8: BC15: A *</span></li>
+          <li>2001: DB8: BC15</li>
+          <li>2001: DB8: BC15: A: 1</li>
+          <li>2001: DB8: BC15: A: 12</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explicación:<br>
+la parte de la red, o el prefijo, de una dirección IPv6 se identifica a través de la longitud del prefijo. La longitud del prefijo A / 64 indica que los primeros 64 bits de la dirección IPv6 son la parte de la red. Por lo tanto, el prefijo es 2001: DB8: BC15: A.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>21.Considere el siguiente rango de direcciones:</h3>
+          <div class="consola">
+            <p>
+              2001: 0DB8: BC15: 00A0: 0000 ::<br>
+              2001: 0DB8: BC15: 00A1: 0000 ::<br>
+              2001: 0DB8: BC15: 00A2: 0000 ::<br>
+              <br>
+              ...
+              <br>
+              2001: 0DB8: BC15: 00AF: 0000 ::
+            </p>
+          </div>
+        <ul class="listaIT">
+          <li>La longitud del prefijo para el rango de direcciones es <span class="azul">/ 60</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br>
+Todas las direcciones tienen la parte 2001: 0DB8: BC15: 00A en común. Cada número o letra en la dirección representa 4 bits, por lo que la longitud del prefijo es / 60.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>22.Haga coincidir la subred con una dirección de host que se incluiría dentro de la subred. (No se utilizan todas las opciones).
+Pregunta Respuesta</h3>
+        <ul class="listaIT">
+          <li>Pregunta</li>
+          <img src="imagen/2017-05-22_211908-768x215.jpg" class="fotoIT" alt="">
+          <li><span class="azul">Respuesta</span></li>
+          <img src="imagen/2017-05-22_211908-1-768x215.jpg" class="fotoIT" alt="">
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br> la
+subred 192.168.1.32/27 tendrá un rango de host válido de 192.168.1.33 - 192.168.1.62 con la dirección de transmisión como 192.168.1.63.<br> La
+subred 192.168.1.64/27 tendrá un rango de host válido de 192.168.1.65 - 192.168.1.94 con la dirección de difusión como 192.168.1.95 <br> La
+subred 192.168.1.96/27 tendrá un rango de host válido de 192.168.1.97 - 192.168.1.126 con la dirección de difusión como 192.168.1.127</p>
+      </div>
+      <div class="capituloIT">
+        <h3>23.Consulte la presentación. Haga coincidir la red con la dirección IP y el prefijo correctos que satisfagan los requisitos de direccionamiento de host utilizables para cada red. (No se utilizan todas las opciones). De derecha a izquierda, la red A tiene 100 hosts conectados al enrutador a la derecha. El enrutador de la derecha está conectado mediante un enlace en serie al enrutador de la izquierda. El enlace serial representa la red D con 2 hosts. El enrutador izquierdo conecta la red B con 50 hosts y la red C con 25 hosts.</h3>
+        <ul class="listaIT">
+          <img src="imagen/i207918v1n1_207918-1-1.jpg" class="fotoIT" alt="">
+          <li>Pregunta</li>
+          <img src="imagen/2017-05-22_214941-768x257.jpg" class="fotoIT" alt="">
+          <li><span class="azul">RESPUESTA</span></li>
+          <img src="imagen/2017-05-22_214941-1-768x257.jpg" class="fotoIT" alt="">
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="dialogo">
+        <p>Explique:<br> la
+red A necesita usar 192.168.0.0 / 25, lo que da como resultado 128 direcciones de host.<br>
+La red B necesita usar 192.168.0.128 / 26, lo que da como resultado 64 direcciones de host. <br>
+La red C necesita utilizar 192.168.0.192 / 27, lo que da como resultado 32 direcciones de host. <br>
+La red D necesita usar 192.168.0.224 / 30, lo que da como resultado 4 direcciones de host.</p>
+      </div>
+      <div class="capituloIT">
+        <h3>24.¿Cuántos bits hay en una dirección IPv4?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">32 *</span></li>
+          <li>64</li>
+          <li>123</li>
+          <li>43</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>25.¿Qué dos partes son componentes de una dirección IPv4? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">porción de red *</span></li>
+          <li>porción de subred</li>
+          <li><span class="azul">parte del host *</span></li>
+          <li>parte fisica</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>26.¿Cuál es la notación de longitud de prefijo para la máscara de subred 255.255.255.224?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">/ 27 *</span></li>
+          <li>/ 25</li>
+          <li>/ 26</li>
+          <li>a</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>27.¿Qué dos afirmaciones describen las características de las transmisiones de Capa 3? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li><span class="azul">Los enrutadores crean dominios de difusión. *</span></li>
+          <li><span class="azul">Un paquete de difusión limitada tiene una dirección IP de destino de 255.255.255.255. *</span></li>
+          <li>Un enrutador no reenviará ningún tipo de paquete de difusión de Capa 3.</li>
+          <li>Hay un dominio de difusión en cada interfaz de conmutador.</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>28.¿Qué dirección IPv6 está más comprimida para la FE80 completa: 0: 0: 0: 2AA: FF: FE9A: dirección 4CA3?</h3>
+        <ul class="listaIT">
+          <li><span class="azul">FE80 :: 2AA: FF: FE9A: 4CA3 *</span></li>
+          <li>FE8 :: 2AA: FF: FE9A: 4CA3?</li>
+          <li>FE80 ::: 0: 2AA: FF: FE9A: 4CA3?</li>
+          <li>FE80 :: 0: 2AA: FF: FE9A: 4CA3?</li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+      <div class="capituloIT">
+        <h3>29.¿Cuáles son dos tipos de direcciones de unidifusión IPv6? (Escoge dos.)</h3>
+        <ul class="listaIT">
+          <li>Anycast</li>
+          <li>multicast</li>
+          <li><span class="azul">loopback *</span></li>
+          <li><span class="azul">enlace local *</span></li>
+          <li>@javi__super</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </body>
+</html>

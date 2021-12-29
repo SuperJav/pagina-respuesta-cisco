@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA2 pratica 2</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity y IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+        <div class="contenedorIT">
+          <div class="capituloIT">
+            <h2>RSE Capítulo 6 SIC Evaluación de habilidades de práctica - Packet Tracer</h2>
+            <img src="imagen/2017-03-18_001259.jpg" class="fotoIT" alt="">
+            <h4>Algunas cosas a tener en cuenta al completar esta actividad</h4>
+            <p>1. No use el botón Atrás del navegador ni cierre ni vuelva a cargar las ventanas de examen durante el examen </p>
+            <br>
+            <p>2. No cierre Packet Tracer cuando haya terminado Se cerrará automáticamente </p>
+            <br>
+            <p>3. Haga clic en el botón Enviar evaluación en la ventana del navegador para enviar su trabajo</p>
+            <br>
+            <br>
+            <h4>Los objetivos</h4>
+            <br>
+            <ul class="listaIT">
+              <li> Diseñe un esquema de direccionamiento IP para proporcionar conectividad a los usuarios finales en una red de pequeñas y medianas empresas. </li>
+              <li>Configure rutas estáticas para habilitar la conectividad en una red de pequeñas y medianas empresas. </li>
+              <li>Configure rutas estáticas resumidas y flotantes. </li>
+              <li>Configure rutas estáticas resumidas y flotantes.
+            Todas las configuraciones de dispositivos IOS deben completarse desde una conexión de terminal directa a la consola del dispositivo.</li>
+            </ul>
+            <img src="imagen/tabla22222.png" class="fotoIT" alt="">
+            <br>
+            <br>
+            <h4>Guión</h4>
+            <p>El administrador de red le ha pedido que implemente enrutamiento IPv4 e IPv6 estático y predeterminado en el entorno de prueba que se muestra en la topología. Configure cada ruta estática y predeterminada como directamente adjunta</p>
+            <br>
+            <h3>Requerimientos</h3>
+            <br>
+            <br>
+            <h4>1. Utilice el espacio de direcciones 10 10 16 0/24 para diseñar un esquema de direccionamiento</h4>
+            <ul class="listaIT">
+              <li>Divida este espacio de direcciones en dos redes de igual tamaño dividiendo en subredes nuevamente</li>
+            </ul>
+              <br>
+              <h4>Subred 1: 10.10.16.0/25 <br>
+                  Subred 2: 10.10.16.128/25</h4>
+                  <ul class="listaIT">
+                    <li> Asigne la primera de estas nuevas subredes a la PC1 LAN </li>
+
+                  <img src="imagen/2017-03-18_001033.jpg" class="fotoIT" alt="">
+                  <li>Asigne la segunda de estas subredes a la PC2 LAN </li>
+                  <img src="imagen/2017-03-18_001133.jpg" class="fotoIT" alt="">
+                  <li>Para cada subred, asigne la primera dirección IP utilizable a R2 y la última dirección IP utilizable a las PC</li>
+                  </ul>
+          </div>
+          <div class="capituloIT">
+            <p>
+              R2 (config) #interfaz G0 / 0 <br>
+              R2 (config-if) #ip dirección 10.10.16.1 255.255.255.128 <br>
+              R2 (config-if) #no apagar <br>
+            </p>
+            <br>
+            <br>
+            <p>
+              R2 (config-if) #interfaz G0 / 1 <br>
+              R2 (config-if) #ip dirección 10.10.16.129 255.255.255.128 <br>
+              R2 (config-if) #no apagar <br>
+              R2 (config-if) #exit
+            </p>
+            <h4>2. Configure el resumen de IPv4 y las rutas predeterminadas</h4>
+            <ul class="listaIT">
+              <li> Configure una ruta predeterminada de IPv4 en R2 utilizando la dirección del siguiente salto</li>
+            </ul>
+            <br>
+            <br>
+            <p>
+              R2 (config) #ip route 0.0.0.0 0.0.0.0 10.10.20.1
+            </p>
+            <ul class="listaIT">
+              <li>Configure una ruta predeterminada de IPv4 en R1 utilizando Serial 0/0/0 como la salida entrelazada</li>
+            </ul>
+            <p>R1 (config) #ip route 0.0.0.0 0.0.0.0 s0 / 0/0</p>
+            <ul class="listaIT">
+              <li>Configure una ruta de resumen de IPv4 en R1 para las LAN internas. Use la interfaz de salida</li>
+            </ul>
+            <p>R1 (config) #ip ruta 10.10.16.0 255.255.255.0 s0 / 1/1</p>
+            <br>
+            <br>
+            <h4>3. Configure el resumen de IPv6 y las rutas predeterminadas</h4>
+            <ul class="listaIT">
+              <li>Configure una ruta predeterminada de IPv6 en R3 usando la interfaz de salida</li>
+            </ul>
+            <p>R3 (config) # ruta ipv6 :: / 0 s0 / 0/0</p>
+            <ul class="listaIT">
+              <li> Configure una ruta predeterminada de IPv6 en R1 utilizando Serial 0/0/1 como interfaz de salida</li>
+            </ul>
+            <p>R1 (config) # ruta ipv6 :: / 0 s0 / 0/1</p>
+            <ul class="listaIT">
+              <li>Configure una ruta de resumen de IPv6 en R1 para las LAN internas. Utilice la interfaz de salida.</li>
+            </ul>
+            <p>R1 (config) # ruta ipv6 2001: db8: 1: a :: / 63 s0 / 1/0</p>
+            <br>
+            <br>
+            <h4>4. Configure una ruta estática flotante de IPv4 en R1 a la red 64.100.100.0/24 utilizando Serial 0/0/1 como la interfaz de salida. Haga que la ruta estática flotante sea menos confiable que la ruta predeterminada por una unidad de AD.</h4>
+            <br>
+            <br>
+            <p>R1 (config) #ip ruta 64.100.100.0 255.255.255.0 s0 / 0/1 5</p>
+            <br>
+            <br>
+            <h4>Si su configuración se ha completado correctamente, todos los hosts deben poder comunicarse con el servidor que está conectado a Internet.</h4>
+          </div>
+        </div>
+
+  </body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segurity-capitulo 2</title>
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de styles css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+  <div class="contenedorIT">
+    <div class="capituloIT">
+      <h3>1.¿Qué dos características se aplican a las supervisiones de acceso CLI basadas en roles? (Escoge dos.)</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Una supervisión específica no puede tener comandos agregados directamente. *</span></li>
+        <li>Las vistas de CLI tienen contraseñas, pero las vistas de supervisión no tienen contraseñas.</li>
+        <li>Una única vista de supervisión puede compartirse entre varias vistas de CLI.</li>
+        <li><span class="azul">Los usuarios que inician sesión en una vista supervisada pueden acceder a todos los comandos especificados en las vistas de la CLI asociadas. *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Al utilizar una supervisión, un administrador puede asignar usuarios o grupos de usuarios a las vistas de la CLI que contienen un conjunto específico de comandos a los que pueden acceder dichos usuarios. Los comandos no se pueden agregar directamente a una supervisión, sino que deben agregarse a una vista de la CLI y la vista de la CLI debe agregarse a la supervisión.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>2.¿Qué tres tipos de vistas están disponibles al configurar la función de acceso de la CLI basada en roles? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li><span class="azul">supervisión *</span></li>
+        <li>vista de administrador</li>
+        <li><span class="azul">vista de raíz *</span></li>
+        <li><span class="azul">Vista CLI *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Hay tres tipos de vistas de CLI basadas en roles: <br>
+1) vista de raíz <br>
+2) vista de CLI <br>
+3) supervisión</p>
+    </div>
+    <div class="capituloIT">
+      <h3>3.Si AAA ya está habilitado, ¿qué tres pasos de CLI se requieren para configurar un enrutador con una vista específica? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li>Cree una vista de supervisión con el comando de vista de nombre de vista de analizador.</li>
+        <li><span class="azul">Asigna comandos a la vista. *</span></li>
+        <li><span class="azul">Cree una vista usando el comando de vista de nombre de vista de analizador. *</span></li>
+        <li><span class="azul">Asigne una contraseña secreta a la vista. *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Hay cinco pasos involucrados para crear una vista en un enrutador Cisco.<br>
+1) AAA debe estar habilitada. <br>
+2) la vista debe ser creada. <br>
+3) Se debe asignar una contraseña secreta a la vista. <br>
+4) los comandos deben ser asignados a la vista. <br>
+5) se debe salir del modo de configuración de la vista.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>4.¿Qué ocurre después de que se generen las claves RSA en un enrutador Cisco para preparar la administración segura del dispositivo?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Las claves generadas pueden ser utilizadas por SSH. *</span></li>
+        <li>El tamaño de la clave de propósito general se debe especificar para la autenticación con la clave criptográfica gen rsa general-keys moduluscommand.</li>
+        <li>Todos los puertos vty se configuran automáticamente para que SSH proporcione una administración segura.</li>
+        <li>Las claves se deben poner a cero para restablecer Secure Shell antes de configurar otros parámetros.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Una vez que se generan las claves RSA, SSH se habilita automáticamente.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>5.¿Qué tres afirmaciones describen las limitaciones en el uso de niveles de privilegio para asignar la autorización de comandos? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Crear una cuenta de usuario que necesite acceso a la mayoría de los comandos, pero no a todos, puede ser un proceso tedioso. *</span></li>
+        <li>Las vistas son necesarias para definir los comandos de la CLI a los que puede acceder cada usuario.</li>
+        <li><span class="azul">Los comandos establecidos en un nivel de privilegio más alto no están disponibles para los usuarios con privilegios más bajos. *</span></li>
+        <li><span class="azul">No hay control de acceso a interfaces específicas en un enrutador. *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Un administrador puede crear niveles de privilegios personalizados y asignar diferentes comandos a cada nivel. Sin embargo, este método de controlar el nivel de acceso al enrutador tiene limitaciones. El uso de niveles de privilegio no permite controlar el acceso a interfaces o puertos específicos y la disponibilidad de comandos no se puede personalizar en todos los niveles.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>6.¿Qué comando se debe emitir para habilitar las mejoras de inicio de sesión en un enrutador Cisco?</h3>
+      <ul class="listaIT">
+        <li>privilegio nivel exec</li>
+        <li>retraso de inicio de sesión</li>
+        <li><span class="azul">bloque de inicio de sesión para *</span></li>
+        <li>banner motd</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Las mejoras de inicio de sesión de Cisco IOS pueden aumentar la seguridad de las conexiones de inicio de sesión virtuales a un enrutador. Aunque el retraso de inicio de sesión es un comando de mejora de inicio de sesión, todas las mejoras de inicio de sesión se desactivan hasta que se configura el comando de bloqueo de inicio de sesión.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>7.Un administrador definió una cuenta de usuario local con una contraseña secreta en el enrutador R1 para usar con SSH. ¿Qué tres pasos adicionales se requieren para configurar R1 para aceptar solo las conexiones SSH cifradas? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Habilitar las sesiones entrantes de SSH vty. *</span></li>
+        <li><span class="azul">Configure el nombre de dominio IP en el enrutador. *</span></li>
+        <li>Habilitar las sesiones entrantes vty telnet.</li>
+        <li><span class="azul">Genera las claves SSH. *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Hay cuatro pasos para configurar el soporte SSH en un enrutador Cisco:<br>
+Paso 1: configure el nombre de dominio. <br>
+Paso 2: Generar claves secretas unidireccionales. <br>
+Paso 3: Crea un nombre de usuario y contraseña locales. <br>
+Paso 4: habilitar SSH entrante en una línea vty.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>8.¿Qué conjunto de comandos se requieren para crear un nombre de usuario de administrador, aplicar hash a la contraseña con MD5 y forzar al enrutador a acceder a la base de datos de nombre de usuario interna cuando un usuario intenta acceder a la consola?</h3>
+      <ul class="listaIT">
+        <li>R1 (config) # nombre de usuario admin password <br> Admin01pa55 <br>
+R1 (config) # line con 0 <br>
+R1 (config-line) # login local</li>
+        <li><span class="azul">R1 (config) # nombre de usuario admin secret <br> Admin01pa55 <br>
+R1 (config) # line con 0 <br>
+R1 (config-line) # login local *</span></li>
+        <li>R1 (config) # nombre de usuario admin Admin01pa55 <br> encr md5 <br>
+R1 (config) # line con 0 <br>
+R1 (config-line) # login local</li>
+        <li>R1 (config) # nombre de usuario admin password <br>Admin01pa55 <br>
+R1 (config) # line con 0 <br>
+R1 (config-line) # login</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Para configurar una cuenta de usuario con una contraseña encriptada, se usa el comando secreto de nombre de usuario. El comando line con 0 define la línea de la consola como configurada para el inicio de sesión y el comando local de inicio de sesión le dice al enrutador que busque las credenciales de usuario en la base de datos local.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>9.Consulte la presentación. ¿Qué afirmación sobre la cuenta de administrador de JR es verdadera?</h3>
+      <ul class="listaIT">
+        <img src="imagen/CCNA-Security-Chapter-2-Exam-Answer-v2-001.jpg" alt="fotoIT" class="fotoIT">
+        <li>JR-Admin solo puede emitir comandos ping.</li>
+        <li>JR-Admin puede emitir comandos de mostrar, ping y recargar.</li>
+        <li>JR-Admin puede emitir comandos de depuración y recarga.</li>
+        <li><span class="azul">JR-Admin puede emitir comandos de ping y recargar *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Cuando se emite el comando de nombre de privilegio 10, se permite al usuario el acceso a comandos con un nivel de privilegio de 10 o menos (0-10).</p>
+    </div>
+    <div class="capituloIT">
+      <h3>10.¿Cuál es el nivel de privilegio predeterminado de las cuentas de usuario creadas en los enrutadores Cisco?</h3>
+      <ul class="listaIT">
+        <li>0</li>
+        <li>15</li>
+        <li><span class="azul">1 *</span></li>
+        <li>dieciséis</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Hay 16 niveles de privilegios que pueden configurarse como parte del comando de nombre de usuario, que van de 0 a 15. De manera predeterminada, si no se especifica ningún nivel, la cuenta tendrá el nivel de privilegio 1,</p>
+    </div>
+    <div class="capituloIT">
+      <h3>11.¿Qué tres áreas de seguridad del enrutador deben mantenerse para asegurar un enrutador de borde en el perímetro de la red? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li>seguridad de acceso remoto</li>
+        <li><span class="azul">endurecimiento del enrutador *</span></li>
+        <li><span class="azul">seguridad del sistema operativo *</span></li>
+        <li><span class="azul">seguridad física *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Hay tres áreas de seguridad del enrutador para mantener: <br>
+1) seguridad física <br>
+2) refuerzo del enrutador <br>
+3) seguridad del sistema operativo</p>
+    </div>
+    <div class="capituloIT">
+      <h3>12.¿Qué práctica de seguridad recomendada impide que los atacantes realicen la recuperación de la contraseña en un enrutador Cisco IOS con el fin de obtener acceso al modo EXEC privilegiado?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Ubique el enrutador en una habitación segura y cerrada que sea accesible solo para personal autorizado. *</span></li>
+        <li>Configure un control administrativo seguro para garantizar que solo el personal autorizado pueda acceder al enrutador.</li>
+        <li>Mantenga una copia segura del enrutador Imagen de Cisco IOS y el archivo de configuración del enrutador como copia de seguridad.</li>
+        <li>Aprovisione el enrutador con la máxima cantidad de memoria posible.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>De las tres áreas de seguridad del enrutador, seguridad física, endurecimiento del enrutador y seguridad del sistema operativo, la seguridad física consiste en ubicar el enrutador en una habitación segura a la que solo pueda acceder el personal autorizado que pueda realizar la recuperación de la contraseña.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>13.Consulte la presentación. En función de la salida del comando show running-config, ¿qué tipo de vista es SUPPORT?</h3>
+      <ul class="listaIT">
+        <img src="imagen/CCNA-Security-Chapter-2-Exam-Answer-v2-002.jpg" alt="fotoIT" class="fotoIT">
+        <li>Vista de CLI, que contiene los comandos SHOWVIEW y VERIFYVIEW</li>
+        <li><span class="azul">supervisión, que contiene vistas de SHOWVIEW y VERIFYVIEW *</span></li>
+        <li>Vista secreta, con una contraseña cifrada de nivel 5.</li>
+        <li>Vista de raíz, con una contraseña secreta cifrada de nivel 5</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>La vista de CLI basada en roles de supervisión llamada SUPPORT se ha configurado en el enrutador. La vista de servicios SUPPORT se compone de dos vistas CLI denominadas SHOWVIEW y VERIFYVIEW.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>14.Un administrador de red advierte que los intentos fallidos de inicio de sesión han provocado que un enrutador entre en modo silencioso. ¿Cómo puede el administrador mantener el acceso remoto a las redes incluso durante el modo silencioso?</h3>
+      <ul class="listaIT">
+        <li>El comportamiento en modo silencioso se puede habilitar a través de un comando de grupo de acceso ip en una interfaz física.</li>
+        <li>El comportamiento del modo silencioso solo evitará que cuentas de usuarios específicos intenten autenticarse.</li>
+        <li><span class="azul">El comportamiento del modo silencioso se puede anular para redes específicas mediante el uso de una ACL. *</span></li>
+        <li>Un administrador puede desactivar el comportamiento del modo silencioso usando SSH para conectarse.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>El modo silencioso evita cualquier intento de inicio de sesión por un período de tiempo. El modo silencioso se habilita a través del comando login-modo silencioso access-class. El comportamiento en modo silencioso se puede anular para redes específicas al construir e implementar una lista de control de acceso (ACL).</p>
+    </div><div class="capituloIT">
+      <h3>15.¿Cuál es una característica de la característica de configuración flexible de Cisco IOS?</h3>
+      <ul class="listaIT">
+        <li>Mantiene una copia de trabajo segura del programa de inicio bootstrap.</li>
+        <li>Una vez emitido, el comando de configuración de arranque seguro actualiza automáticamente el archivo de configuración a una versión más nueva después de que se hayan ingresado los nuevos comandos de configuración.</li>
+        <li><span class="azul">Una instantánea de la configuración en ejecución del enrutador se puede tomar y archivar de forma segura en un almacenamiento persistente. *</span></li>
+        <li>El comando de arranque de imagen segura funciona correctamente cuando el sistema está configurado para ejecutar una imagen desde un servidor TFTP.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>La función de configuración flexible de Cisco IOS mantiene una copia de trabajo segura del archivo de imagen IOS del enrutador y una copia del archivo de configuración en ejecución. El comando de arranque de imagen segura funciona correctamente solo cuando el sistema está configurado para ejecutar una imagen desde una unidad flash con una interfaz ATA. El comando secure boot-config se debe usar repetidamente para actualizar el archivo de configuración a una versión más nueva después de que se hayan emitido los nuevos comandos de configuración. Una instantánea de la configuración en ejecución del enrutador se puede tomar y archivar de forma segura en un almacenamiento persistente con el comando secure boot-config.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>16.¿Cuáles son dos razones para habilitar la autenticación del protocolo de enrutamiento OSPF en una red? (Escoge dos.)</h3>
+      <ul class="listaIT">
+        <li>Proporcionar seguridad de datos a través del cifrado.</li>
+        <li>para asegurar una convergencia de red más rápida</li>
+        <li><span class="azul">para evitar que el tráfico de datos se redirija y luego se descarte *</span></li>
+        <li><span class="azul">para evitar la redirección del tráfico de datos a un enlace inseguro *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>La razón para configurar la autenticación OSPF es mitigar los ataques de protocolo de enrutamiento, como la redirección del tráfico de datos a un enlace inseguro y la redirección del tráfico de datos para descartarlo. La autenticación OSPF no proporciona una convergencia de red más rápida, un enrutamiento más eficiente o el cifrado del tráfico de datos.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>17.¿Qué dos opciones pueden ser configuradas por Cisco AutoSecure? (Escoge dos.)</h3>
+      <ul class="listaIT">
+        <li><span class="azul">habilitar contraseña secreta *</span></li>
+        <li>dirección IP de la interfaz</li>
+        <li>SNMP</li>
+        <li><span class="azul">banner de seguridad *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>AutoSecure ejecuta un script que primero hace recomendaciones para corregir las vulnerabilidades de seguridad y luego modifica la configuración de seguridad del enrutador. AutoSecure puede bloquear las funciones del plano de administración y los servicios del plano de reenvío y las funciones de un enrutador, lo que incluye configurar una contraseña de habilitación y una pancarta de seguridad.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>18.¿Qué tres funciones proporciona el servicio de registro de syslog? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li>configurando el tamaño del búfer de registro</li>
+        <li><span class="azul">especificando donde se almacena la información capturada *</span></li>
+        <li><span class="azul">recopilar información de registro *</span></li>
+        <li><span class="azul">Distinguir entre la información a capturar y la información a ignorar *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Las operaciones de Syslog incluyen recopilar información, seleccionar qué tipo de información capturar y dirigir la información capturada a una ubicación de almacenamiento. El servicio de registro almacena los mensajes en un búfer de registro limitado en el tiempo y no puede retener la información cuando se reinicia un enrutador. Syslog no autentica ni encripta mensajes.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>19.¿Para qué está diseñada la función de Control Plane Policing (CoPP)?</h3>
+      <ul class="listaIT">
+        <li>Deshabilitar los servicios de control de avión para reducir el tráfico general.</li>
+        <li><span class="azul">evitar que el tráfico innecesario abrume el procesador de ruta *</span></li>
+        <li>Dirigir todo el exceso de tráfico fuera del proceso de la ruta.</li>
+        <li>Gestionar los servicios prestados por el plano de control.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Control Plane Policing (CoPP) no administra ni deshabilita ningún servicio. No dirige el tráfico desde el procesador de ruta, sino que evita que el tráfico innecesario llegue al procesador de ruta.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>20.¿Qué es un requisito para utilizar la función de protocolo de copia segura?</h3>
+      <ul class="listaIT">
+        <li>Al menos un usuario con nivel de privilegio 1 debe configurarse para la autenticación local.</li>
+        <li><span class="azul">Se debe emitir un comando para habilitar la funcionalidad del lado del servidor SCP. *</span></li>
+        <li>Una transferencia solo puede originarse desde clientes SCP que son enrutadores.</li>
+        <li>El protocolo Telnet debe configurarse en el lado del servidor SCP.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>La función de protocolo de copia segura se basa en SSH y requiere que la autenticación y autorización AAA se configuren para que el enrutador pueda determinar si el usuario tiene el nivel de privilegio correcto. Para la autenticación local, debe configurarse al menos un usuario con nivel de privilegio 15. Las transferencias pueden originarse desde cualquier cliente SCP, ya sea que ese cliente sea otro enrutador, conmutador o estación de trabajo. El comando ip scp server enable se debe emitir para habilitar la funcionalidad del lado del servidor SCP.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>21.¿Cuál es una característica del MIB?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Los OID están organizados en una estructura jerárquica. *</span></li>
+        <li>La información en el MIB no se puede cambiar.</li>
+        <li>Existe un árbol MIB independiente para cualquier dispositivo dado en la red.</li>
+        <li>La información se organiza de manera plana para que SNMP pueda acceder a ella rápidamente.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Los mensajes SNMP de configuración, obtención y captura se utilizan para acceder y manipular la información contenida en la MIB. Esta información está organizada jerárquicamente para que SNMP pueda acceder a ella rápidamente. Cada pieza de información dentro de la MIB recibe un ID de objeto (OID), que se organiza según los estándares RFC en una jerarquía de OID. El árbol MIB para cualquier dispositivo dado incluye sucursales con variables comunes a muchos dispositivos de red y sucursales con variables específicas para ese dispositivo o proveedor.</p>
+    </div><div class="capituloIT">
+      <h3>22.¿Qué tres elementos solicitan una respuesta del usuario durante la configuración interactiva de AutoSecure? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li>Direcciones IP de interfaces</li>
+        <li><span class="azul">contenido de un banner de seguridad *</span></li>
+        <li><span class="azul">habilitar contraseña secreta *</span></li>
+        <li><span class="azul">habilitar contraseña *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Durante la configuración de AutoSecure, se producen los siguientes pasos: <br>
+- Se ingresa el comando de seguridad automática. <br>
+- El asistente recopila información sobre las interfaces externas. <br>
+- AutoSecure asegura el lugar de administración al deshabilitar servicios innecesarios.<br>
+- AutoSecure solicita un banner de seguridad. <br>
+- AutoSecure solicita contraseñas y habilita las funciones de contraseña e inicio de sesión. <br>
+- Las interfaces están aseguradas. <br>
+- El plano de reenvío está asegurado.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>23.Un ingeniero de redes está implementando seguridad en todos los enrutadores de la empresa. ¿Qué dos comandos deben emitirse para forzar la autenticación a través de la contraseña 1A2b3C para todas las interfaces habilitadas para OSPF en el área de la red troncal de la red de la empresa? (Escoge dos.)</h3>
+      <ul class="listaIT">
+        <li><span class="azul">área 0 autenticación mensaje-resumen *</span></li>
+        <li><span class="azul">ip ospf message-digest-key 1 md5 1A2b3C *</span></li>
+        <li>nombre de usuario OSPF contraseña 1A2b3C</li>
+        <li>habilitar contraseña 1A2b3C</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Los dos comandos necesarios para configurar la autenticación a través de la contraseña 1A2b3C para todas las interfaces habilitadas para OSPF en el área de la red troncal (Área 0) de la red de la empresa serían ip ospf message-digest-key 1 md5 1A2b3C y área 0 . El resumen de mensaje de autenticación del área de opción 1 es incorrecto porque se refiere al Área 1, no al Área 0. La opción habilitar la contraseña 1A2b3C es incorrecta porque establecería la contraseña del modo EXEC privilegiado en lugar de la contraseña de autenticación OSPF. La opción de nombre de usuario OSPF contraseña 1A2b3C es necesaria para crear una base de datos de nombre de usuario en un enrutador, que no es necesaria con la autenticación OSPF.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>24.¿Cuál es el propósito de usar el comando de contraseña md5 de ip ospf message-digest-key-key y el comando del área area-id authentication message-digest en un enrutador?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">para configurar la autenticación OSPF MD5 globalmente en el enrutador *</span></li>
+        <li>para habilitar la autenticación OSPF MD5 en una base por interfaz</li>
+        <li>Facilitar el establecimiento de adyacencias vecinas.</li>
+        <li>para cifrar las actualizaciones de enrutamiento OSPF</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Para configurar la autenticación OSPF MD5 a nivel mundial, se emiten el comando de configuración de la interfaz de contraseña md5 ip ospf message-digest-key y el comando de configuración del enrutador del área ID-mensaje autenticación de resumen de mensaje. Para configurar la autenticación OSPF MD5 por interfaz, se emiten el comando de configuración de la interfaz de contraseña md5 ip ospf message-digest-key y el comando de configuración de la interfaz ip ospf message-digest interface. La autenticación no encripta las actualizaciones de enrutamiento OSPF. Los requisitos para establecer adyacencias de vecinos de enrutador OSPF son independientes de la autenticación.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>25.¿Qué tres acciones se producen al agregar mejoras de inicio de sesión de Cisco IOS al proceso de inicio de sesión del enrutador? (Elige tres.)</h3>
+      <ul class="listaIT">
+        <li><span class="azul">crear mensajes de syslog *</span></li>
+        <li><span class="azul">ralentizar un ataque activo *</span></li>
+        <li><span class="azul">deshabilitar los inicios de sesión de los hosts especificados *</span></li>
+        <li>permitir solo el acceso seguro a la consola</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Las mejoras de inicio de sesión de Cisco IOS brindan mayor seguridad de tres maneras:
+Implementar retrasos entre intentos de inicio de sesión sucesivos
+Habilitar el cierre de inicio de sesión si se sospechan ataques DoS
+Generar mensajes de registro del sistema para la detección de inicio de sesión Los
+banners y la autenticación de contraseña están desactivados de forma predeterminada y deben activarse mediante un comando. Las mejoras de inicio de sesión virtual no se aplican a las conexiones de consola.</p>
+    </div>
+
+    </div>
+
+  </body>
+</html>

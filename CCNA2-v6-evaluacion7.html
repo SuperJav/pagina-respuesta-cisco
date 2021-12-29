@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CCNA2 Evaluacion 7</title>
+    <!--link de estilo-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <!--contenido-->
+        <div class="caja01">
+          <p>
+               En esta pagina encontraras todas las respuesta de cisco,
+               tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+               de tu examen mas facil de llenar.
+               <br>
+               <br>
+              <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+          </p>
+        </div>
+        <div class="contenedorIT">
+          <div class="capituloIT">
+            <h2>SIC del capítulo 7: VLAN, trunking y Router-on-a-Stick</h2>
+            <br>
+            <br>
+            <img src="imagen/2017-07-13_105437-768x526.png" class="fotoIT" alt="">
+              <br>
+              <p>Algunas cosas a tener en cuenta al completar esta actividad:</p>
+              <br>
+              <br>
+              <p>1.No utilice el  botón Atrás del navegador  ni cierre ni vuelva a cargar las ventanas de examen durante el examen.</p>
+              <br>
+              <p>2.No cierre Packet Tracer cuando haya terminado. Se cerrará automáticamente.</p>
+              <br>
+              <p>3.Haga clic en el   botón Enviar evaluación en la ventana del navegador para enviar su trabajo.</p>
+              <br>
+              <br>
+              <h2>Introducción</h2>
+              <br>
+              <br>
+              <p>En esta evaluación de habilidades prácticas, configurará la red Science LLC con VLAN, Trunking, enrutamiento entre VLAN y ACL estándar IPv4. Como parte de este proceso, realizará tareas básicas de configuración de VLAN, direccionará las interfaces y los hosts del enrutador e implementará dos ACL.</p>
+              <br>
+              <h4>No es necesario que configure el conmutador Quark o ninguno de los servidores.</h4>
+              <br>
+              <h4>Nota: para mantener la actividad de evaluación lo más breve posible, solo configurará parcialmente algunos dispositivos, como se indica en las instrucciones. En una red real, todos los dispositivos estarían totalmente configurados para funcionar en la red. Usted solo es responsable de completar las tareas cubiertas en las instrucciones. Cualquier configuración que realice más allá de los requisitos no dará como resultado un crédito adicional.</h4>
+              <br>
+              <h4>Todas las configuraciones de dispositivos IOS deben completarse desde una conexión de terminal directa a la consola del dispositivo. Además, muchos valores que se requieren para completar las configuraciones no se le han dado. En esos casos, cree los valores que necesita para completar los requisitos.</h4>
+              <br>
+              <br>
+              <p>Practicarás y serás evaluado en las siguientes habilidades:</p>
+              <br>
+              <ul class="listaIT">
+                <li>Configuración de la configuración inicial del dispositivo.</li>
+                <li>Asignación de direcciones IPv4</li>
+                <li>Configuración y direccionamiento de interfaces de dispositivos.</li>
+                <li>Configuración de VLANs en tres switches.</li>
+                <li>Configuración de trunking y enrutamiento inter-VLAN.</li>
+                <li>Configuración de ACL para limitar el acceso al dispositivo.</li>
+                </ul>
+                <br>
+                <br>
+                <p>Requisitos por dispositivo:</p>
+                <br>
+                <br>
+                <h3>Router Atom:</h3>
+                <br>
+                <br>
+                <ul class="listaIT">
+                  <li>Configuración de la configuración inicial del enrutador</li>
+                  <li>Configuración de la interfaz y direccionamiento IPv4.</li>
+                </ul>
+                <h2>Neutrón del interruptor:</h2>
+                <ul class="listaIT">
+                  <li>Configuración de VLANs</li>
+                  <li>Configuración de trunking VLAN</li>
+                  <li>Configuración de interfaces en VLAN</li>
+                  <li>Configuración de la dirección IP para la VLAN de administración</li>
+                </ul>
+                <br>
+                <br>
+                <h2>Cambiar Protón:</h2>
+                <br>
+                <ul class="listaIT">
+                  <li>Configuración de VLANs</li>
+                  <li>Configuración de trunking VLAN</li>
+                  <li>Configuración de interfaces en VLAN</li>
+                  <li>Configuración de la dirección IP para la VLAN de administración</li>
+                </ul>
+                <br>
+                <br>
+                <h2>Switch Electron:</h2>
+                <br>
+                <ul class="listaIT">
+                  <li>Configuración de VLANs</li>
+                  <li>Configuración de trunking VLAN</li>
+                  <li>Configuración de interfaces en VLAN</li>
+                  <li>Configuración de la dirección IP para la VLAN de administración</li>
+                </ul>
+                <br>
+                <br>
+                <h2>Anfitriones de PC:</h2>
+                <br>
+                <ul class="listaIT">
+                  <li>Pv4 direccionamiento completo</li>
+                </ul>
+                <br>
+                <br>
+                <h2>Tabla de direccionamiento</h2>
+                <br>
+                <h4>Nota: Se le proporcionan las redes en las que deben configurarse las interfaces. A menos que se le indique lo contrario en las instrucciones detalladas a continuación, tiene la libertad de elegir las direcciones de host para asignar.</h4>
+                <br>
+                <img src="imagen/table-1.png" class="fotoIT" alt="">
+                <br>
+                <br>
+                <h2>Tabla de asignación de VLAN</h2>
+                <br>
+                <img src="imagen/table-2.png" class="fotoIT" alt="">
+                <br>
+                <br>
+                <h2>Instrucciones</h2>
+                <br>
+                <h4>Paso 1: Determinar el direccionamiento</h4>
+                <br>
+                <p>Determine las direcciones IP que utilizará para las interfaces requeridas en los tres SVI de conmutador y los seis hosts de LAN. Usa la información en la tabla de direccionamiento.</p>
+                <br>
+                <ul class="listaIT">
+                  <li>Seleccione las direcciones SVI del interruptor.</li>
+                  <li>Las interfaces en el  enrutador Atom que se utilizan para enrutar las VLAN deben dirigirse con la última dirección IP utilizable en la subred.</li>
+                  <li>Asigne direcciones de host válidas a los hosts de LAN según la asignación de VLAN y la tabla de direccionamiento.</li>
+                </ul>
+                <br>
+                <h4>Paso 2: configurar la configuración inicial del dispositivo en Neutron y Atom</h4>
+                <br>
+                <p>Configure Neutron y Atom con todas las configuraciones iniciales que ha aprendido en el curso hasta el momento:</p>
+                <br>
+                <ul class="listaIT">
+                  <li>Configurar el nombre de host del switch: Neutron.</li>
+                  <li>Configure el nombre de host del router: Atom.</li>
+                  <li>Evite que el enrutador intente resolver las entradas CLI no reconocidas como nombres de dominio.</li>
+                  <li>Proteja las configuraciones de dispositivos contra accesos no autorizados con la contraseña encriptada cisco.</li>
+                  <li>Asegure el enrutador y la consola del conmutador y las líneas de acceso remoto con contraseña cisco.</li>
+                  <li>Evite que todas las contraseñas se vean en texto sin cifrar en los archivos de configuración del dispositivo.</li>
+                </ul>
+
+                <h4>Paso 3: configurar las VLAN</h4>
+                <br>
+                <p>Configure cuatro VLAN en el  Neutron ,  Proton y  Electron  conmutadores usando los valores en la tabla de direccionamiento.</p>
+                <br>
+                <h4>Paso 4: Asignar interfaces de conmutador a las VLAN</h4>
+                <br>
+                <p>Configure las interfaces FastEthernet en  Proton y Electron de  acuerdo con las siguientes pautas:</p>
+                <br>
+                <ul class="listaIT">
+                  <li>Interfaces Fa0 / 1 - Fa0 / 5 se asignan a la VLAN 20</li>
+                  <li>Interfaces Fa0 / 6 - Fa0 / 10 se asignan a la VLAN 40</li>
+                  <li>Interfaces Fa0 / 11 - Fa0 / 15 se asignan a VLAN 60</li>
+                </ul>
+                <br>
+                <h4>Paso 5: Configurar los switches para la administración remota</h4>
+                <br>
+                <p>Configure los SVI de los conmutadores  Neutron ,  Proton y  Electron  utilizando la información en la VLAN y las tablas de direccionamiento. Configure la dirección IP para la VLAN de administración y la dirección IP de la puerta de enlace predeterminada. Configure los SVI para que los dispositivos de otras redes puedan acceder a ellos después de que la red se haya configurado por completo.</p>
+                <br>
+                <h4>Paso 6: Configurar el enlace troncal de VLAN</h4>
+                <br>
+                <p>Configure el enlace troncal de VLAN entre los conmutadores  Neutron ,  Proton y  Electron  .</p>
+                <br>
+                <ul class="listaIT">
+                  <li>Configure manualmente el nombre de dominio VTP a  Escuela  en los interruptores Neutron, Proton y Electron.</li>
+                  <li>Configure manualmente los puertos de enlace troncal en los conmutadores Neutron, Proton y Electron.</li>
+                </ul>
+                <br>
+                <h4>Paso 7: Configurar el enrutamiento entre VLAN</h4>
+                <br>
+                <p>Utilice la información en las tablas de direccionamiento y VLAN para configurar el enrutamiento entre VLAN en  Atom de  acuerdo con las siguientes pautas:</p>
+                <ul class="listaIT">
+                  <li>Configure el enrutamiento entre VLAN entre las VLAN 20, 40, 60 y 88 a través de subinterfaces Gi0 / 0.</li>
+                  <li>Configure el enrutamiento entre VLAN para las VLAN 250 y 254 a través de subinterfaces Gi0 / 1.</li>
+                  <br>
+                </ul>
+                <h4>Paso 8: Configurar el direccionamiento de host</h4>
+                <br>
+                <p>Direccione los hosts de acuerdo con los valores en la tabla de direccionamiento. Utilice una dirección de servidor DNS de  172.16.254.252 . Todos los hosts deben poder acceder al   servidor www.cisco.com .</p>
+                <br>
+                <h4>Paso 9: Configurar las listas de control de acceso</h4>
+
+                <br>
+                <p>Configurará dos listas de control de acceso en el   enrutador Atom . Las especificaciones de ACL son las siguientes:</p>
+                <br>
+                <p>a. Restrinja el acceso a las líneas vty en  Atom .</p>
+                <br>
+                <ul class="listaIT">
+                  <li>Crear un  ACL estándar numerado usando número  10 . Asegúrese de usar este número exactamente como aparece en estas instrucciones.</li>
+                  <li>Permitir que solo los hosts en la  VLAN de producción accedan a las líneas vty de  Atom .</li>
+                  <li>Ningún otro host interno e Internet debe poder acceder a las líneas vty de  Atom .</li>
+                  <li>Su solución debe consistir  en una sola declaración ACL .</li>
+                </ul>
+                <br>
+                <br>
+                <p>segundo. Restringir el acceso al servidor web interno</p>
+                <br>
+                <ul class="listaIT">
+                  <li>Cree una ACL estándar con nombre usando el nombre  INT-WEB . Asegúrese de usar este nombre exactamente como aparece en estas instrucciones.</li>
+                  <li>Permitir que los hosts en las   VLAN de investigación y  producción lleguen al servidor web administrativo interno en  int.com .</li>
+                  <li>Ningún otro host interno y de Internet debe poder acceder al servidor web administrativo interno.</li>
+                  <li>Su solución debe consistir en dos declaraciones de ACL.</li>
+                </ul>
+                <br>
+                <br>
+                <h4>Paso 10: Verificar la conectividad</h4>
+                <br>
+                <p>Verifique sus configuraciones de acuerdo con las siguientes pautas:</p>
+                <br>
+                <ul class="listaIT">
+                  <li>Los hosts en las VLAN 20, 40 y 60  pueden hacer  ping entre sí.>
+                  <li>Los hosts en las VLAN 20, 40 y 60  pueden  visitar el servidor web externo  www.cisco.com .</li>
+                  <li>Los hosts en las redes VLAN 40 y 60  pueden  visitar el servidor web administrativo  www.int.com .</li>
+                  <li>Los anfitriones en VLAN 60  pueden  telnet en Atom</li>
+                  <li>Los hosts en las VLAN 20 y 40  no pueden hacer  telnet a  Atom .</li>
+                </ul>
+
+          </div>
+          <div class="capituloIT">
+            <h2><span class="azul">Intrucciones - Respuesta 100%</span></h2>
+            <br>
+            <h4><span class="azul">Router 1: Atom</span></h4>
+            <p>
+            habilitar <br>
+            conf ter <br>
+            nombre de host Atom <br>
+            sin búsqueda de dominio ip <br>
+            habilitar cisco secreto</p>
+            <br>
+            <br>
+            <p>
+            línea consola 0 <br>
+            contraseña de cisco <br>
+            iniciar sesión
+            </p>
+            <br>
+            <br>
+            <p>
+              línea vty 0 15 <br>
+              contraseña de cisco <br>
+              iniciar sesión
+              salida
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 0.20 <br>
+              encapsulamiento dot1q 20 <br>
+              dirección ip 172.16.20.254 255.255.255.0
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 0.40 <br>
+              encapsulación dot1q 40 <br>
+              dirección ip 172.16.40.254 255.255.255.0
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 0.60 <br>
+              encapsulamiento dot1Q 60 <br>
+              dirección ip 172.16.60.254 255.255.255.0
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 0.88 <br>
+              encapsulamiento dot1Q 88 <br>
+              dirección ip 172.16.88.254 255.255.255.0
+            </p>
+            <br>
+            <br>
+            <p>
+            int g0 / 0 <br>
+            no sh
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 1.250 <br>
+              encapsulamiento dot1Q 250 <br>
+              dirección ip 172.16.250.254 255.255.255.0
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 1.254 <br>
+              encapsulamiento dot1Q 254 <br>
+              dirección ip 172.16.254.254 255.255.255.0
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 1 <br>
+              no apagarse  <br>
+              salida
+            </p>
+            <br>
+            <br>
+            <p>
+              Permiso de la lista de acceso 10 172.16.60.0 0.0.0.255 <br>
+              ip access-list standard INT-WEB <br>
+              Permiso 172.16.40.0 0.0.0.255 <br>
+              Permiso 172.16.60.0 0.0.0.255
+            </p>
+            <br>
+            <br>
+            <p>
+              salida <br>
+              línea vty 0 15 <br>
+              clase de acceso 10  <br>
+              salida
+            </p>
+            <br>
+            <br>
+            <p>
+              int g0 / 1.250 <br>
+              ip access-group INT-WEB fuera
+            </p>
+          </div>
+          <div class="capituloIT">
+            <h4><span class="azul">Interruptor 2: Protón</span></h4>
+            <br>
+            <br>
+            <p>
+
+              en <br>
+              conf ter <br>
+              nombre de host Proton <br>
+              vlan 20 <br>
+              nombre de laboratorio <br>
+              vlan 40 <br>
+              nombre de investigación <br>
+              vlan 60 <br>
+              nombre de producción <br>
+              vlan 88 <br>
+              nombre NetOps <br>
+              salida
+            </p>
+            <p>
+              rango de int fastEthernet 0 / 1-5 <br>
+            acceso al modo switchport  <br>
+            switchport access vlan 20 <br>
+            rango de int fastEthernet 0 / 6-10 <br>
+            acceso al modo switchport  <br>
+            switchport access vlan 40 <br>
+            rango de int fastEthernet 0 / 11-15 <br>
+            acceso al modo switchport <br>
+            switchport access vlan 60 <br>
+            salida <br>
+            int vlan 88 <br>
+            ip add 172.16.88.252 255.255.255.0 <br>
+            no sh <br>
+            no apagarse <br>
+            salida <br>
+            ip por defecto de la puerta de enlace 172.16.88.254 <br>
+            dominio vtp escuela <br>
+            </p>
+            <br>
+            <br>
+            <p>
+              int f0 / 23 <br>
+              maletero modo conmutador
+            </p>
+          </div>
+          <div class="capituloIT">
+            <h4><span class="azul">Interruptor 3: Electron</span></h4>
+            <br>
+            <p>
+              en <br>
+              conf ter <br>
+              nombre de host Electron <br>
+              vlan 20 <br>
+              nombre de laboratorio <br>
+              vlan 40 <br>
+              nombre de investigación <br>
+              vlan 60 <br>
+              nombre de producción <br>
+              vlan 88 <br>
+              nombre NetOps <br>
+              salida
+            </p>
+            <br>
+            <br>
+            <p>
+            rango int fa0 / 1-5 <br>
+            acceso al modo switchport  <br>
+            switchport access vlan 20 <br>
+            rango int fa0 / 6-10 <br>
+            acceso al modo switchport <br>
+            switchport access vlan 40 <br>
+            rango int fa0 / 11-15 <br>
+            acceso al modo switchport  <br>
+            switchport access vlan 60 <br>
+            salida <br>
+            int vlan 88 <br>
+            ip add 172.16.88.251 255.255.255.0 <br>
+            no apagarse  <br>
+            salida
+            </p>
+            <br>
+            <br>
+            <p>
+              ip por defecto de la puerta de enlace 172.16.88.254 <br>
+              dominio vtp escuela
+            </p>
+            <br>
+            <br>
+            <p>
+              int f0 / 24 <br>
+              maletero modo conmutador
+            </p>
+          </div>
+          <div class="dialogo">
+            <h4>Host: Lab 1</h4>
+            <p>
+              Dirección IP: 172.16.20.5 <br>
+              Máscara de subred: 255.255.255.0  <br>
+              Puerta de enlace predeterminada: 172.16.20.254 <br>
+              Servidor DNS: 172.16.254.252
+            </p>
+            <br>
+            <br>
+            <h4>Host: Research 1</h4>
+            <p>
+              Dirección IP: 172.16.40.5 <br>
+              Máscara de subred: 255.255.255.0 <br>
+              Puerta de enlace predeterminada: 172.16.40.254 <br>
+              Servidor DNS: 172.16.254.252
+            </p>
+            <br>
+            <br>
+            <h4>Anfitrión: Prod 1</h4>
+            <p>
+              Dirección IP: 172.16.60.5 <br>
+              Máscara de subred: 255.255.255.0 <br>
+              Pasarela predeterminada: 172.16.60.254 <br>
+              Servidor DNS: 172.16.254.252
+            </p>
+            <br>
+            <br>
+            <h4>Host: Lab 2</h4>
+            <p>
+              Dirección IP: 172.16.20.10 <br>
+              Máscara de subred: 255.255.255.0 <br>
+              Puerta de enlace predeterminada: 172.16.20.254 <br>
+              Servidor DNS: 172.16.254.252
+            </p>
+            <br>
+            <br>
+            <h4>Host: Research 2</h4>
+            <p>
+              Dirección IP: 172.16.40.10 <br>
+              Máscara de subred: 255.255.255.0 <br>
+              Puerta de enlace predeterminada: 172.16.40.254 <br>
+              Servidor DNS: 172.16.254.252
+            </p>
+            <br>
+            <br>
+            <h4>Host: Prod 1</h4>
+            <p>
+              Dirección IP: 172.16.60.10 <br>
+              Máscara de subred: 255.255.255.0 <br>
+              Puerta de enlace predeterminada: 172.16.60.254 <br>
+              Servidor DNS: 172.16.254.252 <br>
+            </p>
+          </div>
+
+        </div>
+
+  </body>
+</html>

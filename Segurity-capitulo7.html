@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Segurity-capitulo 7</title>
+    <!--link de icon de pesta-->
+    <link rel="icon" href="imagen/iconn.ico">
+    <!--link de styles css-->
+    <link rel="stylesheet" href="styles.css">
+    <!--link de stilos en iconos-->
+    <link rel="stylesheet" href="fonts.css">
+    <!--tipo de letra para los cajones-->
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="contenedor">
+
+    <header>
+      <div class="caja1">
+      <img src="imagen/logo.png" class="logo">
+      <h1>Respuesta cisco@</h1>
+      </div>
+    </header>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+          <li><a href="IT Essentials.html"><span class="icon-cog"></span>IT Essentials</a></li>
+          <li><a href="CNNA v6.html"><span class="icon-connection"></span>CCNA v6</a></li>
+          <li><a href="seguridad v2.html"><span class="icon-lock"></span>CCNA Security v2.0</a></li>
+        </ul>
+      </nav>
+    </nav>
+
+<!--contenido-->
+  <div class="caja01">
+    <p>
+         En esta pagina encontraras todas las respuesta de cisco,
+         tanto como en  "CNNA v6" como segurity e IT Essentials; haciendo
+         de tu examen mas facil de llenar.
+         <br>
+         <br>
+        <span class="azul">Presiona CTRL + F para hacer una busqueda rapida y sencilla.</span>
+    </p>
+  </div>
+  <div class="contenedorIT">
+    <div class="capituloIT">
+      <h3>1.¿Cuál es el propósito de un servicio de no rechazo en las comunicaciones seguras?</h3>
+      <ul class="listaIT">
+        <li>para asegurar que las comunicaciones seguras cifradas no puedan ser descodificadas</li>
+        <li>Confirmar la identidad del destinatario de las comunicaciones.</li>
+        <li>para proporcionar el mayor nivel de cifrado posible</li>
+        <li><span class="azul">Asegurar que la fuente de las comunicaciones sea confirmada *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>El no rechazo utiliza las características únicas del remitente de un mensaje para confirmar que el remitente reputado es en realidad el remitente real.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>2.¿Qué objetivo de comunicaciones seguras se logra al cifrar los datos?</h3>
+      <ul class="listaIT">
+        <li>integridad</li>
+        <li>autenticación</li>
+        <li><span class="azul">confidencialidad *</span></li>
+        <li>disponibilidad</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Cuando los datos están cifrados, se codifican para mantener los datos privados y confidenciales para que solo los destinatarios autorizados puedan leer el mensaje. Una función de hash es otra forma de proporcionar confidencialidad.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>3.¿Qué protocolo de cifrado proporciona la confidencialidad de la capa de red?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Paquete de protocolos IPsec *</span></li>
+        <li>Transport Layer Security</li>
+        <li>Secure Hash Algorithm 1</li>
+        <li>Capa de sockets seguros</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>El cifrado criptográfico puede proporcionar confidencialidad en varias capas del modelo OSI. Por ejemplo, los protocolos de capa de red, como el conjunto de protocolos IPsec, proporcionan confidencialidad de capa de red. Secure Sockets Layer (SSL) o Transport Layer Security (TLS), proporcionan confidencialidad de la capa de sesión. MD5, Keyed MD5 y Secure Hash Algorithm 1 son ejemplos de funciones de hash. Proporcionan integridad de datos pero no confidencialidad de datos.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>4.Consulte la presentación. ¿Qué algoritmo de cifrado se describe en la exposición?</h3>
+      <ul class="listaIT">
+        <img src="imagen/CCNA-Security-Chapter-7-Exam-Answer-v2-001-2.png"  class="fotoIT" alt="">
+        <li>RC4</li>
+        <li>AES</li>
+        <li><span class="azul">3DES *</span></li>
+        <li>DES</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>3DES es una buena opción para proteger los datos porque tiene un algoritmo que es muy confiable y tiene seguridad.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>5.Un minorista en línea necesita un servicio para respaldar el no rechazo de la transacción. ¿Qué componente se utiliza para este servicio?</h3>
+      <ul class="listaIT">
+        <li>La clave privada del comerciante.</li>
+        <li>El único secreto compartido conocido solo por el vendedor y el cliente.</li>
+        <li>La clave pública del comerciante.</li>
+        <li><span class="azul">Las firmas digitales *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Las firmas digitales, generadas por la función hash, pueden proporcionar el servicio para no rechazar la transacción. Tanto las claves públicas como las privadas se utilizan para cifrar datos durante la transacción. No se utilizan los secretos compartidos entre el minorista y los clientes.</p>
+    </div><div class="capituloIT">
+      <h3>6.¿En qué situación se utiliza un algoritmo de clave asimétrica?</h3>
+      <ul class="listaIT">
+        <li>Dos routers Cisco se autentican entre sí con CHAP.</li>
+        <li>Los datos del usuario se transmiten a través de la red después de establecer una VPN.</li>
+        <li>Un administrador de oficina cifra los archivos confidenciales antes de guardarlos en un dispositivo extraíble.</li>
+        <li><span class="azul">Un administrador de red se conecta a un enrutador Cisco con SSH. *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>El protocolo SSH utiliza un algoritmo de clave asimétrica para autenticar a los usuarios y cifrar los datos transmitidos. El servidor SSH genera un par de claves públicas / privadas para las conexiones. El cifrado de archivos antes de guardarlos en un dispositivo de almacenamiento utiliza un algoritmo de clave simétrica porque la misma clave se utiliza para cifrar y descifrar archivos. La autenticación del enrutador con CHAP utiliza un algoritmo de clave simétrica. La clave está preconfigurada por el administrador de la red. Una VPN puede usar tanto una clave asimétrica como un algoritmo de cifrado simétrico. Por ejemplo, en una implementación IPSec VPN, la transmisión de datos utiliza un secreto compartido (generado con un algoritmo de clave asimétrica) con un algoritmo de cifrado simétrico utilizado para el rendimiento.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>7.¿Por qué a menudo se prefiere el algoritmo 3DES sobre el algoritmo AES?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">Se confía más en 3DES porque se ha demostrado que es seguro durante un período más largo que AES. *</span></li>
+        <li>AES es más caro de implementar que 3DES.</li>
+        <li>3DES se desempeña mejor en entornos de alto rendimiento y baja latencia que AES.</li>
+        <li>Los principales proveedores de equipos de redes, como Cisco, aún no han adoptado AES.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>A pesar de sus ventajas, AES es un algoritmo relativamente joven. Una regla importante de la criptografía es que un algoritmo maduro siempre es más confiable. Por lo tanto, 3DES es una opción más confiable en términos de fuerza, ya que ha sido probado y analizado durante 35 años. AES se puede utilizar en entornos de alto rendimiento y baja latencia, especialmente cuando 3DES no puede manejar los requisitos de rendimiento o latencia. AES está disponible en varios dispositivos VPN de Cisco como una transformación de cifrado.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>8.¿Cuál es el uso más común del algoritmo Diffie-Helman en la seguridad de las comunicaciones?</h3>
+      <ul class="listaIT">
+        <li>para crear hashes de contraseña para la autenticación segura</li>
+        <li>para proporcionar la autenticación del protocolo de enrutamiento entre los enrutadores</li>
+        <li><span class="azul">para asegurar el intercambio de claves utilizadas para cifrar datos *</span></li>
+        <li>para cifrar datos para comunicaciones de comercio electrónico seguras</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Diffie-Helman no es un mecanismo de cifrado y generalmente no se utiliza para cifrar datos. En su lugar, es un método para intercambiar de forma segura las claves utilizadas para cifrar los datos.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>9.¿En qué se centra el criptoanálisis?</h3>
+      <ul class="listaIT">
+        <li>escondiendo códigos secretos</li>
+        <li>desarrollando códigos secretos</li>
+        <li><span class="azul">rompiendo códigos encriptados *</span></li>
+        <li>implementando códigos encriptados</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>La criptología es la ciencia de hacer y romper códigos secretos. Hay dos disciplinas separadas en criptología, criptografía y criptoanálisis. La criptografía es el desarrollo y uso de códigos. El criptoanálisis es la ruptura de esos códigos secretos (encriptados).</p>
+    </div>
+    <div class="capituloIT">
+      <h3>10.¿Cuántos bits utiliza el Estándar de cifrado de datos (DES) para el cifrado de datos?</h3>
+      <ul class="listaIT">
+        <li>40 bits</li>
+        <li><span class="azul">56 bits *</span></li>
+        <li>64 bits</li>
+        <li>72 bits</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>DES utiliza una clave de longitud fija. La clave tiene una longitud de 64 bits, pero solo se utilizan 56 bits para el cifrado. Los 8 bits restantes se utilizan para la paridad. Una clave de cifrado DES siempre tiene una longitud de 56 bits. Cuando se usa DES con un cifrado más débil de una clave de 40 bits, la clave de cifrado es de 40 bits secretos y 16 bits conocidos, lo que hace que la longitud de la clave sea de 56 bits.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>11.¿Qué enunciado describe el algoritmo de cifrado optimizado por software (SEAL)?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">SEAL es un cifrado de flujo. *</span></li>
+        <li>Utiliza una clave de cifrado de 112 bits.</li>
+        <li>Es un ejemplo de un algoritmo asimétrico.</li>
+        <li>Requiere más recursos de CPU que AES basado en software.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>SEAL es un cifrado de flujo que utiliza una clave de cifrado de 160 bits. Es un algoritmo de cifrado simétrico que tiene un impacto menor en los recursos de la CPU en comparación con otros algoritmos basados ​​en software, como DES, 3DES y AES basados ​​en software.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>12.¿Qué algoritmo de encriptación es un algoritmo asimétrico?</h3>
+      <ul class="listaIT">
+        <li><span class="azul">DH *</span></li>
+        <li>SELLO</li>
+        <li>3DES</li>
+        <li>AES</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>DH es un algoritmo asimétrico. AES, 3DES y SEAL son todos algoritmos simétricos.</p>
+    </div><div class="capituloIT">
+      <h3>13.¿Qué tipo de algoritmo de cifrado usa claves públicas y privadas para proporcionar autenticación, integridad y confidencialidad?</h3>
+      <ul class="listaIT">
+        <li>simétrico</li>
+        <li><span class="azul">asimétrico *</span></li>
+        <li>IPsec</li>
+        <li>secreto compartido</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Un algoritmo de cifrado asimétrico utiliza dos claves, a saber, una clave pública y una clave privada. Un algoritmo de cifrado simétrico utiliza una clave idéntica tanto para el cifrado como para el descifrado. Un secreto compartido es un ejemplo de uso de algoritmo simétrico.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>14.¿Cómo se defienden los criptógrafos modernos contra los ataques de fuerza bruta?</h3>
+      <ul class="listaIT">
+        <li>Utilice el análisis estadístico para eliminar las claves de cifrado más comunes.</li>
+        <li><span class="azul">Use un espacio de teclas lo suficientemente grande como para que se requiera demasiado dinero y demasiado tiempo para realizar un ataque exitoso. *</span></li>
+        <li>Utilice un algoritmo que requiera que el atacante tenga tanto texto cifrado como texto sin formato para realizar un ataque exitoso.</li>
+        <li>Use el análisis de frecuencia para asegurarse de que las letras más populares utilizadas en el idioma no se usen en el mensaje cifrado.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>En un ataque de fuerza bruta, un atacante intenta cada clave posible con el algoritmo de descifrado sabiendo que eventualmente uno de ellos funcionará. Para defenderse de los ataques de fuerza bruta, los criptógrafos modernos tienen como objetivo tener un espacio de teclas (un conjunto de todas las claves posibles) lo suficientemente grande como para que requiera demasiado dinero y demasiado tiempo para llevar a cabo un ataque de fuerza bruta. Una política de seguridad que requiere que las contraseñas se cambien en un intervalo predefinido defiende aún más contra los ataques de fuerza bruta. La idea es que las contraseñas se hayan cambiado antes de que un atacante agote el espacio de claves.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>15.¿Qué enunciado describe los algoritmos de cifrado asimétrico?</h3>
+      <ul class="listaIT">
+        <li>Tienen longitudes de clave que van desde 80 hasta 256 bits.</li>
+        <li>Incluyen DES, 3DES y AES.</li>
+        <li>También se les llama algoritmos de clave de secreto compartido.</li>
+        <li><span class="azul">Son relativamente lentos porque se basan en algoritmos computacionales difíciles. *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>DES, 3DES y AES son ejemplos de algoritmos de cifrado simétricos (también conocidos como algoritmos de clave secreta compartida). La longitud de clave habitual para los algoritmos simétricos es de 80 a 256 bits. Los algoritmos asimétricos son relativamente lentos porque se basan en algoritmos computacionales difíciles.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>16.¿Qué dos números no secretos se acuerdan inicialmente cuando se usa el algoritmo Diffie-Hellman? (Escoge dos.)</h3>
+      <ul class="listaIT">
+        <li>coeficiente binomial</li>
+        <li><span class="azul">generador *</span></li>
+        <li>curva elíptica invariante</li>
+        <li><span class="azul">módulo primario *</span></li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>DH es un algoritmo matemático que permite que dos hosts generen un secreto compartido idéntico en ambos sistemas sin haberse comunicado antes. Para iniciar un intercambio de DH, ambos hosts deben acordar dos números no secretos. El primer número es un número base, también llamado generador. El segundo número es un número primo que se utiliza como módulo. Estos números suelen ser públicos y se eligen de una tabla de valores conocidos.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>17.¿Qué tipo de algoritmo de cifrado usa la misma clave para cifrar y descifrar datos?</h3>
+      <ul class="listaIT">
+        <li>Diffie-Hellman</li>
+        <li><span class="azul">Secreto compartido *</span></li>
+        <li>Llave pública</li>
+        <li>Asimétrico</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Los algoritmos de cifrado simétrico usan la misma clave (también llamada secreto compartido) para cifrar y descifrar los datos. En contraste, los algoritmos de cifrado asimétrico (también llamados clave pública) usan un par de claves, una para el cifrado y otra para el descifrado.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>18.¿Cuántos bits utiliza el Estándar de cifrado de datos (DES) para el cifrado de datos?</h3>
+      <ul class="listaIT">
+        <li>40 bits</li>
+        <li><span class="azul">56 bits *</span></li>
+        <li>64 bits</li>
+        <li>72 bits</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p></p>
+    </div>
+    <div class="capituloIT">
+      <h3>19.¿En qué situación es más probable que se use un algoritmo asimétrico?</h3>
+      <ul class="listaIT">
+        <li>iniciar sesión en una computadora</li>
+        <li><span class="azul">haciendo una compra en línea *</span></li>
+        <li>subir un capítulo de libro de redes usando FTP</li>
+        <li>Transferencia de un gran flujo de datos entre dos ubicaciones corporativas</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Los algoritmos asimétricos son lentos, por lo que se usan comúnmente en transacciones de bajo volumen, como hacer compras en línea o iniciar sesión en un sitio web financiero.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>20.¿Por qué la administración de claves de algoritmo asimétrico es más simple que la administración de claves de algoritmo simétrico?</h3>
+      <ul class="listaIT">
+        <li>Utiliza menos bits.</li>
+        <li>Solo se usa una tecla.</li>
+        <li><span class="azul">Una de las claves puede hacerse pública. *</span></li>
+        <li>Se utilizan dos claves públicas para el intercambio de claves.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Los algoritmos asimétricos utilizan dos claves, una pública y una privada. La administración de claves es más sencilla porque una de las claves puede hacerse pública.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>21.¿Cuál es el propósito de la firma de código?</h3>
+      <ul class="listaIT">
+        <li>secreto de identidad de la fuente</li>
+        <li><span class="azul">integridad de los archivos fuente .EXE *</span></li>
+        <li>transferencia confiable de datos</li>
+        <li>cifrado de datos</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>La firma de código se utiliza para verificar la integridad de los archivos ejecutables descargados de un sitio web de un proveedor. La firma de código utiliza certificados digitales para autenticar y verificar la identidad de un sitio web.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>22.¿Qué algoritmo puede garantizar la confidencialidad de los datos?</h3>
+      <ul class="listaIT">
+        <li>MD5</li>
+        <li>PKI</li>
+        <li><span class="azul">AES *</span></li>
+        <li>RSA</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>La confidencialidad de los datos se garantiza mediante algoritmos de cifrado simétricos, incluidos DES, 3DES y AES.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>23.¿Cuál es el propósito de un certificado digital?</h3>
+      <ul class="listaIT">
+        <li>Garantiza que un sitio web no haya sido hackeado.</li>
+        <li><span class="azul">Autentica un sitio web y establece una conexión segura para intercambiar datos confidenciales. *</span></li>
+        <li>Proporciona una prueba de que los datos tienen una firma tradicional adjunta.</li>
+        <li>Asegura que la persona que está accediendo a un dispositivo de red está autorizada.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+    <div class="dialogo">
+      <p>Las firmas digitales comúnmente usan certificados digitales que se usan para verificar la identidad del originador para autenticar el sitio web de un proveedor y establecer una conexión cifrada para intercambiar datos confidenciales. Un ejemplo es cuando una persona inicia sesión en una institución financiera desde un navegador web.</p>
+    </div>
+    <div class="capituloIT">
+      <h3>24.Rellena el espacio en blanco. </h3>
+      <ul class="listaIT">
+        <li>Un secreto compartido es una clave <span class="azul">simétrica</span> utilizada en un algoritmo de cifrado.</li>
+        <li>@Javi__Super</li>
+      </ul>
+    </div>
+
+  </div>
+
+  </body>
+</html>
